@@ -11,7 +11,7 @@ Un journal apporte plusieurs choses intéressante dans le cadre d'une formation
 C'est pour toutes ces raisons que nous souhaitons que vous preniez du temps, chaque jour, pour écrire, noter ce que vous avez appris, découvert. Vous pouvez également noter des questions, des choses que vous n'avez pas saisi, des points que vous aimeriez explorer ou eclaircir.
 
 Nous vous proposons :
-- d'écrire ces journaux dans un format texte, si possible en [markdown](https://fr.wikipedia.org/wiki/Markdown);
+- d'écrire ces journaux dans un format texte, si possible en [markdown](https://fr.wikipedia.org/wiki/Markdown) (le [cours markdown d'OpenClassRoom](https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown));
 - sur un dépot [github/descodeuses/promo-ada-journaux](https://github.com/descodeuses/promo-ada-journaux)
 
 ## Contenue
