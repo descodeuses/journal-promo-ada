@@ -62,3 +62,21 @@ Le reste de la procédure sera celle que vous executerez chaque fois.
 Un fichier exemple est placé dans chacun de vos répertoires pour vous aider, vous servir de référence.
 
 Si vous avez des difficultés, prévenez nous tout de suite !
+
+## Index des journaux
+
+- [Alix](Alix/)
+- [Aycha](Aycha/)
+- [Céline](Celine/)
+- [Charlotte](Charlotte/)
+- [Delphine](Delphine/)
+- [Françoise](Francoise/)
+- [Laura](Laura/)
+- [Lynda](Lynda/)
+- [Nassima](Nassima/)
+- [Paloma](Paloma/)
+- [Sarah](Sarah/)
+- [Silvia](Silvia/)
+- [Sophie](Sophie/)
+- [Soraya](Soraya/)
+- [Vanessa](Vanessa/)
