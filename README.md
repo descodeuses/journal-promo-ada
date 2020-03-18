@@ -3,12 +3,12 @@
 Un journal apporte plusieurs choses intéressantes dans le cadre d'une formation :
 
 - prendre du recul sur ce que vous avez appris;
-- avoir un support de « contenu » personnalisé en fin de formation;
+- avoir un contenu personnalisé en fin de formation;
 - avoir un pense-bête listant des commandes ou des liens utiles;
 - avoir un outil de suivi pour les personnes encadrantes;
 - partager vos apprentissages avec les autres stagiaires;
 
-C'est pour toutes ces raisons que nous vous recommandons fortement de prendre le temps, chaque jour, pour écrire, noter ce que vous avez appris, découvert. Vous pouvez également noter des questions, des points que vous n'avez pas compris, des points que vous aimeriez explorer ou eclaircir.
+C'est pour toutes ces raisons que nous vous aiderons à prendre le temps, chaque jour, pour écrire, noter ce que vous avez appris, découvert. Vous pouvez également noter des questions, des points que vous n'avez pas compris, des points que vous aimeriez explorer ou eclaircir.
 
 Nous vous proposons :
 - d'écrire votre journal quotidien dans un format texte, si possible en [markdown](https://fr.wikipedia.org/wiki/Markdown) (le [cours markdown d'OpenClassRoom](https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown));
@@ -48,7 +48,6 @@ sous la forme que vous voulez
 - un dessin (idem que pour les photos)
 - du code
 - ...
-Pensez juste que vous serez lue par d'autres, donc tentons d'etre le plus clair possible, prenez le temps d'écrire. Rien ne presse.
 
 
 ## Procédure
@@ -84,6 +83,4 @@ Si vous avez des difficultés, prévenez nous tout de suite ! nous sommes là ! 
 - [Sophie](Sophie/)
 - [Soraya](Soraya/)
 - [Vanessa](Vanessa/)
-
-A vos claviers ! 
 
