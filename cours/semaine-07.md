@@ -23,15 +23,8 @@ Pour en savoir un peu plus [un article sur les différents format d'image](https
 
 Nous avons fait une visioconférence, et produit [du code example](https://github.com/descodeuses/autocomplete-javascript) et deux vidéo.
 
-<video controls>
-    <source src="https://valise.chapril.org/s/wnmrFNw27d2xssa" type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-</video>
-
-<video controls>
-    <source src="https://valise.chapril.org/s/srJdJdHtoPyfkwJ" type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-</video>
+[1ere vidéo de mise en place](https://valise.chapril.org/s/wnmrFNw27d2xssa)
+[2eme vidéo de réalisation avec revue de code à la fin](https://valise.chapril.org/s/srJdJdHtoPyfkwJ)
 
 
 ### Différent style de fonction en JavaScript
