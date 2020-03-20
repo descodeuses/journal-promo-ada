@@ -73,6 +73,8 @@ Pour pouvoir mettre du style, il faut que ton svg soit défini directement dans 
 
 c’est un format d’image composé de formes géométriques, ce qui permet d’avoir des images qu’on peut redimensionner sans perdre de qualité
 
+Il y a des icônes en SVG disponible sur [feathericons.com](https://feathericons.com/)
+
 ### JavaScritp avancé
 
 Le soir, Laura à partagé un bout de code JavaScript assez poussé pour quelqu'un qui se forme depuis 6 semaines seulement :)
