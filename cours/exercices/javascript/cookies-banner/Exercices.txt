@@ -1,0 +1,5 @@
+Exercice : réaliser une bannière de cookies.
+
+1. Afficher une bannière jaune "J'accepte l'utilisation de cookies sur ce site", qui reste fixée en bas de la page.
+
+2. Ajouter un bouton "J'accepte". Quand on clique sur le bouton, la bannière disparait de la page.

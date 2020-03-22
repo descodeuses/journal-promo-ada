@@ -27,7 +27,7 @@ JavaScript par Pierre
 Correction des exercices le matin, dont une partie en binôme qui fonctionne bien. Exercices de programmation et d’algorithmie avec blockly.games l’après-midi.
 
 ### Exercice : afficher un menu latéral
-Énoncé et solution possible : [menu.zip](exercices/javascript/menu.zip)
+Énoncé et solution possible : [menu](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/menu)
 
 ## Jeudi 27  février 2020
 
@@ -61,6 +61,6 @@ JavaScript (le matin) par Pierre
 Correction de l’exercice du menu. Introduction aux fonctions en Javascript. Exercice d’ajouter des thèmes au “Thème clair / sombre”, en utilisant des fonctions. Plein d’exercices différents (et optionnels) qu’on verra lundi.
 
 ### Exercice : sélectionner des thèmes clairs ou sombre
-Énoncé et solution possible : [dark-theme-1.zip](exercices/javascript/dark-theme-1.zip)
+Énoncé et solution possible : [dark-theme-1](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/dark-theme-1)
 
 

@@ -1,0 +1,13 @@
+Exercice : faire une page simple qui affiche un menu latéral.
+
+Quand on clique sur le bouton « Afficher un menu », une barre latérale avec un menu s’affiche.
+Quand on clique sur « Fermer le menu », le menu se referme.
+Compétences nécessaires :
+- CSS : display:flex
+- Javascript : ajouter / supprimer une classe
+
+En bonus, si vous avez envie d'aller plus loin (mais c'est optionnel) :
+
+1. Essayez de remplacer le texte du bouton "Fermer le menu" par une croix en haut à droite du menu.
+2. Essayez de remplacer le texte du bouton "Ouvrir le menu" par une icône avec trois traits horizontaux (par exemple en utilisant font-awesome)
+3. Essayez de faire que, quand on clique sur le bouton "Ouvrir le menu" alors que le menu est ouvert, ça ferme le menu.)

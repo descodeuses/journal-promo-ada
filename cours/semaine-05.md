@@ -13,7 +13,7 @@ une citation approximative d’une apprenante durant le spectacle
 Y’a pas de petit apprentissage :)
 
 ### Exercice : aller plus loin avec les thèmes clairs ou sombre
-Énoncé et solution possible : [dark-theme-2.zip](exercices/javascript/dark-theme-2.zip)
+Énoncé et solution possible : [dark-theme-2](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/dark-theme-2)
 
 ## Mardi 3 mars 2020
 

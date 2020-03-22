@@ -20,7 +20,7 @@ JavaScript par Pierre
 Introduction au Javascript. On fait une bannière à cookies, et le code Javascript pour la faire disparaître. Beaucoup d’exemples de code commentés en direct, du genre “Et si on change ça, vous pensez qu’il se passe quoi ?”. Discussion sur les cookies et le RGPD.
 
 ### Exercice : faire une bannière d’avertissement sur les cookies.
-Énoncé et solution possible : [cookies-banner.zip](exercices/javascript/cookies-banner.zip)
+Énoncé et solution possible : [cookies-banner](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/cookies-banner)
 
 ## Jeudi 20  février 2020
 
@@ -30,7 +30,7 @@ Rapide rappel des apprentissages de la veille. Puis de la pratique, avec une sé
 Correction commune des exercices, et un petit point à la fin de la journée sur la syntaxe du Javascript, les objets et les fonctions.
 
 ### Exercice : programmer des boutons pour faire différentes actions
-Énoncé et solution possible : [boutons-action.zip](exercices/javascript/boutons-action.zip)
+Énoncé et solution possible : [boutons-action](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/boutons-action)
 
 ## Vendredi 21  février 2020
 
