@@ -1,7 +1,7 @@
 # Journal d'apprentissage
 
-- [Comment faire son journal ?](#comment-faire)
-- [Quelle contenu dans mon journal ?](#quelle-contenu-dans-mon-journal)
+- [Comment faire son journal ?](#comment-faire-)
+- [Quelle contenu dans mon journal ?](#quelle-contenu-dans-mon-journal-)
 - [Journal d'Alix](Alix/)
 - [Journal d'Aycha](Aycha/)
 - [Journal de Céline](Celine/)
