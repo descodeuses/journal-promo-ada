@@ -11,13 +11,16 @@ Le reste de l’équipe continuait à bosser sur ses projets
 
 Projets par Michelson
 
-Journée de travail sur les projets. Je réponds aux question individuelles. 
+Journée de travail sur les projets. Je réponds aux question individuelles.
 
 ## Mercredi 19  février 2020
 
 JavaScript par Pierre
 
 Introduction au Javascript. On fait une bannière à cookies, et le code Javascript pour la faire disparaître. Beaucoup d’exemples de code commentés en direct, du genre “Et si on change ça, vous pensez qu’il se passe quoi ?”. Discussion sur les cookies et le RGPD.
+
+### Exercice : faire une bannière d’avertissement sur les cookies.
+Énoncé et solution possible : [cookies-banner.zip](exercices/javascript/cookies-banner.zip)
 
 ## Jeudi 20  février 2020
 
@@ -26,6 +29,8 @@ JavaScript par Pierre
 Rapide rappel des apprentissages de la veille. Puis de la pratique, avec une série de plusieurs petits exercices qui s’enchaînent, pour leur mettre le Javascript dans les doigts, et les faire un peu chercher sur Internet.
 Correction commune des exercices, et un petit point à la fin de la journée sur la syntaxe du Javascript, les objets et les fonctions.
 
+### Exercice : programmer des boutons pour faire différentes actions
+Énoncé et solution possible : [boutons-action.zip](exercices/javascript/boutons-action.zip)
 
 ## Vendredi 21  février 2020
 
@@ -42,7 +47,7 @@ Nous avons fait une rétrospective assez classique, où l’idée était de les 
 
 - Accompagnement par Nolwenn / Daniel-Eric
 
-Nous avons démarré l’atelier à 15h30 avec une rapide revue du parcours d’accompagnement, une présentation du déroulé de l’atelier du jour et des documents envoyés par mail. Elles ont pris connaissance des documents et ont démarré par enrichir La Fiche de projets pro qui nous permettra de suivre leur évolution. 
+Nous avons démarré l’atelier à 15h30 avec une rapide revue du parcours d’accompagnement, une présentation du déroulé de l’atelier du jour et des documents envoyés par mail. Elles ont pris connaissance des documents et ont démarré par enrichir La Fiche de projets pro qui nous permettra de suivre leur évolution.
 
 
 

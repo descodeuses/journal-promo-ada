@@ -7,11 +7,13 @@ JavaScript par Pierre / Yannick l’après-midi
 Le matin, apprentissage des fonctions avec arguments – puis exercice sur l’utilisation de ces fonctions pour changer un thème couleur, et correction collective. L’après-midi, on apprend à utiliser des variables, et à manipuler des champs de texte en Javascript. Ensuite exercice libre sur l’inscription aux listes électorales, en atelier par groupe de trois, animé par Yannick et Pierre.
 
 
-une citation approximative d’une apprenante durant le spectacle 
+une citation approximative d’une apprenante durant le spectacle
 > c'est marrant, on a fait 5 projets différent, et en fait, chacun fonctionne. Ça signifie qu'il n'y a pas qu'une seule façon de faire.
 
 Y’a pas de petit apprentissage :)
 
+### Exercice : aller plus loin avec les thèmes clairs ou sombre
+Énoncé et solution possible : [dark-theme-2.zip](exercices/javascript/dark-theme-2.zip)
 
 ## Mardi 3 mars 2020
 
@@ -32,7 +34,7 @@ L’après-midi, introduction aux tableaux (forEach, querySelector).
 
 JavaScript par Pierre
 
-Le matin travail sur les exercices de la veille, puis sur des exemples de manipulation de tableaux (sort, find, filter, etc) et de HTML (querySelectorAll). En fin de journée, introduction aux objets (avec des litterals pour l’instant). 
+Le matin travail sur les exercices de la veille, puis sur des exemples de manipulation de tableaux (sort, find, filter, etc) et de HTML (querySelectorAll). En fin de journée, introduction aux objets (avec des litterals pour l’instant).
 
 ## Vendredi  6 mars 2020
 

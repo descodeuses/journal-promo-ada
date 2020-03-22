@@ -18,8 +18,7 @@ GIT par Aymeric
 Le début de la matinée a été consacrée à la présentation et à la pratique du travail collaboratif et distant via le même outil ludique que la veille. Les exemples ont ensuite été corrigé ensemble pour une meilleur compréhension.
 
 
-Nous avons pris notre pause repas de 12h00 à 13h00. Elles ont ensuite mis en pratique les enseignements du début de formation en participant sur le répertoire Git de ma formation. L’objectif été pour elles de me faire leurs feedback sur la formation en écrivant dans un même fichier. Cela leur a permis d'être confronté au monde de l’open-source ainsi que d’apprendre à corriger les conflits. 
-
+Nous avons pris notre pause repas de 12h00 à 13h00. Elles ont ensuite mis en pratique les enseignements du début de formation en participant sur le répertoire Git de ma formation. L’objectif été pour elles de me faire leurs feedback sur la formation en écrivant dans un même fichier. Cela leur a permis d'être confronté au monde de l’open-source ainsi que d’apprendre à corriger les conflits.
 
 ## Mercredi 26  février 2020
 
@@ -27,6 +26,8 @@ JavaScript par Pierre
 
 Correction des exercices le matin, dont une partie en binôme qui fonctionne bien. Exercices de programmation et d’algorithmie avec blockly.games l’après-midi.
 
+### Exercice : afficher un menu latéral
+Énoncé et solution possible : [menu.zip](exercices/javascript/menu.zip)
 
 ## Jeudi 27  février 2020
 
@@ -35,9 +36,9 @@ UX / UI par PWC par Aurélia et Timothé
 Résumé de la journée :
 Cette journée entière de formation consacrée au design a démarré à 9h30 et s’est terminée à 17h.
 
-Nous avons commencé par une introduction de la démarche et la présentation des grandes phases d’un projet numérique : du cadrage projet, en passant par l’architecture d’information et la conception, jusqu’aux tests utilisateurs. Chaque phase était présentée théoriquement avec un temps de questions-réponses et était mise en pratique par des ateliers. 
+Nous avons commencé par une introduction de la démarche et la présentation des grandes phases d’un projet numérique : du cadrage projet, en passant par l’architecture d’information et la conception, jusqu’aux tests utilisateurs. Chaque phase était présentée théoriquement avec un temps de questions-réponses et était mise en pratique par des ateliers.
 
-Les apprenantes ont travaillé sur un cas d’usage illustratif tout au long de la journée : imaginer la nouvelle offre de Cdiscount qui proposerait des articles reconditionnés. Elles étaient réparties en cinq groupes de trois pour tous ces moments en atelier. 
+Les apprenantes ont travaillé sur un cas d’usage illustratif tout au long de la journée : imaginer la nouvelle offre de Cdiscount qui proposerait des articles reconditionnés. Elles étaient réparties en cinq groupes de trois pour tous ces moments en atelier.
 
 ## Vendredi 29  février 2020
 
@@ -59,5 +60,7 @@ JavaScript (le matin) par Pierre
 
 Correction de l’exercice du menu. Introduction aux fonctions en Javascript. Exercice d’ajouter des thèmes au “Thème clair / sombre”, en utilisant des fonctions. Plein d’exercices différents (et optionnels) qu’on verra lundi.
 
+### Exercice : sélectionner des thèmes clairs ou sombre
+Énoncé et solution possible : [dark-theme-1.zip](exercices/javascript/dark-theme-1.zip)
 
 
