@@ -1,6 +1,6 @@
 # Journal d'apprentissage
 
-- [Comment faire son journal ?](#comment-faire-)
+- [Comment faire son journal ?](#comment-faire-son-journal-)
 - [Quelle contenu dans mon journal ?](#quelle-contenu-dans-mon-journal-)
 - [Journal d'Alix](Alix/)
 - [Journal d'Aycha](Aycha/)
@@ -18,7 +18,7 @@
 - [Journal de Soraya](Soraya/)
 - [Journal de Vanessa](Vanessa/)
 
-## Comment faire
+## Comment faire son journal ?
 
 Nous vous proposons :
 - d'écrire votre journal quotidien dans un format texte, si possible en [markdown](https://fr.wikipedia.org/wiki/Markdown) (le [cours markdown d'OpenClassRoom](https://openclassrooms.com/fr/courses/1304236-redigez-en-markdown));
