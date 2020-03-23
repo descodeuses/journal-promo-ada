@@ -1,0 +1,30 @@
+Exercice : entraînement à la manipulation d'objets avec un objet "uneScientifique"
+
+0. Créer une page HTML vide, et un fichier Javascript "script.js".
+
+1. Choisir une scientifique dans la Liste de femmes scientifiques sur Wikipedia (https://fr.wikipedia.org/wiki/Liste_de_femmes_scientifiques).
+Créer un objet Javascript nommé `uneScientifique` avec trois propriété : 'nom', 'année de naissance', et 'réalisations'.
+
+2. Utilisez console.log pour afficher le nom de la scientifique dans la console, avec un message de bienvenue. Par exemple "Bonjour, je m’apelle [NOM] et je suis une scientifique !"
+
+3. Écrivez une nouvelle ligne de code, qui ajoute une propriété 'aRecuUnPrixNobel' à votre scientifique, et mettez la propriété à 'true'.
+(NB: ne modifiez pas le code que vous avez écrit plus haut pour créer votre objet. Faites cette étape avec une **nouvelle** ligne de code.)
+
+4. Ajoutez à votre objet 'uneScientifique' une méthode nommée 'parlerDeLinformatique', qui affiche dans la console le message 'En informatique, nous sommes tous perchés sur des épaules de géantes.'
+(NB: pareil, ne modifiez pas votre code précédent ! Ajoutez une nouvelle ligne de code.)
+
+5. Appelez la méthode 'parlerDeLinformatique' de votre scientifique, et vérifiez que le bon message s'affiche bien dans la console.
+
+6. Ajoutez une nouvelle méthode 'direBonjour', qui affiche dans la console le même message que dans la question 2. Mais cette fois, utilisez le mot-clef 'this' pour afficher le nom de votre scientifique (de manière à ce que ça marche potentiellement pour n'importe quelle scientifique).
+
+7. Appelez la méthode 'direBonjour' de votre scientifique, et vérifiez que ça affiche bien un message dans la console.
+
+8. Sans modifier le code précédent, changez la propriété 'nom' de votre scientifique en 'Margaret Hamilton'. Appelez ensuite à nouveau la méthode 'direBonjour', et vérifiez que cela fonctionne toujours.
+
+9. Écrivez une nouvelle méthode 'decrireLesReussites', et danc cette méthode, utilisez un if/else pour afficher dans la console 'J’ai reçu un prix Nobel !' si sa propriété 'aRecuUnPrixNobel' est 'true', et 'Je n’ai pas reçu de prix Nobel, mais j’ai fait encore mieux que ça !' si sa propriété 'aRecuUnPrixNobel' est 'false'.
+
+10. Appelez la méthode 'decrireLesReussites()' de votre scientifique, et vérifiez que ça fonctionne.
+
+11. Mettez la propriété 'aRecuUnPrixNobel' de votre scientifique à false (pareil, sans ajouter de ligne de code).
+
+12. Appelez à nouveau la méthode 'decrireLesReussites()', et vérifiez que le bon message s'affiche dans la console.
