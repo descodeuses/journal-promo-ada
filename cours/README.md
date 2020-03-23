@@ -9,10 +9,10 @@ Semaine après semaine, jour après jour
 - [5eme semaine](semaine-05.md)
 - [6eme semaine](semaine-06.md)
 - [7eme semaine](semaine-07.md)
+- [8eme semaine](semaine-08.md)
 
 ---
 
-- [8eme semaine](semaine-08.md)
 - [9eme semaine](semaine-09.md)
 - [10eme semaine](semaine-10.md)
 - [11eme semaine](semaine-11.md)
