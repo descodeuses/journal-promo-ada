@@ -1,0 +1,15 @@
+Exercice : remplir le prénom et l'âge de plusieurs voyageurs
+
+1. Faire une page HTML avec quatre lignes.
+  Chaque ligne contient deux champs : "Prénom du voyageur" et "Âge du voyageur".
+  (Ça fait donc 8 champs en tout).
+
+2. Ajouter en haut de la page un bouton "Remplir l'âge par défaut".
+  Quand on clique sur ce bouton, l'âge de tous les voyageurs est mis à "20".
+  (Indice : utiliser 'querySelectorAll()').
+
+3. À côté du bouton "Remplir l'âge de tout le monde", rajouter un seul champ nombre "Âge par défaut". Maintenant, quand on clique sur le bouton "Remplir l'âge de tout le monde", tous les champs "Âge" doivent être remplis avec la valeur du champ "Âge par défaut".
+
+4. On voudrait pouvoir sélectionner ou dé-sélectionner plusieurs voyageurs d'un coup.
+  Rajouter une case à cocher à gauche de chaque voyageur, avant le champ "Prénom" – ainsi qu'une case à cocher supplémentaire tout en haut des autres.
+  Quand on clique sur la case à cocher supplémentaire, celle-ci doit cocher (ou décocher) toutes les autres cases.

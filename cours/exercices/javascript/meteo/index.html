@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="themes.css"/>
+  </head>
+  <body>
+    <h1>Météo</h1>
+
+    <h2>Par code INSEE</h2>
+    <label>Entrez le code INSEE de votre ville :</label>
+    <input type="text" class="code-insee">
+    <button type="button" class="bouton-afficher">Afficher la température maximale</button>
+
+    <h2>Par code postal ou nom de ville</h2>
+    <label>Entrez le code postal ou le nom de votre ville :</label>
+    <input type="text" class="champ-de-recherche">
+    <button type="button" class="bouton-rechercher">Rechercher puis afficher la température maximale</button>
+
+    <h2>Prévisions</h2>
+    <p class="prevision">
+    </p>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="meteo.js"></script>
+  </body>
+</html>

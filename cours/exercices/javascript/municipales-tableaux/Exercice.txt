@@ -1,0 +1,31 @@
+Exercices avec les tableaux
+
+Ces exercices utilisent `console.log` pour afficher les résultats des questions quand on charge la page. Il n'y a pas de texte HTML à afficher.
+
+    • Faire une page HTML simple aec juste un body et une balise script
+
+    - 1. Déclarer un tableau avec les noms des candidates et candidats aux municipales.
+
+1. Danielle Simonnet
+2. Anne Hidalgo
+3. David Belliard
+4. Cédric Villani
+5. Benjamin Griveaux
+6. Rachida Dati
+7. Serge Federbusch
+8. Marcel Campion
+9. Christophe Berkani
+
+    - 2. Afficher le contenu du tableau entier dans la console.
+
+    - 3. Afficher le nom du 2ème candidat du tableau dans la console.
+
+    - 4. Remplacer le candidat "Benjamin Griveaux" par "Agnès Buzyn". Afficher le tableau dans la console pour vérifier.
+
+    - 5. Ajouter une nouvelle candidate ou candidat à la fin du tableau.
+
+    - 6. Inverser la position du premier et du second candidat.
+
+    - 7. Trier les candidats par ordre alphabétique.
+
+    - 8. Coder une recherche : coder une fonction qui renvoie le premier candidat dont le prénom commence par une lettre donnée (par exemple la lettre 'D'). Utiliser la fonction Array.prototype.find

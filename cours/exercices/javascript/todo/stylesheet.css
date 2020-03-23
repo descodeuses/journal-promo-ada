@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+
+.liste-taches {
+  display: inline-block; /* ajuste la largeur de la liste à la longueur du texte des tâches.*/
+  margin: 30px 0;
+  padding: 20px 0px 10px 0px;
+  border: 1px solid #e9e901;
+  background-color: #fff667;
+  border-radius: 5px;
+}
+
+.liste-taches .checkbox-generale {
+  margin-left: 14px;
+  margin-bottom: 10px;
+}
+
+.liste-taches ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.liste-taches label {
+  display: block; /* étend le label sur toute la largeur disponible (pour que toute la largeur soit cliquable) */
+  padding: 10px;
+  background-color: #fffcd4;
+  border-top: 1px solid #e1c800;
+  cursor: pointer;
+}
+.liste-taches label:hover {
+  background-color: #ffe86e;
+}
+
+.tache-checkbox {
+  margin-right: 10px;
+}
+
+.tache-checkbox:checked + .tache-nom {
+  text-decoration: line-through;
+  opacity: 0.4;
+}

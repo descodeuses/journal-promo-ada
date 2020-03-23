@@ -7,6 +7,11 @@ JavaScript par Pierre
 Affichage d’éléments dynamiques dans une page web avec innerHTML. Le matin, démo de comment innerHTML fonctionne, puis exercices d’affichage d’un tableau Javascript dans des balises HTML.
 L’après-midi, séance de trois exercices en parallèle : manipulation des tableaux avec une Todo-list, manipulation d’objets dans des tableaux avec un tableau de données électorales, et recherche sur les énumérations en Javascript.
 
+### Exercices
+
+- **Afficher un tableau d’objets 'candidats'**. Énoncé et solution possible : [municipales-objets](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/municipales-objets/)
+- **Faire une liste de tâches**. Énoncé et solution possible : [todo](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/todo/)
+
 ## Mardi  10 mars 2020
 
 JavaScript par Yannick
@@ -29,6 +34,10 @@ Le matin, introduction aux classes pour créer des objets. Comme exercice, on co
 Résumé
 L’après-midi, introduction aux requêtes d’API. On prend l’exemple d’un site qui affiche la météo, et on regarde comment créer une clef d’API, lire la documentation, et appeler l’API depuis notre code.
 
+### Exercices
+
+- **Créer des objets 'candidat' avec une classe**. Énoncé et solution possible : [municipales-classes](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/municipales-classes/)
+- **Afficher des données météo depuis une API**. Énoncé et solution possible : [meteo](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/meteo/)
 
 ## Jeudi 12 mars 2020
 
