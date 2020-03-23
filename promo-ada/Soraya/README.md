@@ -4,9 +4,9 @@
 
 - [lundi 23 mars](2020-03-23.md)
 - [mardi 24 mars](2020-03-24.md)
-- [lundi 25 mars](2020-03-25.md)
-- [lundi 26 mars](2020-03-26.md)
-- [lundi 27 mars](2020-03-27.md)
+- [mercredi 25 mars](2020-03-25.md)
+- [jeudi 26 mars](2020-03-26.md)
+- [venredi 27 mars](2020-03-27.md)
 
 ## Semaine 9
 
