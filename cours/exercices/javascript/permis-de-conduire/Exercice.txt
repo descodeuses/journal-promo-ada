@@ -1,0 +1,6 @@
+Exercice : Faire une page pour indiquer si une personne peut passer le permis de conduire, en fonction de son âge.
+
+La page doit avoir un champ "prénom", un champ "âge", et un bouton "Vérifier". Quand on clique sur le bouton, la page indique si la personne peut passer le permis (+ de 18 ans), si elle peut être en conduite accompagnée (+ de 16 ans), ou si elle ne peut pas passer le permis.
+
+Bonus :
+Essayez d'afficher combien d'années il reste avant que la personne puisse passer le permis.

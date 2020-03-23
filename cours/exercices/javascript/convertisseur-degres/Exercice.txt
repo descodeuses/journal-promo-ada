@@ -1,0 +1,9 @@
+Exercice : faire un convertisseur de degrés Farenheit en degrés Celcius.
+
+La page doit avoir un champ "Degrés Farenheit", et un bouton "Convertir en degrés Celcius". Quand on clique sur le bouton, l'équivalent en degrés Celcius s'affiche.
+
+Bonus : 
+
+1. Permettre de faire aussi la conversion dans le sens inverse.
+
+2. Cette fois ci, on veut convertir entre celsius et farenheit automatiquement, sans avoir besoin de cliquer sur bouton "Convertir". La conversion se fait automatiquement, dès qu'on entre un chiffre dans un des champs.

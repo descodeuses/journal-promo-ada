@@ -23,6 +23,11 @@ Le matin, on continue à travailler sur les exercices données la veille en bin�
 
 Ensuite cours puis exercices sur la valeur de retour des fonctions. L’application est un convertisseur livre/euros. Au milieu des exercices, on refait un rappel sur la portée des variables.
 
+### Exercices
+
+- **Permis de conduire**. Énoncé et solution possible : [permis-de-conduire](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/permis-de-conduire)
+- **Convertisseur de degrés Celsius <-> Farenheit**. Énoncé et solution possible : [convertisseur-degres](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/convertisseur-degres)
+
 ## Mercredi 4 mars 2020
 
 JavaScript par Pierre
@@ -35,6 +40,10 @@ L’après-midi, introduction aux tableaux (forEach, querySelector).
 JavaScript par Pierre
 
 Le matin travail sur les exercices de la veille, puis sur des exemples de manipulation de tableaux (sort, find, filter, etc) et de HTML (querySelectorAll). En fin de journée, introduction aux objets (avec des litterals pour l’instant).
+
+### Exercice : manipuler un objet 'uneScientifique'
+
+Énoncé et solution possible : [une-scientifique](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/une-scientifique)
 
 ## Vendredi  6 mars 2020
 
