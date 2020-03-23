@@ -1,0 +1,9 @@
+Exercice : tableau des candidats avec des Classes
+
+En repartant de l'exercice 'municipales-objets'
+
+1. Définir en haut du fichier une classe "Candidat", qui contienne un prénom, un nom et un parti.
+
+2. Modifier le tableau 'candidats', pour le remplir en utilisant notre classe (new Candidat(…)) plutôt qu'en créant des objets directement.
+
+3. Modifier le code du Javascript exécuter quand on clique sur "Ajouter un candidat", pour que l'objet nouvellement créé soit créé avec notre classe 'Candidat'.

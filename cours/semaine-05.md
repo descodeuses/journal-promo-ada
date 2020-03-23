@@ -41,9 +41,11 @@ JavaScript par Pierre
 
 Le matin travail sur les exercices de la veille, puis sur des exemples de manipulation de tableaux (sort, find, filter, etc) et de HTML (querySelectorAll). En fin de journée, introduction aux objets (avec des litterals pour l’instant).
 
-### Exercice : manipuler un objet 'uneScientifique'
+### Exercices
 
-Énoncé et solution possible : [une-scientifique](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/une-scientifique)
+- **Manipuler un objet 'uneScientifique'**. Énoncé et solution possible : [une-scientifique](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/une-scientifique)
+- **Manipuler un tableau de voyageurs**. Énoncé et solution possible : [voyageurs](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/voyageurs)
+- **Manipuler un tableau de candidats**. Énoncé et solution possible : [municipales-tableaux](https://github.com/descodeuses/journal-promo-ada/tree/master/cours/exercices/javascript/municipales-tableaux)
 
 ## Vendredi  6 mars 2020
 

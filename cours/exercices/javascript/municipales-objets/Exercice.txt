@@ -1,0 +1,24 @@
+Exercice :
+
+1. Mettre un bouton "Afficher la liste des candidats" sur la page. Quand on clique sur ce bouton, la liste des personnes candidates doit s'afficher en dessous du bouton.
+(utiliser innerHTML)
+
+2. Améliorer la page : afficher le nom des personnes candidates, mais sous forme de liste HTML (ul / li). (Utiliser aussi innerHTML)
+
+3. Ajouter un champ "Nom", et un bouton "Ajouter un candidat". Quand on clique sur le bouton, le nouveau candidat contenu dans le champ doit être ajouté à la liste.
+
+5. Faire un bouton "Trier par ordre alphabétique", qui trie la liste des candidats et affiche la liste triée.
+
+5. Mettre en commentaire le bouton "Ajouter un candidat" pour l'instant (on ne va pas s'en servir tout de suite).
+
+6. Remplacer la liste des candidats ["Anne Hidalgo", …] par un tableau d'objets : [ {prenom: "Anne", nom: "Hidalgo", parti: "PS"}, … ].
+
+7. Ajuster le code pour que la liste avec le nom des candidat·es s'affiche toujours dans la page.
+
+8. Séparer le nom et le prénom : dans la liste, pour chaque élément, au lieu d'afficher "Agnès Buzyn", afficher "Nom : Buzyn ; prénom : Agnès".
+
+9. Plutôt qu'une liste, afficher les candidats dans un tableau HTML, avec trois colonnes : Prénom, Nom, Parti.
+
+10. Dé-commenter le bouton "Ajouter un candidat", et rajouter deux champs de texte : "Nom" et "Parti". Faire en sorte que quand on clique sur "Ajouter un candidat", une nouvelle ligne est ajoutée dans le tableau.
+
+11. Faire en sorte que le bouton "Trier par ordre alphabétique" fonctionne à nouveau, et trie le tableau

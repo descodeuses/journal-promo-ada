@@ -1,0 +1,19 @@
+Exercice : afficher la météo d'un lieu sur la page
+
+1. S'inscrire sur https://api.meteo-concept.com, et obtenir un jeton d’API.
+
+2. Créer une nouvelle page web vide, et insérer jQuery.
+
+3. Utiliser '$.get(…)' pour faire un appel d'API à Meteo-Concept, en donnant le code Insee '75120'. Quand la réponse arrive, afficher la température maximale dans la console.
+
+4. Afficher la température maximale dans la page (plutôt que dans la console).
+
+5. Ajouter un champ de texte "Code INSEE" sur la page, et un bouton "Obtenir la température maximale". Quand on clique sur le bouton, afficher la météo pour le code INSEE correspondant.
+
+6. (Difficile) Permettre une recherche par nom de ville. Quand on entre un code postal, le code fait deux appels d'API :
+
+- D'abord un appel à l'API `/location/cities`, pour récupérer un code INSEE en fonction du nom de la ville.
+
+- Puis un appel à l'API /forecast/daily/0 pour récupérer les prévisions en fonction du code INSEE.
+
+
