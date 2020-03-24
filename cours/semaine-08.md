@@ -24,6 +24,20 @@ limite au techno du navigateur il me semble.
 Helvira propose [un cours](semaine-08/liens-cours-RWD.docx) et se rends
 disponible pour discuter autour du responsive design.
 
+Je reproduis ici le contenu du fichier de cours de Helvira.
+
+- Ressources
+    1. [C’est quoi le responsive web design ?](https://www.alsacreations.com/article/lire/1615-cest-quoi-le-responsive-web-design.html)
+    2. [Les différentes tailles des écrans de device](http://mydevice.io/devices/)
+    3. [Principes de base de la conception de sites web adaptatifs](https://developers.google.com/web/fundamentals/design-and-ux/responsive)
+    4. [Les Media Queries en CSS3](https://www.alsacreations.com/article/lire/930-css3-media-queries.html)
+    
+- Aller plus loin
+    1. [Les Media Queries](https://developer.mozilla.org/fr/docs/Web/CSS/Requ%C3%AAtes_m%C3%A9dia/Utiliser_les_Media_queries)
+    2. [Choisir la taille de police et l’unité](http://www.pompage.net/traduction/dimensionner-ses-fontes-avec-rem)
+    3. [Les préfixes vendeurs en CSS](https://www.alsacreations.com/article/lire/1159-prefixes-vendeurs-css-proprietaires.html)
+    4. [Différentes vues (smartphone, tablette, desktop) de sites internet](https://mediaqueri.es/)
+
 ### Débordement ou point de fuite
 
 En soirée, rapide visio avec Laura pour un problème sur du HTML/CSS. En HTML,
