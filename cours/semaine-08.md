@@ -53,6 +53,21 @@ s'étale en largeur, soit en hauteur. Le classique, c'est en hauteur (le scoll
 vertical est souvent préférable au scroll horizontal). On limite assez rarement
 la hauteur.
 
+## Mardi 24 mars
 
+Encore un petit café ce matin. Ça fait du bien de se voir, de pouvoir parler, rigoler, se tenir au courant, se motiver.
 
+Un échange avec Céline m'apprend qu'elle voyait le journal comme une contrainte de plus, et qu'après l'avoir fait, il y vois un intérêt. C'est un moment qui permet de prendre du recul sur les apprentissagess frais, c'est un processus pédagogique qui aide à ancrer les connaissances.
 
+Un petit coup de main à Alis pour intégrer les nouvelles dans son site.
+- Le fichier de données était chargé après le code qui l'utilise;
+- La liste était attaché au body (et donc, on ne sais pas trop où sur la page);
+- Le css rendait les liens invisible (parce que de la même couleur que le fond).
+
+Sur le dernier point, Alix c'est débrouillée seule.
+
+Discussion avec Françoise pour retrouver les cours de Helvira. Nous en profitons pour mettre le contenu du doc dans la page, directement. Il manque la présentation utilisé par Hevira ?
+
+Nous n'arrivons pas à travailler sur l'aspect git/github avec Françoise (problème de connexion). Françoise se demande comment mettre en place un repo sur un projet existant.
+
+Reprise des journaux pour qu'ils soient tous à la semaine. Un fichier par jour, ça faisait beaucoup. Là en plus, chaque fichier a pu être préparé à l'avance. La procédure est donc simplifié : il faut mettre à jour un fichier existant.
