@@ -8,4 +8,10 @@
 
 - café !
 - tuto md (Yannick et OCR)
-- je retourne sur Codevores... à suivre
+- je retourne sur Codevores
+
+### après-midi
+
+- essayé de comprendre quelque chose de relative et absolute, c'est pas flagrant mais j'ai une idée un peu plus précise
+- changement de fond d'écran pour le site, je renonce définitivement à la fille au ballon de Banksy car vraiment elle supporte mal les cards collées à la figure :(
+- refait le footer
