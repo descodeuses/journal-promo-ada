@@ -1,0 +1,68 @@
+#HTML / CSS
+
+- apprendre à faire du responsive façon Hell'vyra: 
+    1. aller sur la console, cliquer sur le petit bouton ipad/iphone 
+    2. changer dans la console le titre h1 par exemple puis le rétrécir a la bonne taille 
+    3. le changer dans Atom avec @media screen and (max-width:375px){ commencer en mobile first pour que ce sois plus facile après
+    4. elle nous a aussi appris a bien indenter, ex:
+                                            (max-width:375px){
+                                                                    .link-dev {
+
+                                                                                padding-left: 0em;
+                                                                    }
+
+                                                                    .inscription .codevores{
+
+                                                                                display: none;
+                                                                    }
+                                                                    .accroche h1{
+
+                                                                                font-size: 1em;
+                                                                    }
+     5. Note pour soi même et ne pas prendre la flemme: s'habituer au responsive car très demander sur le marché et on 
+        devra souvent justement reprendre des sites non adapté au responsive 
+        
+- ce que j'ai appris par moi-même hier en visitant des sites web: 
+     1. faire encore plus d'animation haha ex: 
+                                                  #list-animation {
+                                                    margin: 2em auto;
+                                                    padding: 0;
+                                                    max-width: 600px;
+                                                    list-style: none;
+                                                    overflow: scroll;
+                                                  }
+
+                                                  #list-animation li {
+                                                    display:inline-block;
+                                                    width: 10em;
+                                                    height: 12em;
+                                                    margin: 3em 1em;
+                                                    text-align: center;
+                                                    line-height: 2em;
+                                                    opacity: 0;
+                                                    animation: fadeIn 1s ease-in both;
+                                                  }
+
+                                                  #list-animation li:nth-child(2) {
+                                                    animation-delay: 1s;
+                                                  }
+                                                  #list-animation li:nth-child(3) {
+                                                    animation-delay: 2s;
+                                                  }
+                                                  #list-animation li:nth-child(4) {
+                                                    animation-delay: 3s;
+                                                  }
+                                                  #list-animation li:nth-child(5) {
+                                                    animation-delay: 4s;
+                                                  }
+                                                  #list-animation li:nth-child(5) {
+                                                    animation-delay: 5s;
+                                                  }
+                                                  #list-animation li:nth-child(5) {
+                                                    animation-delay: 5s;
+                                                  }
+          Cela permet de faire "glisser" ma liste ul li (moi j'ai mis des screenshots de portfolio cliquable) petit
+          à petit :) 
+          
+       2.Grâce à Yannick j'ai aussi appris qu'il fallait éviter de mettre des heights partout parce que du coup, 
+          certaines partis se superposent sinon, et qu'il valait mieux mettre overflow hidden/scroll! 
