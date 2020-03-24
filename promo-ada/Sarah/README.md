@@ -1,7 +1,5 @@
 # Journal de Sarah
 
-- [dimanche 22 mars](2020-03-22.md)
-
 _pas de journaux pour les semaines 1 à 7_
 
 - [Semaine 8](semaine-08)
