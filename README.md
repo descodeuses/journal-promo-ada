@@ -2,9 +2,9 @@
 
 Vous trouverez ici toutes les informations autour de la formation des descodeuses de la promotion Ada Lovelace.
 
-- [le déroulé des journées](cours/README.md)
 - [Comment faire son journal ?](#comment-faire-son-journal-)
 - [Quelle contenu dans mon journal ?](#quelle-contenu-dans-mon-journal-)
+- [Journal des cours](cours/README.md)
 - [Journal d'Alix](Alix/)
 - [Journal d'Aycha](Aycha/)
 - [Journal de Céline](Celine/)
