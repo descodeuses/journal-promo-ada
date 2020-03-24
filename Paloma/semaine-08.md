@@ -9,4 +9,5 @@
               page pro
               le faq ac js si possible
               connexions des liens
+- soutient avec Yannick pour écrire proprement dans le journal              
 
