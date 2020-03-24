@@ -2,11 +2,11 @@
 
 ## Semaine 8
 
-- [lundi 23 mars](2020-03-23.md)
-- [mardi 24 mars](2020-03-24.md)
-- [mercredi 25 mars](2020-03-25.md)
-- [jeudi 26 mars](2020-03-26.md)
-- [vendredi 27 mars](2020-03-27.md)
+- [lundi 23 mars](2020-03-23)
+- [mardi 24 mars](2020-03-24)
+- [mercredi 25 mars](2020-03-25)
+- [jeudi 26 mars](2020-03-26)
+- [vendredi 27 mars](2020-03-27)
 
 ## Semaine 9
 
