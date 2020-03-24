@@ -1,6 +1,6 @@
 # Semaine 8
 
-## Mon journal du dimanche 22 mars 2020 : 
+## Journal du dimanche 22 mars 2020 
 
 - J'ai travaillé sur comment styliser un input-file ( en le rendant invisible et en travaillant sur le label lié grâce à for). Il reste à utiliser javascript pour permettre l'affichage du nom du fichier téléchargé pour une meilleure UX. 
 - J'ai fait un peu de responsive sur les pages contact, inscription et connexion de mon site Codevores.
@@ -19,3 +19,11 @@
         - mes pages html en ajoutant dans le head les meta-name
         - ma page css en remplaçant "media queries" all par "media queries screen"
 - J'ai réindenté tout mon code CSS pour qu'il soit plus propre avec la méthode d'Helvira.         
+
+## Journal du mardi 24 mars 2020 
+
+
+- J'ai appris à utiliser un seul fichier script.js pour plusieurs pages html en posant la condition `if(document.querySelector(.hamburger)`, auparavant la console empêchait le déroulement du script dès qu'un élément appelé dans le script pour une autre page html n'existait pas dans la page html présente. 
+- J'ai commençé à utiliser les positions relative et absolue.
+- J'ai fait un peu de Benchmark pour m'inspirer.
+- J'ai appris à utiliser linear-gradient.
