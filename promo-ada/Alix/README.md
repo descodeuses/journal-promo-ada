@@ -1,12 +1,7 @@
 # Journal d'Alix
 
-- Semaine 1
-- Semaine 2
-- Semaine 3
-- Semaine 4
-- Semaine 5
-- Semaine 6
-- Semaine 7
+_pas de journaux pour les semaines 1 à 7_
+
 - [Semaine 8](semaine-08)
 - [Semaine 9](semaine-09)
 - [Semaine 10](semaine-10)
