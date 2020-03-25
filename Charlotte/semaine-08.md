@@ -29,27 +29,28 @@ _----REALISATION DE LA JOURNEE 24.03.2020-----_
 - pas de café du matin car pas le moral
 - aide @alix sur ; dérouler un menu sans qu’il ne “pousse” les autres divs. Elle n'avait pas placé sa class sur la bonne balise "ul"
   
-  >>>  solution apportée copiée du site (https://www.malt.fr/create-profile) : 
-  
-  @media screen and (max-width: 1199px)
-        
-        .main-header-nav__list {
+> solution apportée copiée du site (https://www.malt.fr/create-profile) :
 
-            position: fixed;
-            z-index: 13;
-            overflow: auto;
-            top: 0;
-            right: 0;
-            display: none;
-            width: calc(100vw - 30px);
-            max-width: 320px;
-            height: 100vh;
-            margin: 0;
-            padding: 20px;
-            background-color: #fff;
-            flex-direction: column;
-    
-    >>> ATTENTION où on place les class.
+```css
+@media screen and (max-width: 1199px) {
+  .main-header-nav__list {
+    position: fixed;
+    z-index: 13;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    display: none;
+    width: calc(100vw - 30px);
+    max-width: 320px;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    flex-direction: column;
+  }
+}
+```
+> ATTENTION où on place les class.
 
 
 **Codevores.co**
@@ -59,7 +60,7 @@ _----REALISATION DE LA JOURNEE 24.03.2020-----_
 - Nouvelle idée trouvée pour la page inscription et connexion = un modal css/js
 - Le responsive initialement codé répond assez bien sur les nouvelles pages. A peaufiner à la fin pour les détails s'il me reste du temps.
 
->> pour action : 
+> pour action : 
 - continuer sur le modal et l'appliquer sur les 3 pages crées : index, espace pro, espace recruteur
 - correction du bug du header > demander de l'aide à un mentor pour nettoyer cette partie qui pose pb, notamment en responsive.
 - création de la page FAQ + Formulaire contact (en modal // connexion ou inscription)
@@ -76,12 +77,15 @@ _----REALISATION DE LA JOURNEE 25.03.2020-----_
 **Codevores.co**
 - Réalisation de 3 modals : formulaire de contact, connexion, inscription
 - Appliquation sur la page index
-- Ajout d'une <div> avec la class "opacity_activated" pour lorsque la modal apparait, le reste du site soit moins visible
-- Résolution du bug avec le <header> > ne le garder que pour la barre de nav !!! 
-    
-    <!------------ MENU ----------------------->
-                                                      <div class="opacity opacity_activated">                                 
-<header class="" style="height:0">
+- Ajout d'une `<div>` avec la class "opacity_activated" pour lorsque la modal apparait, le reste du site soit moins visible
+- Résolution du bug avec le `<header>`
+
+> ne le garder que pour la barre de nav !!!
+
+```html
+<!------------ MENU ----------------------->
+<div class="opacity opacity_activated">
+  <header class="" style="height:0">
       <div class="container-fluid header_menu flex">
           <div class="header_logo">
             <a href="index.html" class="no_border_hover">
@@ -103,40 +107,42 @@ _----REALISATION DE LA JOURNEE 25.03.2020-----_
             <i class="fas fa-hamburger"></i>
           </div>
       </div>
-</header>
+  </header>
 
   <!------------ COUVERTURE ----------------------->
 
-    <section class="bg_image" style="">
-      <div class="container-fluid titillium white header_title texte_center">
+  <section class="bg_image" style="">
+    <div class="container-fluid titillium white header_title texte_center">
         <h2 class=""><span class="underline_yellow_title text_shadow">Recrutez votre Codevoreuses !</span></h2>
+    </div>
+    <form class="header_selector texte_center flex container-fluid">
+      <div class="">
+         <input class="input is-rounded inputSelector" placeholder="Vous cherchez : UX Designer, php, Angular...">
       </div>
-      <form class="header_selector texte_center flex container-fluid">
-        <div class="">
-            <input class="input is-rounded inputSelector" placeholder="Vous cherchez : UX Designer, php, Angular...">
-        </div>
-        <div class="">
-            <input class="input is-rounded inputSelector" type="text" placeholder="Pays, Région, Ville">
-        </div>
-        <div class="">
-            <button type="button" name="button" class="white border_argile button_header underline_none" value="submit"><a class="underline_none">Rechercher</a></button>
-        </div>
-      </form>
+      <div class="">
+         <input class="input is-rounded inputSelector" type="text" placeholder="Pays, Région, Ville">
+      </div>
+      <div class="">
+         <button type="button" name="button" class="white border_argile button_header underline_none" value="submit"><a class="underline_none">Rechercher</a></button>
+      </div>
+    </form>
+  </section>
+</div>
+```
 
-    </section>
+> POUR ACTION JEUDI :
 
-    
->> POUR ACTION JEUDI :
-- appliquer le débug du <header> sur les pages déjà crées 
+- appliquer le débug du `<header>` sur les pages déjà crées 
 - corriger le responsive sur les pages crées suite au débug
 - création de la page FAQ + la communauté
 
->> POUR ACTION VENDREDI :
+> POUR ACTION VENDREDI :
+
 - création de la page actualités + page du pro
 
->> POUR ACTION SAMEDI + DIMANCHE : 
+> POUR ACTION SAMEDI + DIMANCHE : 
 - JS !!
 
->> POUR ACTION LUNDI
+> POUR ACTION LUNDI
 - relecture et correction des derniers bugs
 
