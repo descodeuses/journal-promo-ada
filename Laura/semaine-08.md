@@ -293,3 +293,42 @@ h5 {
     position: relative;
 }
 */
+
+
+
+## Mercredi 25
+
+### HTML / CSS
+
+- ce que j'ai appris par moi-même hier en visitant des sites web:
+     1. en faisant des copier-coller de bout de sites, j'ai appris les balises suivantes: 
+         <svg> pour faire des figure
+         <path> pour créer des lignes et des figues ex:
+             
+             <svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M 10 315
+                           L 110 215
+                           A 30 50 0 0 1 162.55 162.45
+                           L 172.55 152.45
+                           A 30 50 -45 0 1 215.1 109.9
+                           L 315 10" stroke="black" fill="green" stroke-width="2" fill-opacity="0.5"/>
+             </svg>
+             
+         <data role> chercher des données spécifiques d'une seule page 
+   
+   
+####- où j'en suis dans le projet?
+
+J'ai commencé samedi à faire une maquette mais finalement je m'en tiens à moitié à force de visiter plein d'autres sites 
+web, je finis par prendre un bout par ci par là, apprendre à faire un site de façon pro en regardant les autres. 
+
+Stades des pages:
+
+####(Index) 
+J'ai donc plus ou moins fini cette page qui pour moi correspond a la page communauté et elle regroupe un teaser de
+toutes les autres pages (portfolio dev, entreprises, des bouts d'articles, la nav avec le burger à ranger et le footer
+à remettre en responsive, remettre au clair le thème jour/nuit): j'aurai quand même mis 3 jours à la faire en travaillant dessus de 12h à 22h avec une pause toute les 2h.  
+
+####(Recruiters-space) 
+Cette page correspond à l'espace recruteur et j'ai mis dedans tous les portfolios des développeurs
+ainsi que des liens direct en cliquant sur leur photos: leur fiche contact, que je vais commencer aujourd'hui. 
