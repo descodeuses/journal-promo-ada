@@ -71,3 +71,12 @@ Discussion avec Françoise pour retrouver les cours de Helvira. Nous en profiton
 Nous n'arrivons pas à travailler sur l'aspect git/github avec Françoise (problème de connexion). Françoise se demande comment mettre en place un repo sur un projet existant.
 
 Reprise des journaux pour qu'ils soient tous à la semaine. Un fichier par jour, ça faisait beaucoup. Là en plus, chaque fichier a pu être préparé à l'avance. La procédure est donc simplifié : il faut mettre à jour un fichier existant.
+
+
+## Mercredi 25
+
+Discussion avec Solveig, une développeuse.
+
+
+
+
