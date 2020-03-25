@@ -317,18 +317,18 @@ h5 {
          <data role> chercher des données spécifiques d'une seule page 
    
    
-####- où j'en suis dans le projet?
+#### - où j'en suis dans le projet?
 
 J'ai commencé samedi à faire une maquette mais finalement je m'en tiens à moitié à force de visiter plein d'autres sites 
 web, je finis par prendre un bout par ci par là, apprendre à faire un site de façon pro en regardant les autres. 
 
 Stades des pages:
 
-####(Index) 
+#### (Index) 
 J'ai donc plus ou moins fini cette page qui pour moi correspond a la page communauté et elle regroupe un teaser de
 toutes les autres pages (portfolio dev, entreprises, des bouts d'articles, la nav avec le burger à ranger et le footer
 à remettre en responsive, remettre au clair le thème jour/nuit): j'aurai quand même mis 3 jours à la faire en travaillant dessus de 12h à 22h avec une pause toute les 2h.  
 
-####(Recruiters-space) 
+#### (Recruiters-space) 
 Cette page correspond à l'espace recruteur et j'ai mis dedans tous les portfolios des développeurs
 ainsi que des liens direct en cliquant sur leur photos: leur fiche contact, que je vais commencer aujourd'hui. 
