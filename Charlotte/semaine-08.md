@@ -63,3 +63,80 @@ _----REALISATION DE LA JOURNEE 24.03.2020-----_
 - continuer sur le modal et l'appliquer sur les 3 pages crées : index, espace pro, espace recruteur
 - correction du bug du header > demander de l'aide à un mentor pour nettoyer cette partie qui pose pb, notamment en responsive.
 - création de la page FAQ + Formulaire contact (en modal // connexion ou inscription)
+
+
+_----REALISATION DE LA JOURNEE 25.03.2020-----_
+
+**Promo**
+- Café du matin 
+- Rencontre avec une développeuse : Solveigh
+- Demande de l'aide à Yannick et Hell'vyra > mais réussi à me débuguer
+
+
+**Codevores.co**
+- Réalisation de 3 modals : formulaire de contact, connexion, inscription
+- Appliquation sur la page index
+- Ajout d'une <div> avec la class "opacity_activated" pour lorsque la modal apparait, le reste du site soit moins visible
+- Résolution du bug avec le <header> > ne le garder que pour la barre de nav !!! 
+    
+    <!------------ MENU ----------------------->
+                                                      <div class="opacity opacity_activated">                                 
+<header class="" style="height:0">
+      <div class="container-fluid header_menu flex">
+          <div class="header_logo">
+            <a href="index.html" class="no_border_hover">
+                <img src="assets/logo/codevores.png" alt="" class="logo">
+                <h1 class="allerta white">odevores</h1>
+            </a>
+          </div>
+          <div class="titillium text_shadow menu_metiers">
+            <a href="#"><span class="white">Métiers</span></a>
+          </div>
+          <nav class="">
+              <a href="recruteur_space.html" class="titillium border_argile white no_border_hover">Je recrute</a>
+              <a href="pro_space.html" class="titillium border_argile white no_border_hover">Je suis freelance</a>
+              <a href="inscription.html" class="titillium white text_shadow subscribe">M'inscrire</a>
+              <a href="connexion.html" class="titillium white text_shadow connexion">Me connecter</a>
+              <a href="help.html" class="titillium white text_shadow">FAQ</a>
+          </nav>
+          <div class="i_header">
+            <i class="fas fa-hamburger"></i>
+          </div>
+      </div>
+</header>
+
+  <!------------ COUVERTURE ----------------------->
+
+    <section class="bg_image" style="">
+      <div class="container-fluid titillium white header_title texte_center">
+        <h2 class=""><span class="underline_yellow_title text_shadow">Recrutez votre Codevoreuses !</span></h2>
+      </div>
+      <form class="header_selector texte_center flex container-fluid">
+        <div class="">
+            <input class="input is-rounded inputSelector" placeholder="Vous cherchez : UX Designer, php, Angular...">
+        </div>
+        <div class="">
+            <input class="input is-rounded inputSelector" type="text" placeholder="Pays, Région, Ville">
+        </div>
+        <div class="">
+            <button type="button" name="button" class="white border_argile button_header underline_none" value="submit"><a class="underline_none">Rechercher</a></button>
+        </div>
+      </form>
+
+    </section>
+
+    
+>> POUR ACTION JEUDI :
+- appliquer le débug du <header> sur les pages déjà crées 
+- corriger le responsive sur les pages crées suite au débug
+- création de la page FAQ + la communauté
+
+>> POUR ACTION VENDREDI :
+- création de la page actualités + page du pro
+
+>> POUR ACTION SAMEDI + DIMANCHE : 
+- JS !!
+
+>> POUR ACTION LUNDI
+- relecture et correction des derniers bugs
+
