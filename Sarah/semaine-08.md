@@ -1,6 +1,6 @@
 # Semaine 8
 
-## Mon journal du dimanche 22 mars 2020 : 
+## Journal du dimanche 22 mars 2020 
 
 - J'ai travaillé sur comment styliser un input-file ( en le rendant invisible et en travaillant sur le label lié grâce à for). Il reste à utiliser javascript pour permettre l'affichage du nom du fichier téléchargé pour une meilleure UX. 
 - J'ai fait un peu de responsive sur les pages contact, inscription et connexion de mon site Codevores.
@@ -19,3 +19,19 @@
         - mes pages html en ajoutant dans le head les meta-name
         - ma page css en remplaçant "media queries" all par "media queries screen"
 - J'ai réindenté tout mon code CSS pour qu'il soit plus propre avec la méthode d'Helvira.         
+
+## Journal du mardi 24 mars 2020 
+
+
+- J'ai appris à utiliser un seul fichier script.js pour plusieurs pages html en posant la condition `if(document.querySelector(.hamburger)`, auparavant la console empêchait le déroulement du script dès qu'un élément appelé dans le script pour une autre page html n'existait pas dans la page html présente. 
+- J'ai commençé à utiliser les positions relative et absolue.
+- J'ai fait un peu de Benchmark pour m'inspirer.
+- J'ai appris à utiliser linear-gradient.
+
+## Journal du mercredi 25 mars 2020
+
+- Ce matin café connecté avec les descodeuses.
+- Essai de finalisation de la page "Actualités". Je change 50 fois de couleurs et de font. Je perds un temps fou...
+- à 15h j'ai participé en visio au témoignage de Solveig qui a fait une reconversion à la suite de petits boulots et d'un BacS. Elle a fait une formation intensive de 3mois avec comme langages (HTML, CSS3, PHP, Javascrpit et MySQL. Puis a directement travaillé en CDI (Emailing). Après un an elle a décidé de poursuivre sa formation en s'inscrivant à l'Ecole 42 pour apprendre l'IA. Elle conseille de choisir un stage ou un premier job avec au moins un responsable technique au dessus de nous et d'être dans une équipe de 4/5 développeurs. 
+- J'ai fait le footer de mes pages Codevores.
+
