@@ -317,7 +317,7 @@ h5 {
          <data role> chercher des données spécifiques d'une seule page 
    
    
-#### - où j'en suis dans le projet?
+### Projet (Codevores)
 
 -J'ai commencé samedi à faire une maquette mais finalement je m'en tiens à moitié à force de visiter plein d'autres sites 
 web, je finis par prendre un bout par ci par là, apprendre à faire un site de façon pro en regardant les autres. 
