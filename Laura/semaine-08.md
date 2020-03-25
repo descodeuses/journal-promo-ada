@@ -202,7 +202,7 @@ Cela fait slider mon paragraph à chaque actualisation et avec MDN j'ai vu qu'on
   en site, on finit par en oublier qu'on doit faire le projet haha 
 
 
-## Mardi 24
+## Mardi 24 mars
 
 ### HTML / CSS
 
@@ -296,7 +296,7 @@ h5 {
 
 
 
-## Mercredi 25
+## Mercredi 25 mars
 
 ### HTML / CSS
 
@@ -323,7 +323,7 @@ h5 {
 web, je finis par prendre un bout par ci par là, apprendre à faire un site de façon pro en regardant les autres. 
 
 
-                                                   (Stades des pages)
+                                                   (Pages statut)
 
 
 #### (Index) 
