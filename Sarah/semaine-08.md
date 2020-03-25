@@ -32,5 +32,5 @@
 
 - Ce matin café connecté avec les descodeuses.
 - Essai de finalisation de la page "Actualités". Je change 50 fois de couleurs et de font. Je perds un temps fou...
-- à 15h j'ai participé en vision au témoignage de Solveig qui a fait une reconversion à la suite de petits boulots et d'un BacS. Elle a fait une formation intensive de 3mois avec comme langage (HTML, CSS3, PHP, Javascrpit et MySQL. Puis a directement travaillé en CDI (Emailing). Après un an elle a décidé de poursuivre sa formation en s'inscrivant à l'Ecole 42 pour apprendre l'IA. Elle conseille de choisir un stage ou un premier job avec au moins un responsable technique au dessus de nous et d'être dans une équipe de 4/5 développeurs. 
+- à 15h j'ai participé en visio au témoignage de Solveig qui a fait une reconversion à la suite de petits boulots et d'un BacS. Elle a fait une formation intensive de 3mois avec comme langages (HTML, CSS3, PHP, Javascrpit et MySQL. Puis a directement travaillé en CDI (Emailing). Après un an elle a décidé de poursuivre sa formation en s'inscrivant à l'Ecole 42 pour apprendre l'IA. Elle conseille de choisir un stage ou un premier job avec au moins un responsable technique au dessus de nous et d'être dans une équipe de 4/5 développeurs. 
 
