@@ -37,4 +37,6 @@
 - MIRACLE ! la réunion de mon copain est annulée et je peux travailler jusqu'à 13h !
 - grâce à Alix je comprends le sens de ce que je suis en train de faire et j'arrive même à faire une mise en page !! Jai un goût esthétique assez douteux, je crois, mais je suis ravie.
 
-### après-midi (
+### après-midi (17h-19h)
+- travaillé sur la page des professionnelles et quasi finalisée. Joie.
+- problème de Git, tout va bien quand tout va bien, mais quand Git essaie de me dire un nouveau truc, je ne comprends plus rien. C'est un peu énervant. 
