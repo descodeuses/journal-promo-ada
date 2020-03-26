@@ -23,3 +23,4 @@ Début du responsivage. J'adore !
 ## 26 mars 2020
 
 Je continue le responsivage.
+Il y a un bug (qui ne se produit pas sur l'ordi de Lucas quand il fait le test) avec le 2ème responsivage (ipad pas pro). J'ai décidé de faire autre chose pour revenir à tête reposée.
