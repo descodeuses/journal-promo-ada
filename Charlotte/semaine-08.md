@@ -125,11 +125,12 @@ _----REALISATION DE LA JOURNEE 25.03.2020-----_
 
     </section>
 
-    
+
+
 >> POUR ACTION JEUDI :
-- appliquer le débug du <header> sur les pages déjà crées 
-- corriger le responsive sur les pages crées suite au débug
-- création de la page FAQ + la communauté
+- appliquer le débug du <header> sur les pages déjà crées - OK
+- corriger le responsive sur les pages crées suite au débug - OK
+- création de la page FAQ (OK) + la communauté
 
 >> POUR ACTION VENDREDI :
 - création de la page actualités + page du pro
@@ -139,4 +140,18 @@ _----REALISATION DE LA JOURNEE 25.03.2020-----_
 
 >> POUR ACTION LUNDI
 - relecture et correction des derniers bugs
+
+
+
+_----REALISATION DE LA JOURNEE 26.03.2020-----_
+
+**Codevores.co**
+- appliquer le débug du <header> sur les pages déjà crées
+- corriger le responsive sur les pages crées suite au débug
+- création de la page FAQ + la communauté + page profil d'1 pro + actualités
+
+>> POUR ACTION VENDREDI : 
+- finalisation de la page pro 
+- créer un modal pour contacter le pro
+- corriger tout le responsive
 
