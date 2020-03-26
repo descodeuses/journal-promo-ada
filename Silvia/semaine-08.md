@@ -26,3 +26,15 @@
 - vidéoconf avec Solveig
 - bricolage graphique sur le footer et l'index
 - je n'arrive à rien faire, je me remets sur la formation JS ou sur freecodecamp
+
+## Mon journal du 26 mars
+### matin (9h30-13h)(oui ! 13h !!!)
+- café Descodeuses à 9h30
+- à la fin du café il me reste moins d'une heure pour travailler
+- je me penche sur la page actualités en copiant intégralement le dossier créé par Yannick (merci Yannick :)
+- ça marche mais s'affiche n'importe comment
+- je demande de l'aide à Alix qui avait l'air d'avoir réussi et là
+- MIRACLE ! la réunion de mon copain est annulée et je peux travailler jusqu'à 13h !
+- grâce à Alix je comprends le sens de ce que je suis en train de faire et j'arrive même à faire une mise en page !! Jai un goût esthétique assez douteux, je crois, mais je suis ravie.
+
+### après-midi (
