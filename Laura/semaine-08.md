@@ -314,7 +314,7 @@ h5 {
                            L 315 10" stroke="black" fill="green" stroke-width="2" fill-opacity="0.5"/>
              </svg>
              
-         <data role> chercher des données spécifiques d'une seule page 
+       2.  <data role> chercher des données spécifiques d'une seule page 
    
    
 ### Projet (Codevores)
@@ -334,3 +334,30 @@ toutes les autres pages (portfolio dev, entreprises, des bouts d'articles, la na
 #### (Recruiters-space) 
 - Cette page correspond à l'espace recruteur et j'ai mis dedans tous les portfolios des développeurs
 ainsi que des liens direct en cliquant sur leur photos: leur fiche contact, que je vais commencer aujourd'hui. 
+
+
+
+
+## Jeudi 26 mars
+
+### HTML / CSS
+
+- ce que j'ai appris par moi-même hier en visitant des sites web:
+        1. une autre façon d'écrire width calc(66% - 50px) assez spéciale, je n'ai pas bien compris mais ça marche lol 
+
+
+
+
+### Projet (Codevores)
+
+                                                   (Pages statut)
+
+ 
+
+#### (Subscribtion) 
+- j'ai mis bien plus de temps que ce que j'aurai pensé à faire la page d'inscription (contact) qui m'a littéralement pris une journée entière alors que c'est juste des petites input et label, le problème était de tout bien cadré, au début j'ai voulu faire un copier coller d'un site mais ca ne rentrait juste pas ... du coup j'ai tout recommencé mais c'est fait ainsi que la partie responsive 
+
+
+#### (Fiche Contact) 
+
+- aujourd'hui je vais faire la fiche contact du développeur ! Il ne me restera plus qu'à faire le FAQ, la partie Blog et l'espace développeurs avec tout les projets en cours ou qui ont besoin de main d'oeuvre. 

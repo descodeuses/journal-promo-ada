@@ -9,6 +9,18 @@ Cours sur le principe _responsive_ avec la developpeuse Helvira.
 
 ## 24 mars 2020 !
 
-Je commence le cours Open Classrooms sur php.
+Je commence le cours _Open Classrooms_ sur **php**.
 Je dois aussi responsiver et peaufiner les pages du site codevores.
+Finalement : résolution de _bugs_ sur le site codevores, et aide pour des bugs chez des collègues.
+**responsive** et **php** : aucun avancement.
 
+## 25 mars 2020
+
+Café avec les collègues
+Fignolage du layout du site.
+Début du responsivage. J'adore !
+
+## 26 mars 2020
+
+Je continue le responsivage.
+Il y a un bug (qui ne se produit pas sur l'ordi de Lucas quand il fait le test) avec le 2ème responsivage (ipad pas pro). J'ai décidé de faire autre chose pour revenir à tête reposée.

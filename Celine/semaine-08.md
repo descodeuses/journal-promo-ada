@@ -20,14 +20,21 @@ Suite à une visio avec Michelson pour mon site, j'ai appris:
 - je dois utiliser plus les %, em, vh, et autres unités de mesure reponsive
 
 
- ## mardi 24 mars 
- 
- ### Codevores
- - Less is more!!! 
- - après avoir essayé plusieurs images en tant que background, j'ai fini par opter pour des bg-color, et au niveau de l'UI c'est carrément mieux! 
- - J'ai aussi suivi les conseils de Michelson pour les logos gris des partenaires, au lieu de leurs logos colorés, ce qui donne un meilleur visuel.
--  Je suis quand même inquiète car j'ai l'impression d'avancer lentement, de passer beaucoup de temps à chercher sur Google, des info HTML et css, des images...
--  Toujours pas commencé ni le responsive, ni le js!
- - Il est 21h59, je m'y mets. J'ai pu bosser environ 1h30 dans la journée...
- 
- 
+## mardi 24 mars
+
+### Codevores
+- Less is more!!!
+- après avoir essayé plusieurs images en tant que background, j'ai fini par opter pour des bg-color, et au niveau de l'UI c'est carrément mieux! 
+- J'ai aussi suivi les conseils de Michelson pour les logos gris des partenaires, au lieu de leurs logos colorés, ce qui donne un meilleur visuel.
+- Je suis quand même inquiète car j'ai l'impression d'avancer lentement, de passer beaucoup de temps à chercher sur Google, des info HTML et css, des images...
+- Toujours pas commencé ni le responsive, ni le js!
+- Il est 21h59, je m'y mets. J'ai pu bosser environ 1h30 dans la journée...
+
+## mercredi 25 mars
+
+### Codevores
+- J'ai appris à faire des copyrights pour le site sur https://www.html-code-generator.com/html/website-copyright-generator.php
+- Ai complété la page connexion/inscription grâce à bootstrap
+- En fin de journée, j'ai décidé de laisser de côté le contenu du site pour débuter le js qui me permettra de mettre du contenu au fur et à mesure que je voudrai mettre des fonctionnalités. 
+- Ai crée les boutons pour les thèmes clair/sombre ---- les boutons marchent en js!
+- JS: je voudrais que lorsque la souris passe sur une photo d'une dév, son expérience et ses langanges apparaissent à la place de la photo. 

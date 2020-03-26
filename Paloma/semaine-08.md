@@ -11,3 +11,20 @@
               connexions des liens
 - soutient avec Yannick pour écrire proprement dans le journal              
 
+
+Mercredi 25 mars
+
+-finition bloc footer
+-commencement page faq
+-amélioration page d'accueil
+-bcp de changment css
+-mise en place page presse
+
+à faire: 
+
+-finir mise en place html de toutes les pages
+-améliorer cohérence design
+-si possible: intégrer mes propres commandes js
+
+
+
