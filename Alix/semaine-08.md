@@ -29,4 +29,5 @@ Il y a un bug (qui ne se produit pas sur l'ordi de Lucas quand il fait le test) 
 
 J'espère trouver aujourd'hui la source de mon bug responsive. Et bien avancer sur le respinsive smartphone. Autrement, je fais tout à l'aveugle.
 13:30 : bug pas trouvé, aide demandée. Je continue "à l'aveugle". Responsive de la page Communauté, jusqu'ici pour grand spartphone.
-15:30 : Début responsive page codeuse1
+15:30 : Début responsive page codeuse1 jusqu'au plus loin possible.
+J'atttends la réponde de Helvira qui va regarder mon code.
