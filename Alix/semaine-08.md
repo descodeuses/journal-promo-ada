@@ -24,3 +24,7 @@ Début du responsivage. J'adore !
 
 Je continue le responsivage.
 Il y a un bug (qui ne se produit pas sur l'ordi de Lucas quand il fait le test) avec le 2ème responsivage (ipad pas pro). J'ai décidé de faire autre chose pour revenir à tête reposée.
+
+## 27 mars 2020
+
+J'espère trouver aujourd'hui la source de mon bug responsive. Et bien avancer sur le respinsive smartphone. Autrement, je fais tout à l'aveugle.
