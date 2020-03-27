@@ -40,3 +40,8 @@
 ### après-midi (17h-19h)
 - travaillé sur la page des professionnelles et quasi finalisée. Joie.
 - problème de Git, tout va bien quand tout va bien, mais quand Git essaie de me dire un nouveau truc, je ne comprends plus rien. C'est un peu énervant. 
+
+## Mon journal du 27 mars
+### matin (9h30-10h30)
+- café / discussion autour de la poursuite de la formation
+- fin de ma matinée, ma fille a besoin d'aide pour ses devoirs....
