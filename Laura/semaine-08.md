@@ -361,3 +361,59 @@ ainsi que des liens direct en cliquant sur leur photos: leur fiche contact, que 
 #### (Fiche Contact) 
 
 - aujourd'hui je vais faire la fiche contact du développeur ! Il ne me restera plus qu'à faire le FAQ, la partie Blog et l'espace développeurs avec tout les projets en cours ou qui ont besoin de main d'oeuvre. 
+
+
+
+
+
+## Jeudi 26 mars
+
+### HTML / CSS
+
+- ce que j'ai appris par moi-même hier en visitant des sites web:
+        1. : before/ after 
+        2. faire plus d'animations : grossir au passage de la souris une image 
+        
+<div class="andrew-portfolio">
+    
+    <img class="portfolio-andrew1 element transition-width" src="Images/portfolio-andrew.png" alt="Photo1">
+    <img class="portfolio-andrew2 element2 transition-width"src="Images/portfolio-andrew2.png" alt="Photo2">
+    
+</div><br/>
+
+
+.element, .element2{  
+	cursor: pointer;
+  margin:1.563em;
+	}
+
+
+.transition-width {
+    transition-property: 0%, 60%;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+
+.transition-width:hover {
+	width: 70%;
+	background: #008ed6;
+}
+
+
+
+### Projet (Codevores)
+
+                                                   (Pages statut)
+                                                   
+                                                   
+#### (Fiche Contact) 
+
+- Done
+
+#### (Esapce développeur) 
+
+- Je passa à l'espace développeur qui consiste à lorsque les développeur clique sur ce lien à atterrir sur une sorte de liste
+    de projets en cours ou qui ont déjà été fait avec nos entreprises/ ONG / associations passés. Le but étant de montrer 
+    à quoi sers principalement cette communauté: impact positifi social ou à des fins humanitaires ou boulot..
