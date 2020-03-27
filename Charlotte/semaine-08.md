@@ -28,7 +28,7 @@ _----REALISATION DE LA JOURNEE 24.03.2020-----_
 
 - pas de café du matin car pas le moral
 - aide @alix sur ; dérouler un menu sans qu’il ne “pousse” les autres divs. Elle n'avait pas placé sa class sur la bonne balise "ul"
-  
+
 > solution apportée copiée du site (https://www.malt.fr/create-profile) :
 
 ```css
@@ -60,7 +60,7 @@ _----REALISATION DE LA JOURNEE 24.03.2020-----_
 - Nouvelle idée trouvée pour la page inscription et connexion = un modal css/js
 - Le responsive initialement codé répond assez bien sur les nouvelles pages. A peaufiner à la fin pour les détails s'il me reste du temps.
 
-> pour action : 
+> pour action :
 - continuer sur le modal et l'appliquer sur les 3 pages crées : index, espace pro, espace recruteur
 - correction du bug du header > demander de l'aide à un mentor pour nettoyer cette partie qui pose pb, notamment en responsive.
 - création de la page FAQ + Formulaire contact (en modal // connexion ou inscription)
@@ -69,7 +69,7 @@ _----REALISATION DE LA JOURNEE 24.03.2020-----_
 _----REALISATION DE LA JOURNEE 25.03.2020-----_
 
 **Promo**
-- Café du matin 
+- Café du matin
 - Rencontre avec une développeuse : Solveigh
 - Demande de l'aide à Yannick et Hell'vyra > mais réussi à me débuguer
 
@@ -122,27 +122,47 @@ _----REALISATION DE LA JOURNEE 25.03.2020-----_
       <div class="">
          <input class="input is-rounded inputSelector" type="text" placeholder="Pays, Région, Ville">
       </div>
-      <div class="">
-         <button type="button" name="button" class="white border_argile button_header underline_none" value="submit"><a class="underline_none">Rechercher</a></button>
-      </div>
-    </form>
-  </section>
-</div>
-```
+      <form class="header_selector texte_center flex container-fluid">
+        <div class="">
+            <input class="input is-rounded inputSelector" placeholder="Vous cherchez : UX Designer, php, Angular...">
+        </div>
+        <div class="">
+            <input class="input is-rounded inputSelector" type="text" placeholder="Pays, Région, Ville">
+        </div>
+        <div class="">
+            <button type="button" name="button" class="white border_argile button_header underline_none" value="submit"><a class="underline_none">Rechercher</a></button>
+        </div>
+      </form>
 
-> POUR ACTION JEUDI :
+    </section>
 
-- appliquer le débug du `<header>` sur les pages déjà crées 
-- corriger le responsive sur les pages crées suite au débug
-- création de la page FAQ + la communauté
+
+
+>> POUR ACTION JEUDI :
+- appliquer le débug du <header> sur les pages déjà crées - OK
+- corriger le responsive sur les pages crées suite au débug - OK
+- création de la page FAQ (OK) + la communauté
 
 > POUR ACTION VENDREDI :
 
 - création de la page actualités + page du pro
 
-> POUR ACTION SAMEDI + DIMANCHE : 
+> POUR ACTION SAMEDI + DIMANCHE :
 - JS !!
 
 > POUR ACTION LUNDI
 - relecture et correction des derniers bugs
 
+
+
+_----REALISATION DE LA JOURNEE 26.03.2020-----_
+
+**Codevores.co**
+- appliquer le débug du <header> sur les pages déjà crées
+- corriger le responsive sur les pages crées suite au débug
+- création de la page FAQ + la communauté + page profil d'1 pro + actualités
+
+>> POUR ACTION VENDREDI :
+- finalisation de la page pro
+- créer un modal pour contacter le pro
+- corriger tout le responsive
