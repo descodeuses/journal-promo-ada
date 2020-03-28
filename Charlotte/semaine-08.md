@@ -172,7 +172,7 @@ _----REALISATION DE LA JOURNEE 27.03.2020-----_
 
 **Promo**
 - café du matin
-- proposition d eréaliser un tuto responsive
+- proposition de réaliser un tuto responsive
     
 **Sites**    
 - crop les images et compresser = https://resizeimage.net/   
@@ -186,3 +186,20 @@ _----REALISATION DE LA JOURNEE 27.03.2020-----_
 >> POUR ACTION SAMEDI:
     - faire le tuto
     - démarrer JS
+
+    
+_----REALISATION DE LA JOURNEE 28.03.2020-----_
+**Codevores.co**
+- JS modal OK
+- Création d'un menu déroulant (en cours)
+
+**Promo**
+- Réalisation d'un tuto responsive
+- Aide Alix sur son code et son responsive > solution trouvée
+
+>> POUR ACTION DIMANCHE & LUNDI:
+    - terminer le menu déroulant
+    - corriger les derniers bugs de responsive notamment
+    - relire les fautes
+    - tester le site sur 3 navigateurs : IE / Firefox / Chrome
+    - faire checker par W3C
