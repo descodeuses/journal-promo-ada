@@ -35,3 +35,6 @@ J'atttends la réponde de Helvira qui va regarder mon code.
 ## 28 mars 2020
 
 Observation du code des sites avec menu _déroulant_ et position _absolute_ ou _relative_
+Aide de Helvira pour une taille de fonte.
+Essais de responsive pour 2 pages sans bcp de succès. Re-demande d'aide à Helvira.
+C'est pour changer de menu entre tablette et smartphone.
