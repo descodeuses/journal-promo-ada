@@ -456,8 +456,8 @@ ainsi que des liens direct en cliquant sur leur photos: leur fiche contact, que 
 #### (FAQ et Blog)
 
 - ce sont les deux dernières pages qu'il me reste à faire, elles ne devraient pas prendre beaucoup de temps, j'ai déjà une version de FAQ sur un site que je n'ai qu'a copier coller et retoucher à ma sauce comme les autres pages, pareil pour le blog 
-j'ai déjà trouvé le bootstrap pour la mise en forme et en tant de coronavirus il y a assez d'articles sur le télétravail 
-pour en faire une bible 2.0 hahaha (humour faisant parti de notre crédo, merci) 
+j'ai déjà trouvé le bootstrap pour la mise en forme et en temps de coronavirus il y a assez d'articles sur le télétravail 
+pour en faire une bible 2.0 hahaha (humour, faisant parti de notre crédo, merci) 
 
 
 Notes: le navigateur n'est toujours pas bien fait (flemme) 
