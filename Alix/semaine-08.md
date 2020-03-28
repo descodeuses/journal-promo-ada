@@ -31,3 +31,7 @@ J'espère trouver aujourd'hui la source de mon bug responsive. Et bien avancer s
 13:30 : bug pas trouvé, aide demandée. Je continue "à l'aveugle". Responsive de la page Communauté, jusqu'ici pour grand spartphone.
 15:30 : Début responsive page codeuse1 jusqu'au plus loin possible.
 J'atttends la réponde de Helvira qui va regarder mon code.
+
+## 28 mars 2020
+
+Observation du code des sites avec menu _déroulant_ et position _absolute_ ou _relative_
