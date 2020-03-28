@@ -366,7 +366,7 @@ ainsi que des liens direct en cliquant sur leur photos: leur fiche contact, que 
 
 
 
-## Jeudi 26 mars
+## Vendredi 27 mars
 
 ### HTML / CSS
 
@@ -417,3 +417,50 @@ ainsi que des liens direct en cliquant sur leur photos: leur fiche contact, que 
 - Je passa à l'espace développeur qui consiste à lorsque les développeur clique sur ce lien à atterrir sur une sorte de liste
     de projets en cours ou qui ont déjà été fait avec nos entreprises/ ONG / associations passés. Le but étant de montrer 
     à quoi sers principalement cette communauté: impact positifi social ou à des fins humanitaires ou boulot..
+    
+    
+
+
+
+## Samedi 28 mars
+
+                                                   (Mental health)
+						   
+
+- la motivation n'est plus vraiment là quand on sait que la formation sera suspendue dès ce mercredi 1er avril et que le dernier devoir à rendre est ce projet et qu'on n'en verra pas la correction/ conseils avant le mois de mai aka quand on aura tout oublié haha (my way of dealing with it) 
+
+- on se motive quand même à faire du PHP pour le mois qui arrive et faire des sites web gratuits pour des amis pour continuer
+à s'entrainer... 
+
+### HTML / CSS
+
+- apprendre à mettre une image en background en dessous d'un texte : (merci Yannick)
+
+			.paragraphs {
+			    background: transparent url('mon_image_de_fond.jpg') center no-repeat
+			}
+
+- mais du coup le z index ne s'applique que pour des div de box et forme ou bien? 
+
+
+### Projet (Codevores)
+
+                                                   (Pages statut)
+                                                   
+                                                   
+#### (Dev-space)
+
+- il reste à mettre un petit paragraphe et le lien direct (a href) vers le mail, mettre la page en responsive.
+
+
+#### (FAQ et Blog)
+
+- ce sont les deux dernières pages qu'il me reste à faire, elles ne devraient pas prendre beaucoup de temps, j'ai déjà une version de FAQ sur un site que je n'ai qu'a copier coller et retoucher à ma sauce comme les autres pages, pareil pour le blog 
+j'ai déjà trouvé le bootstrap pour la mise en forme et en temps de coronavirus il y a assez d'articles sur le télétravail 
+pour en faire une bible 2.0 hahaha (humour, faisant parti de notre crédo, merci) 
+
+
+Notes: le navigateur n'est toujours pas bien fait (flemme) 
+
+
+

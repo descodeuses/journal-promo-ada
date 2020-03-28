@@ -163,6 +163,26 @@ _----REALISATION DE LA JOURNEE 26.03.2020-----_
 - création de la page FAQ + la communauté + page profil d'1 pro + actualités
 
 >> POUR ACTION VENDREDI :
-- finalisation de la page pro
-- créer un modal pour contacter le pro
+- finalisation de la page pro 
+- créer un modal pour contacter le pro 
 - corriger tout le responsive
+ 
+    
+_----REALISATION DE LA JOURNEE 27.03.2020-----_
+
+**Promo**
+- café du matin
+- proposition d eréaliser un tuto responsive
+    
+**Sites**    
+- crop les images et compresser = https://resizeimage.net/   
+- faire un menu déroulant en CSS = https://www.youtube.com/watch?v=tCbStDbQcTo&list=PLjwdMgw5TTLU5x6bUs_FkyxF9vt0BWfIo&index=16
+
+**Codevores.co**
+- finalisation de la page pro  
+- créer un modal pour contacter le pro 
+- corriger tout le responsive
+
+>> POUR ACTION SAMEDI:
+    - faire le tuto
+    - démarrer JS

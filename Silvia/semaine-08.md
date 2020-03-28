@@ -45,3 +45,15 @@
 ### matin (9h30-10h30)
 - café / discussion autour de la poursuite de la formation
 - fin de ma matinée, ma fille a besoin d'aide pour ses devoirs....
+
+### a-m (16h-17h)
+- Freecodecamp: responsive, création d'un fichier aide mémoire
+
+## Mon journal du 28 mars
+### matin (9h00-12h)
+- travail sur le site: liens et mise en page
+- création fiches contact et inscription
+
+### a-m (15h-19h)
+- deux heures sur la page communauté, sans succès aucun : je ne sais vraiment pas comment mettre en page des photos, il me faut un tuto à regarder tranquillement, mais je n'ai pas le temps.
+- page pro bof
