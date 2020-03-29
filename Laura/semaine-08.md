@@ -434,7 +434,7 @@ ainsi que des liens direct en cliquant sur leur photos: leur fiche contact, que 
 
 ### HTML / CSS
 
-- apprendre à mettre une image en background en dessous d'un texte : (merci Yannick)
+- apprendre à mettre une image en background en dessous d'un texte : (merci Yannick mais ne marche toujours pas lol)
 
 			.paragraphs {
 			    background: transparent url('mon_image_de_fond.jpg') center no-repeat
@@ -464,3 +464,20 @@ Notes: le navigateur n'est toujours pas bien fait (flemme)
 
 
 
+## Dimanche 29 mars
+
+
+### Projet (Codevores)
+
+                                                   (Pages statut)
+						   
+
+#### (Blog)
+
+- Dernière page à faire pour le dernier jour
+
+- Il manque aussi la partie JavaScript avec Mandrill, le truc des mails puis API avec les actualités que je n'ai pas encore touché
+
+- Indenter tout mon code 
+
+- Refaire la nav encore et toujours... 
