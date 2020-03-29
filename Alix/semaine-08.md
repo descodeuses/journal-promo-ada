@@ -38,3 +38,7 @@ Observation du code des sites avec menu _déroulant_ et position _absolute_ ou _
 Aide de Helvira pour une taille de fonte.
 Essais de responsive pour 2 pages sans bcp de succès. Re-demande d'aide à Helvira.
 C'est pour changer de menu entre tablette et smartphone.
+
+## 29 mars 2020
+
+Continuation du responsive
