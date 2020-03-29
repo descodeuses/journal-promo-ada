@@ -203,3 +203,16 @@ _----REALISATION DE LA JOURNEE 28.03.2020-----_
     - relire les fautes
     - tester le site sur 3 navigateurs : IE / Firefox / Chrome
     - faire checker par W3C
+
+_----REALISATION DE LA JOURNEE 29.03.2020-----_
+
+**Codevores.co**
+- Finalisation du projet
+    
+**Formation**
+- Savoir faire un menu sticky : https://www.creativejuiz.fr/blog/tutoriels/creer-menu-sticky-avec-javascript-css
+- apprendre à faire des animations css : https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes
+
++> Pour action Lundi :
+    - Indentation du projet
+    - Nettoyage du script et du css
