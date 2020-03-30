@@ -4,3 +4,5 @@
 
 Site codevores :
 Finitions du thème sombre
+
+Reste de la journée _sans ordinateur_.
