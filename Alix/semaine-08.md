@@ -42,3 +42,5 @@ C'est pour changer de menu entre tablette et smartphone.
 ## 29 mars 2020
 
 Continuation du responsive
+Ajout de toutes les pages des codeuses
+Harmonisation du thème sombre
