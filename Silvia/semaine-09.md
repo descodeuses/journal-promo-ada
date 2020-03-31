@@ -5,7 +5,7 @@
 ----------------------
 ## Matin
 - validation site sur w3c
-- correction de bugs (je ne savais pas qu'on ne pouvait pas mettre une balise <i> autour d'une <li>!)
+- correction de bugs (je ne savais pas qu'on ne pouvait pas mettre une balise `<i>` autour d'une `<li>` !)
   
 ## après-midi
 
