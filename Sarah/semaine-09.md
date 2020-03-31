@@ -2,7 +2,7 @@
 
 ## Lundi 30 Mars
 
-J'ai commencé à reconstruire mon site Codevores très moche. Je tire un trait de mes erreurs notamment le nom de mes class fourre-tout aux multiples propriétés. Au final c'est improductif. Quand il s'agit de changer à la dernière minutes c'est une grande blague. 
+J'ai commencé à reconstruire mon site Codevores très moche. Je tire un enseignement de mes erreurs notamment le nom de mes class fourre-tout aux multiples propriétés. Au final c'est improductif. Quand il s'agit de changer à la dernière minutes c'est une grande blague. 
 
 Je commence donc par monter une bibliothèque css avec toutes les propriétés utiles pour minimiser les class fourre-tout.
 
