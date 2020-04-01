@@ -47,7 +47,8 @@
           
 
 
-Exemple: nous voulons que notre bouton grossisse quand un utilisateur passe sa souris dessus, 
+            (Ex:nous voulons que notre bouton grossisse quand un utilisateur passe sa souris dessus) 
+            
 - nous pouvons choisir la propriété  transform  et sa fonction  scale().
 
 1. la fonction  scale()  permet de modifier la taille d’un élément, 
@@ -148,7 +149,9 @@ Liste des pseudoclasses les plus couramment utilisées pour déclencher des tran
     :disabled, qui correspond à un élément dont l'interaction a été bloquée.
 
 
-  Exemple pour valider un formulaire:
+
+
+                              (Exemple pour valider un formulaire)
   
     <body>
         <div class="container">
@@ -190,7 +193,9 @@ Liste des pseudoclasses les plus couramment utilisées pour déclencher des tran
       }
  
  
-Les pseudoclasses peuvent aussi être utilisés pour changer le style d’un élément voisin. Ex:
+ 
+ 
+            (Ex:Les pseudoclasses peuvent aussi être utilisés pour changer le style d’un élément voisin.)
 
   1. (HTML)
   
@@ -226,3 +231,117 @@ Les pseudoclasses peuvent aussi être utilisés pour changer le style d’un él
               transform: scale(0.1);                //l’échelle initiale  scale()  à .1 pour faire grandir le ballon et       
               transition: transform 4000ms;         // pour créer une impression de ballon en train de gonflé pendant 4s
           }
+ 
+ 
+
+Les 12 principes de l'animation sont :
+
+1. Squash and Stretch, pour compresser et étirer un élément ;
+2. Anticipation, pour préparer l’audience à un mouvement à venir ; 
+3. Staging (mise en scène), pour guider les yeux de l’utilisateur vers les éléments importants d’une page ;
+4. Straight Ahead and Pose to Pose (toute l'action d'un coup et partie par partie), qui correspond davantage à l'animation
+    traditionnelle mais fait penser à la différence transitions/keyframes ; 
+5. Follow Through and Overlapping Action (continuité du mouvement initial et chevauchement de deux mouvements consécutifs), 
+    pour faire accélérer et décélérer un élément en fonction de sa masse ; 
+6. Slow in and slow out (ralentissement en début et en fin de mouvement), basé sur le fait que les objets ne démarrent pas et 
+    ne s’arrêtent pas instantanément ;
+7. Arc, pour créer des mouvements naturels ;
+8. Secondary Action (action secondaire), pour séparer différentes parties d’une scène dans une animation ;
+9. Timing, pour faire se déplacer les objets à une vitesse crédible ;
+10. Exaggeration (exagération), pour donner du caractère et de la personnalité à une animation ; 
+11. Solid Drawing (notion de volume), pour que les animations correspondent au résultat souhaité ;
+12. Appeal (charisme), pour rendre les animations plus dynamiques.
+
+
+
+
+
+                   (Ex: créez des animations naturelles en combinant les transitions)
+                   
+- au survol de la souris, non seulement le bouton grossira, mais on lui appliquera également un effet de fondu.
+
+          $cd-btn-start: rgba(1, 28, 55, 0);
+          $cd-btn-end: rgba(1, 28, 55, 1);
+
+          .btn {
+              background-color: $cd-btn-start;
+              border: 4px solid $cd-btn;
+              border-radius: 10rem;
+              cursor: pointer;
+              font-size: 3rem;
+              padding: 1.85rem 3rem;
+              &:hover {
+                  transform: scale(1.13);
+                  background-color: $cd-btn-end;
+              }
+          }
+
+- on peut aussi retarder la transition: 
+
+              transition: transform 450ms, background-color 300ms;
+
+- retardez le début d'une transition:
+  "Attention à bien respecter l'ordre qu'on a utilisé juste avant pour préciser la durée de chaque propriété. 
+  Dans notre cas précis,    nous ne voulons pas retarder l’animation de transformation, mais celle de couleur
+  d’arrière-plan"
+
+              transition: transform 450ms, background-color 300ms;
+              transition-delay: 0, 150ms;
+              
+  si on refactor ca donne : 
+              
+              transition: transform 450ms, background-color 300ms 150ms;
+  
+  le code finale:
+  
+              .btn {
+                background-color: $cd-btn-start;
+                border: 4px solid $cd-btn;
+                border-radius: 10rem;
+                cursor: pointer;
+                font-size: 3rem;
+                overflow: hidden;
+                padding: 1.85rem 3rem;
+                position: relative;
+                transition: transform 450ms, background-color 300ms 150ms;
+                &:hover {
+                    transform: scale(1.13);
+                    background-color: $cd-btn-end;
+                }
+              }
+              
+              
+
+                     (Créez des animations plus naturelles avec les fonctions de timing)
+                     
+1.L’accélération et la décélération des transitions sont contrôlées par la propriété  transition-timing-function ;
+    ex:
+    
+        transition: transform 1000ms;
+        transition-timing-function: linear;
+        
+        ou transition: transform 1000ms linear;
+        
+2.Si aucune fonction de timing n’est indiquée, la transition utilisera la fonction  ease. Elle suit un profil d’accélération plus net, et une rampe de décélération plus prononcée ;
+3.Parmi les autres mots clés pour les fonctions de temporisation, on peut trouver  ease-in,   ease-out,   ease-in-out, et  linear ;
+    ex: 
+        
+        transition: transform 1000ms ease-in-out; 
+        ou 
+        // Fonction de timing ease-in :
+        transition: transform 1000ms ease-in;
+        // Fonction de timing ease-out :
+        transition: transform 1000ms ease-out;
+        
+4.Quand aucune fonction de timing par défaut ne correspond à l’animation, il est possible de créer ses propres courbes d’animation personnalisée à l’aide de la fonction  cubic-bezier()  ;
+
+    merci à https://cubic-bezier.com/#.17,.67,.83,.67
+    
+    ce qui donnerai :
+    
+    $trans-dur: 2000ms;
+    .strength {
+      transform: translateY(100%);
+      transition: transform $trans-dur cubic-bezier(0, .75, .08, 1);
+    }
+5.Il existe des outils pour ajuster les effets de timing avec la fonction  cubic-bezier()  .
