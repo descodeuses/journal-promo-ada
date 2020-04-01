@@ -80,7 +80,7 @@ Exemple: nous voulons que notre bouton grossisse quand un utilisateur passe sa s
 
           }
 
-Nous voulons que le bouton grossisse de 15 % au survol de la souris. Pour cela, nous avons besoin de la pseudoclasse  :hover, avec la fonction  scale()  définie sur 1.15 
+    Nous voulons que le bouton grossisse de 15 % au survol de la souris. Pour cela, nous avons besoin de la pseudoclasse           :hover, avec la fonction  scale()  définie sur 1.15 
 
           $cd-btn: #011c37;
           $cd-txt: #15DEA5;
@@ -97,7 +97,7 @@ Nous voulons que le bouton grossisse de 15 % au survol de la souris. Pour cela, 
               }
           }
 
-Pour ajouter un peu de fluidité, nous devons indiquer à notre navigateur que le changement d’échelle, entre l’état inactif et le  :hover, devra se faire par une transition animée. Pour cela, vous pouvez ajouter la propriété  transition-property  au sélecteur  .btn. On lui indique que la propriété  transform est celle sur laquelle le navigateur doit appliquer une transition :
+    Pour ajouter un peu de fluidité, nous devons indiquer à notre navigateur que le changement d’échelle, entre l’état             inactif et le  :hover, devra se faire par une transition animée. Pour cela, vous pouvez ajouter la propriété                   transition-property  au sélecteur  .btn. On lui indique que la propriété  transform est celle sur laquelle le navigateur       doit appliquer une transition :
 
         $cd-btn: #011c37;
         $cd-txt: #15DEA5;
@@ -109,12 +109,120 @@ Pour ajouter un peu de fluidité, nous devons indiquer à notre navigateur que l
             padding: 1.85rem 3rem;
             border-radius: 10rem;
             transform: scale(1);
-            ```diff
-            - transition-property: transform;  //pour plus fluide
-            + transition-duration: 400ms;     // possibilité en secondes (s) ou millisecondes (ms) pas trop long non plus donc                                                                                                                400 c'est bien
-                ``` 
+           
+            transition-property: transform;  //pour plus fluide
+            transition-duration: 400ms;     // possibilité en secondes (s) ou millisecondes (ms) pas trop long non plus donc                                                                                                                400 c'est bien
+               
 
-            &:hover {
+            &:hover {                     //  pour déclencher la transition, pseudo classe :hover comme if / else et il en                                                                                                              existe une 50aine 
                 transform: scale(1.15);  // pcq on veut que ca grosis de 15% 
             }
         }
+
+      Pour refactorer on écrirait: 
+    
+            transition: transform 400ms;
+
+
+
+            
+            
+Liste des pseudoclasses les plus couramment utilisées pour déclencher des transitions :
+
+    :hover, qui est déclenché au survol de la souris ;
+
+    :active, activé au clic de l'utilisateur (le plus souvent pour les liens et boutons) ;
+
+    :focus, qui se déclenche lorsque son élément reçoit le focus (soit il est sélectionné à l'aide du clavier, soit il est                 activé avec la souris) ;
+
+    :valid, dont la validation du contenu s'effectue correctement par rapport au type de donnée attendu ;
+
+    :invalid, qui inversement, correspond à un élément dont la validation du contenu ne s'effectue pas correctement par                     rapport au type de donnée attendu ;
+
+    :not(), qui correspond à la négation. Elle prend un sélecteur en argument et permet de cibler les éléments qui ne sont pas               représentés par cet argument ;
+
+    :checked, qui correspond aux input de type checkbox, option ou radio qui sont cochés ;
+
+    :enabled, un élément avec lequel on peut interagir ;
+
+    :disabled, qui correspond à un élément dont l'interaction a été bloquée.
+
+
+  Exemple pour valider un formulaire:
+  
+    <body>
+        <div class="container">
+            <div class="form">
+                <div class="form__group">
+                    <label for="">email</label>
+                    <input type="email" name="" id="">
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    $cd-txt: #6300a0;
+    $cd-txt--invalid: #fff;
+    $cd-danger: #b20a37;
+     .form {
+          &__group {
+              & input {
+                  border: 2px solid $cd-box;
+                  border-radius: 100rem;
+                  color: $cd-txt;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 2.5rem;
+                  outline: none;
+                  padding: .5rem 1.5rem;
+                  width: 100%;
+                  transition: background-color 500ms;    //un rapide effet de fondu entre le moment où l’utilisateur tape son                                                                         adresse e-mail et l’affichage de la couleur rouge.
+                  
+                  &:focus {                              //quand l’user clique, cela change l’état du champ à  :focus,        
+                      border: 2px solid $cd-txt;                        ajoutant ainsi un contour violet à l’élément.
+                  }
+                  &:not(:focus):invalid {               // la fonctionnalité de validation des champs avec :invalid
+                      background-color: $cd-danger;      :not(), combinée à la pseudoclasse  :focus, afin de s’assurer que    
+                      border: 2px solid $cd-danger;         l’utilisateur a terminé de renseigner son adresse e-mail avant
+                      color: $cd-txt--invalid;                                   de lui faire un feedback de validation.    
+                  }
+              }
+          }
+      }
+ 
+ 
+Les pseudoclasses peuvent aussi être utilisés pour changer le style d’un élément voisin. Ex:
+
+  1. (HTML)
+  
+          <body>
+              <div class="container">
+                  <div class="btn">
+                      C'est partiii!
+                  </div>  
+                  <div class="ball"></div>
+              </div>
+          </body>
+      
+      
+      (CSS)
+      
+          .btn {
+              background: $cd-primary;
+              font-size: 3rem;
+              cursor: pointer;
+              padding: 1.85rem 3rem;
+              border-radius: 10rem;
+              &:active + .ball{                 //la boule grossisse au clic de l’utilisateur en utilisant la pseudoclasse   
+                  transform: scale(1.0);                                                       :active  plutôt que  :hover
+              }
+          }
+
+          .ball {
+              width: $ball-size;
+              height: $ball-size;
+              background: $cd-secondary;
+              margin-bottom: 1rem;
+              border-radius: $ball-size * 0.5;
+              transform: scale(0.1);                //l’échelle initiale  scale()  à .1 pour faire grandir le ballon et       
+              transition: transform 4000ms;         // pour créer une impression de ballon en train de gonflé pendant 4s
+          }
