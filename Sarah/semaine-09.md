@@ -49,3 +49,67 @@ Je commence le cours Animation d'Openclassroom. J'ai appris notamment :
 
 - On peut aussi choisir de manière plus précise la courbe du timing. Pour cela on utilise la fonction cubic-bezier qui reçoit plusieurs valeurs (x et y de l'accélération et x et y de la décélération). 
       
+      
+## Mardi 1 avril
+
+_ J'ai continué tout doucement la refonte de Codevores. Difficile d'y voir clair dans tous le code produit avant. J'ai l'impression que repartir de 0 aurait été plus simple. 
+
+
+_ Cet après midi reprise du cours Animation sur OpenClassRoom. j'ai appris: 
+
+### Il faut optimiser les performances du navigateurs pour les animations CSS : 
+        - Il faut essayer de garder un nombre idéal de 60 FPS (Frame per seconds/Image par secondes). 
+        - On calcule le FPS on divise une seconde par la durée de calcul. 
+        -Pour passer du code html/css à une page web le navigateur fait pluseiurs étapes : 
+                    - Style : interprète le code pour comprendre la structure du DOM et déterminer quelles règles s'appliquent à quels élèments. 
+                    - Layout : détermine la taille des élèments et où les placer.
+                    - Paint : transforme les élèments en pixels en appliquant le style et le placement des élèments
+                    - Composition : combine tous les élèments pour composer la page. 
+        - Pour des animations fluides il faut que le navigateur calcul le moins possible. Donc passer uniquement par composition. (pas utilisation de width ni de background color mais par transform et opacity). 
+        - quand le mouvement "rouille" on parle de "jank".
+        
+### Créer des animations fluides avec transform : 
+        - on peut déplacer des éléments avec les fonctions translate : 
+                    - translate()
+                    - translateX()
+                    - translateY()
+                    - translate3d()
+        - on peut agrandir avec les fonctions scale :
+                    - scale()
+                    - scaleX() 
+                    - scaleY()
+                    - scale3d()
+        - on peut les faire pivoter grâce aux fonctions rotate : 
+                    - rotate()
+                    - rotateX()
+                    - rotateY()
+                    - rotateZ()
+        - si on ajoute une deuxième propriété  transform, elle annule la première. On ne peut donc définir qu’une seule propriété  transform  dans un même sélecteur ;
+        - pour effectuer plusieurs transformations, on peut les lister dans une même propriété transform
+        - une propriété avec plusieurs fonctions exécute les fonctions dans l’ordre, de droite à gauche ;
+        - les fonctions de transformations en 3D comme translate3d(),  rotateZ()  et  scale3d()  ont également besoin de la fonction perspective pour indiquer au navigateur la distance à laquelle l'utilisateur se trouve : plus la distance est grande, moins l'animation sera marquée.
+        
+### Modifier le point d'ancrage d'un élèment grâce à transform-origin:
+    - transform-origin  permet de repositionner le point d’ancrage, qui se trouve par défaut au centre de l’élément.
+    - on peut régler ce point d’origine en :
+        - utilisant des unités comme px, rem, vh, etc. ;
+        - utilisant des pourcentages pour X et Y ;
+        - utlisant des mots clés :  left  et   right  pour l’axe X,  top  et  bottom  pour l’axe Y, et  center  pour les deux;
+        - il est possible de ne pas indiquer la valeur de l'axe Y ou, quand on utilise des mots clés, de mettre uniquement une valeur : le navigateur comprend de lui-même à quel axe la valeur s'applique ;
+        - quand on change le point d’origine en 3D, la valeur de Z doit être exprimée en unités (et non en pourcentages) ! 
+        
+### Analyser la performances des animations avec Chrome DevTools :
+        - l'outil Performance de Chrome DevTools permet d'analyser les performances d’une page, notamment le taux d’images par seconde d’une animation; 
+        - On peut brider la performance de notre machine pour simuler un appareil plus lent (activer l’option “CPU throttling”) ;
+        - zoomer sur une image précise d’une animation permet de détailler les calculs effectués par le navigateur.
+        
+### Animer les couleurs avec opacity : 
+    - animer la couleur d’une propriété déclenche des calculs de paint ; La propriété  opacity permet de faire des transitions entre des couleurs en évitant ces calculs ;
+    - la propriété  opacity  reçoit une valeur entre 0 et 1 (0 étant complètement transparent et 1 complètement opaque) ;
+    - pour éviter d’avoir à ajouter des  <div>  supplémentaires, on peut utiliser le pseudoélément  ::before  ou  ::after  
+    - ::before  et  ::after  créent un élément qui est respectivement le premier ou le dernier enfant de l’élément sélectionné; 
+    - il est possible de créer des dégradés de couleur. Il suffit d'attribuer un dégradé au background-color de l'élément d'arrière-plan. On fera ensuite disparaître l'élément superposé avec opacity: 0.
+
+
+        
+        
