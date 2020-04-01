@@ -57,64 +57,64 @@ Exemple: nous voulons que notre bouton grossisse quand un utilisateur passe sa s
 
 3. 
 
-(HTML)                                         
-<body>
-    <div class="container">
-        <div class="btn">
-            Vois comme je grandis !
-        </div>
-    </div>
-</body>
+          (HTML)                                         
+          <body>
+              <div class="container">
+                  <div class="btn">
+                      Vois comme je grandis !
+                  </div>
+              </div>
+          </body>
 
-(CSS)
-$cd-btn: #011c37;
-$cd-txt: #15DEA5;
-.btn {
-    background: $cd-btn;
-    color: $cd-txt;
-    font-size: 3rem;
-    cursor: pointer;
-    padding: 1.85rem 3rem;
-    border-radius: 10rem;
-    transform: scale(1);     // cela ne change rien pcq le btn est déjà à scale 1 de base 
-    
-}
+          (CSS)
+          $cd-btn: #011c37;
+          $cd-txt: #15DEA5;
+          .btn {
+              background: $cd-btn;
+              color: $cd-txt;
+              font-size: 3rem;
+              cursor: pointer;
+              padding: 1.85rem 3rem;
+              border-radius: 10rem;
+              transform: scale(1);     // cela ne change rien pcq le btn est déjà à scale 1 de base 
+
+          }
 
 Nous voulons que le bouton grossisse de 15 % au survol de la souris. Pour cela, nous avons besoin de la pseudoclasse  :hover, avec la fonction  scale()  définie sur 1.15 
 
-$cd-btn: #011c37;
-$cd-txt: #15DEA5;
-.btn {
-    background: $cd-btn;
-    color: $cd-txt;
-    font-size: 3rem;
-    cursor: pointer;
-    padding: 1.85rem 3rem;
-    border-radius: 10rem;
-    transform: scale(1);
-   ![#1589F0] &:hover {
-        transform: scale(1.15);`#1589F0`
-    }
-}
+          $cd-btn: #011c37;
+          $cd-txt: #15DEA5;
+          .btn {
+              background: $cd-btn;
+              color: $cd-txt;
+              font-size: 3rem;
+              cursor: pointer;
+              padding: 1.85rem 3rem;
+              border-radius: 10rem;
+              transform: scale(1);
+              &:hover {
+                  transform: scale(1.15);
+              }
+          }
 
 Pour ajouter un peu de fluidité, nous devons indiquer à notre navigateur que le changement d’échelle, entre l’état inactif et le  :hover, devra se faire par une transition animée. Pour cela, vous pouvez ajouter la propriété  transition-property  au sélecteur  .btn. On lui indique que la propriété  transform est celle sur laquelle le navigateur doit appliquer une transition :
 
-$cd-btn: #011c37;
-$cd-txt: #15DEA5;
-.btn {
-    background: $cd-btn;
-    color: $cd-txt;
-    font-size: 3rem;
-    cursor: pointer;
-    padding: 1.85rem 3rem;
-    border-radius: 10rem;
-    transform: scale(1);
-    ```diff
-    - transition-property: transform;  //pour plus fluide
-    + transition-duration: 400ms;     // possibilité en secondes (s) ou millisecondes (ms) pas trop long non plus donc 400
-        ``` 
+        $cd-btn: #011c37;
+        $cd-txt: #15DEA5;
+        .btn {
+            background: $cd-btn;
+            color: $cd-txt;
+            font-size: 3rem;
+            cursor: pointer;
+            padding: 1.85rem 3rem;
+            border-radius: 10rem;
+            transform: scale(1);
+            ```diff
+            - transition-property: transform;  //pour plus fluide
+            + transition-duration: 400ms;     // possibilité en secondes (s) ou millisecondes (ms) pas trop long non plus donc                                                                                                                400 c'est bien
+                ``` 
 
-    &:hover {
-        transform: scale(1.15);  // pcq on veut que ca grosis de 15% 
-    }
-}
+            &:hover {
+                transform: scale(1.15);  // pcq on veut que ca grosis de 15% 
+            }
+        }
