@@ -58,9 +58,9 @@ _ J'ai continué tout doucement la refonte de Codevores. Difficile d'y voir clai
 _ Cet après midi reprise du cours Animation sur OpenClassRoom. j'ai appris: 
 
 ### Il faut optimiser les performances du navigateurs pour les animations CSS : 
-        - Il faut essayer de garder un nombre idéal de 60 FPS (Frame per seconds/Image par secondes). 
-        - On calcule le FPS on divise une seconde par la durée de calcul. 
-        -Pour passer du code html/css à une page web le navigateur fait pluseiurs étapes : 
+        - Il faut essayer de garder un nombre idéal de 60 FPS (Frame per seconds/Images par seconde). 
+        - FPS = une seconde / durée de calcul. 
+        -Pour passer du code html/css à une page web le navigateur fait plusieurs étapes : 
                     - Style : interprète le code pour comprendre la structure du DOM et déterminer quelles règles s'appliquent à quels élèments. 
                     - Layout : détermine la taille des élèments et où les placer.
                     - Paint : transforme les élèments en pixels en appliquant le style et le placement des élèments
