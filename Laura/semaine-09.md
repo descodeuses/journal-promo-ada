@@ -491,8 +491,34 @@ bien toute la base consolidé pour ensuite pouvoir mettre en pratique, chacun sa
 - **transform-origin**  permet de repositionner le point d’ancrage, qui se trouve par défaut au centre de l’élément ;
 - on peut régler ce point d’origine en utilisant des unités comme px, rem, vh, etc. ;
 - il est aussi possible d'utiliser des pourcentages pour X et Y ;
-- ou encore, on peut utiliser des mots clés :  **left  et   right  pour l’axe X,  top  et  bottom  pour l’axe Y,** et  center   
+- ou encore, on peut utiliser des mots clés :  **left  et   right  pour l’axe X,  top  et  bottom  pour l’axe Y,** et  center 
 pour les deux ;
 - il est possible de ne pas indiquer la valeur de l'axe Y ou, quand on utilise des mots clés, de mettre uniquement une valeur 
   : le navigateur comprend de lui-même à quel axe la valeur s'applique ;
 - quand on change le point d’origine en **3D, la valeur de Z doit être exprimée en unités (et non en pourcentages)** ! 
+
+
+
+
+
+
+### Les quatre étapes de la création d’une page web sont : 
+- **Style** : le navigateur comprend la structure HTML du code qu'il reçoit et prépare le style qui sera appliqué,
+- **Layout** (mise en page) : le navigateur détermine la mise en page et la taille des éléments en fonction du style qu'il a reçu,
+- **Paint** : il transforme les éléments en pixels,
+- **Composition** : il combine tous les éléments pour composer la page qui s’affiche ;
+pour assurer la fluidité des animations, il faut se contenter d’animer des propriétés de l’étape composition. Les plus utiles sont  transform  et  opacity
+
+### Animez les couleurs de manière performante avec opacity
+
+- Animer la couleur d’une propriété déclenche des calculs de paint ;
+- La propriété  opacity  nous permet de faire des transitions entre des couleurs en évitant ces calculs ;
+- La propriété  opacity  reçoit une valeur entre 0 et 1, 0 étant complètement transparent et 1 complètement opaque ;
+- Pour éviter d’avoir à ajouter des  <div>  supplémentaires, que l'on aurait dû ajouter à chaque fois dans le HTML, on peut 
+  utiliser le pseudoélément  ::before  ou  ::after  ;
+- Pour créer un pseudoélément, ajoutez le nom du pseudoélément à un sélecteur, en utilisant le préfixe double deux-points :  
+  .selector::after{...}
+- Les pseudo-éléments  ::before  et  ::after  créent un élément qui est respectivement le premier ou le dernier enfant de
+  l’élément sélectionné ; 
+- Il est possible de créer des dégradés de couleur. Il suffit d'attribuer un dégradé au background-color de l'élément 
+  d'arrière-plan. On fera ensuite disparaître l'élément superposé avec opacity: 0.
