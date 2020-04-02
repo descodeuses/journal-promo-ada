@@ -345,3 +345,128 @@ Les 12 principes de l'animation sont :
       transition: transform $trans-dur cubic-bezier(0, .75, .08, 1);
     }
 5.Il existe des outils pour ajuster les effets de timing avec la fonction  cubic-bezier()  .
+
+
+
+
+## Jeudi 2 avril
+
+### CSS animation (OpenClassroom)
+
+- FPS de 60 pour le navigateur 
+- Pour nous assurer que nos animations soient aussi fluides que possibles, nos main propriétés sont  **transform  et  
+  opacity**.
+- Modifiez **la taille** d'un élément avec  **scale** avec un parametre genre scale(2) = grossi de 200% pour taille uniforme:
+
+              .btn {
+                  :hover + .box {
+                      transform: scale(2);
+                  }
+              }
+
+              .box {
+                  transition: transform 330ms ease-in-out;
+              }
+              
+  ou avec deux paramètres X et Y genre scale, X à 300 %, et Y à 50 % : pour un volume constant:
+  
+              .btn {
+                :hover + .box {
+                    transform: scale(3, 0.5);
+                }
+              }
+            .box {
+                transition: transform 330ms ease-in-out;
+              }
+              
+   quand on veut modifier l’échelle dans une seule direction, on peut utiliser les fonctions  scaleX()  et  scaleY(). 
+ - Modifiez **la position** d'un élément avec la fonction  **translate** qui accepte différentes unités, comme  les px, les vh ou 
+ les em avec X et Y pour propriétés,  déplacer notre boîte de 150 px vers la droite et 7 vh vers le haut:
+  
+            .btn {
+                :hover + .box {
+                    transform: translate(150px, -7vh);
+                }
+            }
+             
+             .box {
+                transition: transform 330ms ease-in-out;
+              }
+  
+  Notes : Pour certaines propriétés CSS, les pourcentages sont calculés par rapport à leur élément parent. Par exemple, width: 
+  50%  signifie la moitié de la largeur du parent. Mais quand on utilise des pourcentages avec  translate(), ces pourcentages 
+  sont liés à l’élément lui-même. Il est possible de déplacer des éléments sur l’axe X et Y séparément, grâce aux fonctions  
+  translateX()  et  translateY(). Ex:
+    
+    (HTML)                                                (CSS)
+    <div class="container">                                .btn {
+      <button class="btn">Transform!</button>              :hover + .box {
+        <div class="box">                                       transform: scale(1);
+          <span>Boop!</span>                                    span {
+        </div>                                                       transform: translateY(0);
+    </div>                                                      }
+                                                              }
+                                                             }
+    
+
+                                                                .box {
+                                                                  transform: scale(0.1);
+                                                                  transition: transform 330ms ease-in-out;
+                                                                  overflow: hidden;     // texte n'apparaît que dans la boîte 
+                                                                  span {
+                                                                      display: inline-block;
+                                                                      transform: translateY(250%);
+                                                                      transition: transform 280ms ease-out 50ms;
+                                                                  }
+                                                                }
+ Notes: transform  ne peut pas manipuler d’éléments inline. Nous devons donc modifier le mode d’affichage en   block  ou  
+ inline-block  avant d’obtenir des résultats.
+ - Faites **pivoter** vos éléments avec **rotate()** ex:
+      
+        (HTML)
+        <div class="container">
+            <button class="btn">Transform!</button>
+            <div class="boxes">
+                <div class="boxes__base boxes--rotDegrees">rotate(360deg)</div>
+                <div class="boxes__base boxes--rotTurns">rotate(1turn)</div>
+            </div>
+        </div>
+
+ 
+        (CSS)
+       .btn {
+          :hover + .boxes {
+              & > .boxes--rotDegrees {
+                  transform: rotate(0deg);
+              }
+              & > .boxes--rotTurns {
+                   transform: rotate(0turn);
+              }
+          }
+        }
+
+        .boxes {                                                    //Chaque boîte démarre en position de rotation négative de 
+           &--rotDegrees {                                             360 deg/1 turn. Au survol du bouton, cela déclenche la 
+                transform: rotate(-360deg);                           transition.  On les fait alors tourner vers la position
+                transition: transform 500ms ease-in-out;                      0 deg/0 turn sur une demi-seconde, en utilisant
+            }                                                                       la fonction de temporisation ease-in-out.
+
+            &--rotTurns {
+                background: pink;
+                transform: rotate(-1turn);
+                transition: transform 500ms ease-in-out;
+            }
+        }
+        
+- si on ajoute une deuxième propriété  transform, elle annule la première. On ne peut donc définir qu’une seule propriété  transform  dans un même sélecteur ;
+- pour effectuer plusieurs transformations, on peut les lister dans une même propriété transform comme 
+transform:translateX(200%) scale(2);
+- une propriété avec plusieurs fonctions exécute les fonctions dans l’ordre, de droite à gauche ;
+- les fonctions de transformations en 3D comme translate3d(),  rotateZ()  et  scale3d()  ont également besoin de la fonction
+perspective pour indiquer au navigateur la distance à laquelle l'utilisateur se trouve : plus la distance est grande, moins 
+l'animation sera marquée.        
+- Notes: À vous de choisir entre degrés et turns selon vos préférences. Pour ma part, j'ai tendance à préférer turn lorsque 
+mon élément fait au moins un tour sur lui-même, et deg lorsqu'il s'agit de valeurs inférieures à un tour.
+ 
+ 
+  
