@@ -465,8 +465,8 @@ transform:translateX(200%) scale(2);
 - les fonctions de transformations en 3D comme translate3d(),  rotateZ()  et  scale3d()  ont également besoin de la fonction
 perspective pour indiquer au navigateur la distance à laquelle l'utilisateur se trouve : plus la distance est grande, moins 
 l'animation sera marquée.        
-- Notes: À vous de choisir entre degrés et turns selon vos préférences. Pour ma part, j'ai tendance à préférer turn lorsque 
-mon élément fait au moins un tour sur lui-même, et deg lorsqu'il s'agit de valeurs inférieures à un tour.
+- Notes: À vous de choisir entre degrés et turns selon vos préférences. Tendance à préférer turn lorsque l'élément fait au 
+moins un tour sur lui-même, et deg lorsque valeurs inférieures à un tour.
  
  
 ## Notes persos
@@ -487,3 +487,12 @@ Gauthier, c'est bien plus facile à manier et j'ai donc ce cours sous la main :
 https://la-cascade.io/se-lancer-dans-sass/
 (Sarah est d'ailleurs en train de l'installer et de faire joujou avec, moi je continue sur la partie théorie, le temps d'avoir
 bien toute la base consolidé pour ensuite pouvoir mettre en pratique, chacun sa façon d'apprendre :) 
+
+- **transform-origin**  permet de repositionner le point d’ancrage, qui se trouve par défaut au centre de l’élément ;
+- on peut régler ce point d’origine en utilisant des unités comme px, rem, vh, etc. ;
+- il est aussi possible d'utiliser des pourcentages pour X et Y ;
+- ou encore, on peut utiliser des mots clés :  **left  et   right  pour l’axe X,  top  et  bottom  pour l’axe Y,** et  center   
+pour les deux ;
+- il est possible de ne pas indiquer la valeur de l'axe Y ou, quand on utilise des mots clés, de mettre uniquement une valeur 
+  : le navigateur comprend de lui-même à quel axe la valeur s'applique ;
+- quand on change le point d’origine en **3D, la valeur de Z doit être exprimée en unités (et non en pourcentages)** ! 
