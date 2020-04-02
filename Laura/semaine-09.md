@@ -469,4 +469,21 @@ l'animation sera marquée.
 mon élément fait au moins un tour sur lui-même, et deg lorsqu'il s'agit de valeurs inférieures à un tour.
  
  
-  
+## Notes persos
+
+** les cours OpenClassRoom montrent parfois des exemples incomplet comme j'ai pu le constater avec Gauthier lorsque j'ai copié
+coller un code sur rotate transition ... donc j'aurai peut etre pas du copier tout ces exemples hahahaha vu que je ne les ai 
+pas testé moi-même, a par le dernier où d'ailleurs il manque un & et de la déco pour afficher les carrés rose et vert.. **
+
+Tout les exemples donné dans le cours OpenClassroom son en SASS donc si on veut traduire les codes en CSS pure: 
+https://www.sassmeister.com/
+
+Pour étudier le CSS pure en animation : 
+https://www.w3schools.com/css/css3_animations.asp
+
+Mais je conseillerai juste de finir le cours OpenClassroom avant pcq on nous a pas encore introduit la notion de keyframes
+que l'on verra justement plus tard dans le cours OCR. Et j'avais envie du coup d'apprendre SCSS car comme me l'a montré 
+Gauthier, c'est bien plus facile à manier et j'ai donc ce cours sous la main : 
+https://la-cascade.io/se-lancer-dans-sass/
+(Sarah est d'ailleurs en train de l'installer et de faire joujou avec, moi je continue sur la partie théorie, le temps d'avoir
+bien toute la base consolidé pour ensuite pouvoir mettre en pratique, chacun sa façon d'apprendre :) 
