@@ -471,9 +471,9 @@ mon élément fait au moins un tour sur lui-même, et deg lorsqu'il s'agit de va
  
 ## Notes persos
 
-Les cours OpenClassRoom montrent parfois des exemples incomplet comme j'ai pu le constater avec Gauthier lorsque j'ai copié
+***Les cours OpenClassRoom montrent parfois des exemples incomplet comme j'ai pu le constater avec Gauthier lorsque j'ai copié
 coller un code sur rotate transition ... donc j'aurai peut etre pas du copier tout ces exemples hahahaha vu que je ne les ai 
-pas testé moi-même, a par le dernier où d'ailleurs il manque un & et de la déco pour afficher les carrés rose et vert.. **
+pas testé moi-même, a par le dernier où d'ailleurs il manque un & et de la déco pour afficher les carrés rose et vert.. ***
 
 Tout les exemples donné dans le cours OpenClassroom son en SASS donc si on veut traduire les codes en CSS pure: 
 https://www.sassmeister.com/
