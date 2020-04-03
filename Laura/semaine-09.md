@@ -522,3 +522,95 @@ pour assurer la fluidité des animations, il faut se contenter d’animer des pr
   l’élément sélectionné ; 
 - Il est possible de créer des dégradés de couleur. Il suffit d'attribuer un dégradé au background-color de l'élément 
   d'arrière-plan. On fera ensuite disparaître l'élément superposé avec opacity: 0.
+  
+  
+  
+  
+  
+  
+  
+## Jeudi 2 avril
+
+### CSS animation (OpenClassroom)
+
+      
+- Intro des keyframes: 
+
+        .progress {
+         &__bar {
+                opacity: 0;                            // le truc de base pour la bar a opacité 0 donc blanc
+            }
+          }
+          @keyframes progress-bar{
+                0% {
+                    transform: scaleX(0);
+                }
+                17% {                                  //là a 17% x=18 don du vert jusqu'a la 
+                    transform: scaleX(.18);
+                }
+                24% {
+                    transform: scaleX(.4);
+                }
+                46% {
+                    transform: scaleX(.81);
+                }
+                85%,100% {
+                    opacity: 1;                        // quand la barre atteint les 85% l'opacité est a 1
+                }
+                100% {
+                    transform: scaleX(1);              // important pour qu'elle reste a 100% jusqu'a la fin
+                }
+           }
+  
+  
+  - On peut introdure un delay et une durée dans le keyframe: 
+  
+             $prog-bar-dur: 1000ms;
+             $prog-bar-delay: 1000ms;
+             
+             .progress {
+                  &__bar {
+                      transform-origin: left;
+                      transform: scaleX(0.5);
+                  animation: progress-bar $prog-bar-dur $prog-bar-delay;
+                  animation-fill-mode: both;
+
+                  }
+             }
+
+             
+ - On peut rajouter du cubic : (+smooth)
+  
+            @keyframes progress-bar{
+              0% {
+                  transform: scaleX(0);
+              }
+              17% {
+                  transform: scaleX(.18);
+              }
+              24% {
+                  transform: scaleX(.40);
+                  animation-timing-function: cubic-bezier(.9,0,.1,1);
+              }
+              46% {
+                  transform: scaleX(.81);
+                  animation-timing-function: cubic-bezier(.25,0.25,1);
+              }
+              100% {
+                  transform: scaleX(1);
+              }
+          }
+          
+- Nous pouvons retarder le démarrage des animations avec keyframes en utilisant la propriété  animation-delay, avec un délai 
+exprimé en secondes ou en millisecondes, tout comme les transitions ;
+- Nous pouvons étendre ces valeurs du début à la fin de ces animations en utilisant la propriété  animation-fill-mode :
+- Le mot clé « backwards » prolonge les valeurs de départ d'une animation avant son lancement, couvrant la durée du délai 
+assigné avant que l'animation elle-même ne commence,
+- Le mot clé « forwards » prolonge les valeurs finales d'une animation jusqu'à ce que la page soit rechargée ou que le 
+navigateur soit fermé,
+- Le mot clé « both » prolonge l'animation dans les deux sens ;
+- Nous pouvons définir une fonction de timing des @keyframes en utilisant la fonction animation-timing-function sur le 
+sélecteur où l'animation a été assignée ;
+- Nous pouvons également définir un timing spécifique keyframe par keyframe, en assignant la propriété  animation-timing-
+function  aux keyframes en question.
+
