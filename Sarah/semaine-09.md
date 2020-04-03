@@ -110,6 +110,12 @@ _ Cet après midi reprise du cours Animation sur OpenClassRoom. j'ai appris:
     - ::before  et  ::after  créent un élément qui est respectivement le premier ou le dernier enfant de l’élément sélectionné; 
     - il est possible de créer des dégradés de couleur. Il suffit d'attribuer un dégradé au background-color de l'élément d'arrière-plan. On fera ensuite disparaître l'élément superposé avec opacity: 0.
 
+## Jeudi 2 Avril
 
+J'ai repris tous le bloc 2 du cours Animation d'Openclassroom en essayant de refaire les exercices. Je me rends compte que je bloque sur certaine traduction de Scss en Css. 
+
+Gauthier partage une application permettant de traduire en direct le scss en css : SassMeister. 
+
+## Vendredi 3 Avril
         
         
