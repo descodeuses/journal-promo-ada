@@ -614,3 +614,41 @@ sélecteur où l'animation a été assignée ;
 - Nous pouvons également définir un timing spécifique keyframe par keyframe, en assignant la propriété  animation-timing-
 function  aux keyframes en question.
 
+
+
+
+- Pour faire un headshake de l'input:
+
+          $cd-danger : #b20a37 ;
+          $cd-txt: #6300a0;
+          $shake-intensity: 2%;
+
+          .form {
+              &__group {
+                  & input {
+                      &:active, &:focus {
+                          border: 2px solid $cd-txt;
+                      }
+                      &:not(:focus):invalid {
+                          color: white;
+                          border: 2px solid $cd-danger;
+                          background: $cd-danger;
+                          animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);   // durée et ease in out a diff point
+                          animation-iteration-count: 3;                          //pour qu'il le fasse 3 fois
+
+                      }
+                  }
+              }
+          }
+
+          @keyframes headshake {
+              25% {
+                  // entièrement à droite
+                  transform: translateX($shake-intensity);                        // se décale un peu a droite 
+              }
+              75% {
+                  // entièrement à gauche
+                  transform: translateX($shake-intensity * -1);                   // se décale un peu a gauche
+              }
+          }
+
