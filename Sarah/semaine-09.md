@@ -165,7 +165,9 @@ Je continue le cours Animations d'OpenClassRoom.
    
  ## Manipulez et réutilisez les animations CSS
  
-   - On peut répéter un ensemble de keyframes autant de fois qu'on veut en utilisant la propriété  animation-iteration-count, avec le nombre de cycles comme valeur ; les keyframes se répètent à l'infini avec « infinite » ;
+   - la propriété  animation-iteration-count permet de répéter un ensemble de keyframes autant de fois qu'on veut. 
+        - On met le nombre de cycles comme valeur ; 
+        - la valeur « infinite » répètent les keyframes à l'infini;
 
    - la propriété  animation-direction permet de :
         - lire un ensemble de keyframes normalement, avec « normal » ;
