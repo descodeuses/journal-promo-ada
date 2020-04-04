@@ -162,3 +162,17 @@ Je continue le cours Animations d'OpenClassRoom.
    - on peut définir une fonction de timing des @keyframes en utilisant la fonction animation-timing-function sur le sélecteur où l'animation a été assignée ;
     
    - on peut aussi définir un timing spécifique keyframe par keyframe, en assignant la propriété  animation-timing-function aux keyframes en question.
+   
+ ## Manipulez et réutilisez les animations CSS
+ 
+   - On peut répéter un ensemble de keyframes autant de fois qu'on veut en utilisant la propriété  animation-iteration-count, avec le nombre de cycles comme valeur ; les keyframes se répètent à l'infini avec « infinite » ;
+
+   - la propriété  animation-direction permet de :
+        - lire un ensemble de keyframes normalement, avec « normal » ;
+        - lire un ensemble de keyframes vers l'arrière avec « reverse » ;
+        - lire un ensemble de keyframes avec des allers-retours avec « alternate » ;
+        - lire un ensemble de keyframes avec des allers-retours, mais en commençant par la fin avec « alternate-reverse » ;
+    
+   - la propriété  animation-play-state permet de 
+        - de mettre en pause une animation avec la valeur « paused » ;
+        - on peut reprendre la lecture d'une animation avec la valeur « running ».
