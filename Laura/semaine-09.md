@@ -529,7 +529,7 @@ pour assurer la fluidité des animations, il faut se contenter d’animer des pr
   
   
   
-## Jeudi 2 avril
+## Vendredi 3 avril
 
 ### CSS animation (OpenClassroom)
 
@@ -651,4 +651,13 @@ function  aux keyframes en question.
                   transform: translateX($shake-intensity * -1);                   // se décale un peu a gauche
               }
           }
+
+
+
+
+
+
+## Samedi 4 avril
+
+### CSS animation (OpenClassroom)
 
