@@ -118,4 +118,42 @@ Gauthier partage une application permettant de traduire en direct le scss en css
 
 ## Vendredi 3 Avril
         
-        
+Visioconférence d'Olivier, développeur dont les langages favoris sont Javascript et Java! :)
+J'apprends que : 
+    - GWT transforme le Java en Javascript;
+    - Rust serait une passerelle entre Front et Back.
+    - CMS signifie : Content management system. (Wordpress en est un). Cela permet au client de modifier son site sans intervenir en codant. 
+    - A list appart est un bon site. 
+    - Le site de Sara Soueidan aussi! 
+    
+## Samedi 4 Avril
+
+Je continue le cours Animations d'OpenClassRoom. 
+
+### Des animations plus complexes avec la règle CSS @keyframes
+
+   - les animations @keyframes permettent de construire des animations complexes en créant plusieurs étapes pour les propriétés tout au long de l'animation ;
+
+   - les keyframes CSS sont mise en place à l'aide de la règle @keyframes suivie d'un nom pour l'ensemble des keyframes;
+
+   - chaque keyframe peut être établi en utilisant comme valeur le pourcentage d'animation réalisé : 33% {...} ;
+
+   - si on n'a besoin que d'un keyframe de début et de fin, on peut utiliser « from » et « to »;
+   
+   - si aucun keyframe de début ou de fin n'est fourni, l'animation commence et/ou se termine avec les valeurs de propriété assignées au sélecteur. Si aucune valeur n'est explicitement assignée dans le sélecteur, c'est la valeur par défaut qui est choisie ;
+
+   - une animation @keyframes peut contenir différents keyframes avec des propriétés distinctes ;
+
+   - plusieurs pourcentages peuvent être assignés à un seul keyframe. Les valeurs de ce keyframe seront appliquées à ces pourcentages dans l'animation ;
+
+### Utiliser les propriétés de l'animation CSS
+
+   - Comme les transitions, les animations @keyframes peuvent être déclenchées avec des pseudoclasses (:hover, etc.);
+   - les @keyframes peuvent aussi être déclenchés par le chargement des éléments auxquels ils sont assignés, comme un sélecteur. Par exemple, dès le chargement d'une page ; 
+   - On peut retarder le démarrage en utilisant la propriété animation-delay (s ou ms)
+   - on peut étendre les valeurs du début à la fin des animations en utilisant la propriété animation-fill-mode :
+            - « backwards » prolonge les valeurs de départ d'une animation avant son lancement. Cela couvre le délai avant que l'animation ne commence.
+            - « forwards » prolonge les valeurs finales d'une animation jusqu'à ce que la page soit rechargée ou que le navigateur soit fermé.
+            - « both » prolonge l'animation dans les deux sens ;
+    - on peut définir une fonction de timing des @keyframes en utilisant la fonction animation-timing-function sur le sélecteur où l'animation a été assignée ;
+        - on peut aussi définir un timing spécifique keyframe par keyframe, en assignant la propriété  animation-timing-function aux keyframes en question.
