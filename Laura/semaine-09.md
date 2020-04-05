@@ -793,3 +793,5 @@ function  aux keyframes en question.
                                                                 transform: rotate(360deg);
                                                                 }
                                                             }
+
+ - Cours openclassroom se finit en nous montrant comment marche Google Dev Tools pour les animations :)
