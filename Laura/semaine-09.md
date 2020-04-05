@@ -657,7 +657,139 @@ function  aux keyframes en question.
 
 
 
-## Samedi 4 avril
+## Samedi/ dimanche 4/ 5 avril
 
 ### CSS animation (OpenClassroom)
 
+
+- Faites boucler vos animations à l'infini :
+
+
+            .load {
+              width: 30vh;
+              height: 22.5vh;
+              display: flex;
+              justify-content: space-evenly;
+            }
+            .load__bar {
+              background-color: #15DEA5;
+              height: 100%;
+              width: 3vh;
+              animation: bars 1000ms backwards infinite;
+              animation-direction : nomal;                  // rare d'utiliser normal, souvent reverse pour  jouer des
+            }                                                  animations avec des allers-retours ou alternate animation en 
+            .load__bar--1 {                                    boucle infinie et invisible 
+              animation-delay: 200ms;
+            }
+            .load__bar--2 {
+              animation-delay: 400ms;
+            }
+            .load__bar--3 {
+              animation-delay: 600ms;
+            }
+            .load__bar--4 {
+              animation-delay: 800ms;
+            }
+            .load__bar--5 {
+              animation-delay: 1000ms;
+            }
+            
+            
+            
+            .load__bar {
+                background-color: #15DEA5;
+                animation: bars 1000ms backwards infinite ease-in-out alternate;  // tout mettre sur la même ligne
+              }
+              
+        
+  - Avec alternate reverse 
+  
+        (HTML)
+          <div class="container">
+              <div class="load">
+              <div class="load__bar load__bar--1"></div>
+              <div class="load__bar load__bar--2"></div>
+              <div class="load__bar load__bar--3"></div>
+              <div class="load__bar load__bar--4"></div>
+              <div class="load__bar load__bar--5"></div>
+          </div>
+          <div class="load">
+              <div class="load__bar load__bar--1-inv"></div>
+              <div class="load__bar load__bar--2-inv"></div>
+              <div class="load__bar load__bar--3-inv"></div>
+              <div class="load__bar load__bar--4-inv"></div>
+              <div class="load__bar load__bar--5-inv"></div>
+              </div>
+          </div>
+        
+        
+        (CSS)
+        .load__bar {
+          animation: bars 1000ms backwards infinite ease-in-out alternate;
+        }
+        .load__bar--1 {
+          animation-delay: 200ms;
+        }
+        .load__bar--1-inv {
+          animation-delay: 200ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+        .load__bar--2 {
+          animation-delay: 400ms;
+        }
+        .load__bar--2-inv {
+          animation-delay: 400ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+        .load__bar--3 {
+          animation-delay: 600ms;
+        }
+        .load__bar--3-inv {
+          animation-delay: 600ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+        .load__bar--4 {
+          animation-delay: 800ms;
+        }
+        .load__bar--4-inv {
+          animation-delay: 800ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+        .load__bar--5 {
+          animation-delay: 1000ms;
+        }
+        .load__bar--5-inv {
+          animation-delay: 1000ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+     
+     
+  - La propriété animation-play-state permet de mettre en pause ou de jouer des animations en utilisant respectivement les 
+    mots clés « paused » ou « running »
+    
+          
+          (HTML)                                     (CSS)
+    
+          <div class="container">                     .spin {
+              <div class="spin"></div>                background-color: #15DEA5;
+          </div>                                      width: 30vh;
+                                                      height: 30vh;
+                                                      animation: spin 3s linear infinite paused;  // on met paused pour 
+                                                      }                                         qu'elle tourne pas à l'infini
+                                                      
+                                                      .spin:hover {
+                                                            animation-play-state: running;  // comme on a mise pause il faut 
+                                                       }                                    mettre :hover et running pour qu'
+                                                      @keyframes spin {                     on sache quand elle démarre
+                                                          from {
+                                                                transform: rotate(0deg);
+                                                           }
+                                                           to {
+                                                                transform: rotate(360deg);
+                                                                }
+                                                            }
