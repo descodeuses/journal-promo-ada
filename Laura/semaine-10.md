@@ -48,7 +48,8 @@ ecrivez-votre-premier-script)
 > Notes 
 *********************
 
-- Pour écrire des guillemets: <?php echo "Cette ligne a été écrite \"uniquement\" en PHP."; ?>
+- Pour écrire des guillemets: echo "Cette ligne a été écrite \"uniquement\" en PHP."; 
+
 
 > Là où ça bloque
 *********************
