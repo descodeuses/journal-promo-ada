@@ -10,6 +10,7 @@
 
 
 
+> La Base
  
  - Les instructions PHP sont placées dans une balise ouvrante et fermante : <?php ?>
  - Ex: 
