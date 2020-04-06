@@ -73,5 +73,5 @@ ecrivez-votre-premier-script)
 *********************
 
 J'ai pris plus de temps à savoir comment installer MAMP et à savoir comment relier mon fichier roots à PHP qu'à apprendre,
-c'est dommage parce que maintenant je sais comment écrire des balises etc mais je ne peux pas vraiment passer à l'étape 
-application, donc j'emmagasine les règles pour l'instant x) 
+les joies du confinement x) mais ça avance petit à petit. J'ai décidé de faire un chapitre par jour (i.e. donc 1 chapitre
+par jour pour toute la semaine) 
