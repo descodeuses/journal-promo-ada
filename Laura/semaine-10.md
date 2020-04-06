@@ -45,10 +45,10 @@ ecrivez-votre-premier-script)
                                                 // on remarquera que après les guillemets il y a un ; aka fin de l'instruction
           
           
-> On s'accroche 
+> Notes 
 *********************
 
-
+- Pour écrire des guillemets: <?php echo "Cette ligne a été écrite \"uniquement\" en PHP."; ?>
 
 > Là où ça bloque
 *********************
@@ -61,11 +61,11 @@ ecrivez-votre-premier-script)
   un mauvais exemple! On peut mettre notre fichier roots où on veut et l'appeler comme on veut. Il suffit juste de Stop 
   servers puis de Start servers et normalement ils t'affichent une page direct de MAMP et il suffira de changer l'adresse:
   http://localhost:8888/test/ le test est le nom de mon dossier que j'ai créer dans le dossier où j'ai mis mon PHP. 
-
-        Cliquez sur l'icône « ... » pour sélectionner le dossier dans lequel vous placerez les fichiers de votre site web.    
-        Sous Mac OS, un dossier est déjà créé : il s'agit de « Sites », dans votre répertoire personnel (fig. suivante).
-        Sélectionnez ce répertoire, qui devrait être de la forme/Users/pseudo/Sites. Notez que ce n'est pas une obligation : 
-        vous pouvez utiliser n'importe quel autre répertoire si vous le désirez.
+* Configuration PHP pour voir les erreurs : raccourci clavier avec cmd + F en même temps et check "display_errors = On" 
+  & "error_reporting = E_ALL" souvent l'ordi le trouve 4 fois et il faut donc tous les check avant de trouver le bon (si ça 
+  commence par ; au début de la ligne c'est que c'est pas le bon = commentaire), lorsqu'on rafraichit la page de localhost:
+  
+  ![OpenClassrooms aperçu] (https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4238821-configurez-php-pour-visualiser-les-erreurs)
 
  
  
