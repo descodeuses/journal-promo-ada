@@ -522,3 +522,276 @@ pour assurer la fluidité des animations, il faut se contenter d’animer des pr
   l’élément sélectionné ; 
 - Il est possible de créer des dégradés de couleur. Il suffit d'attribuer un dégradé au background-color de l'élément 
   d'arrière-plan. On fera ensuite disparaître l'élément superposé avec opacity: 0.
+  
+  
+  
+  
+  
+  
+  
+## Vendredi 3 avril
+
+### CSS animation (OpenClassroom)
+
+      
+- Intro des keyframes: 
+
+        .progress {
+         &__bar {
+                opacity: 0;                            // le truc de base pour la bar a opacité 0 donc blanc
+            }
+          }
+          @keyframes progress-bar{
+                0% {
+                    transform: scaleX(0);
+                }
+                17% {                                  //là a 17% x=18 don du vert jusqu'a la 
+                    transform: scaleX(.18);
+                }
+                24% {
+                    transform: scaleX(.4);
+                }
+                46% {
+                    transform: scaleX(.81);
+                }
+                85%,100% {
+                    opacity: 1;                        // quand la barre atteint les 85% l'opacité est a 1
+                }
+                100% {
+                    transform: scaleX(1);              // important pour qu'elle reste a 100% jusqu'a la fin
+                }
+           }
+  
+  
+  - On peut introdure un delay et une durée dans le keyframe: 
+  
+             $prog-bar-dur: 1000ms;
+             $prog-bar-delay: 1000ms;
+             
+             .progress {
+                  &__bar {
+                      transform-origin: left;
+                      transform: scaleX(0.5);
+                  animation: progress-bar $prog-bar-dur $prog-bar-delay;
+                  animation-fill-mode: both;
+
+                  }
+             }
+
+             
+ - On peut rajouter du cubic : (+smooth)
+  
+            @keyframes progress-bar{
+              0% {
+                  transform: scaleX(0);
+              }
+              17% {
+                  transform: scaleX(.18);
+              }
+              24% {
+                  transform: scaleX(.40);
+                  animation-timing-function: cubic-bezier(.9,0,.1,1);
+              }
+              46% {
+                  transform: scaleX(.81);
+                  animation-timing-function: cubic-bezier(.25,0.25,1);
+              }
+              100% {
+                  transform: scaleX(1);
+              }
+          }
+          
+- Nous pouvons retarder le démarrage des animations avec keyframes en utilisant la propriété  animation-delay, avec un délai 
+exprimé en secondes ou en millisecondes, tout comme les transitions ;
+- Nous pouvons étendre ces valeurs du début à la fin de ces animations en utilisant la propriété  animation-fill-mode :
+- Le mot clé « backwards » prolonge les valeurs de départ d'une animation avant son lancement, couvrant la durée du délai 
+assigné avant que l'animation elle-même ne commence,
+- Le mot clé « forwards » prolonge les valeurs finales d'une animation jusqu'à ce que la page soit rechargée ou que le 
+navigateur soit fermé,
+- Le mot clé « both » prolonge l'animation dans les deux sens ;
+- Nous pouvons définir une fonction de timing des @keyframes en utilisant la fonction animation-timing-function sur le 
+sélecteur où l'animation a été assignée ;
+- Nous pouvons également définir un timing spécifique keyframe par keyframe, en assignant la propriété  animation-timing-
+function  aux keyframes en question.
+
+
+
+
+- Pour faire un headshake de l'input:
+
+          $cd-danger : #b20a37 ;
+          $cd-txt: #6300a0;
+          $shake-intensity: 2%;
+
+          .form {
+              &__group {
+                  & input {
+                      &:active, &:focus {
+                          border: 2px solid $cd-txt;
+                      }
+                      &:not(:focus):invalid {
+                          color: white;
+                          border: 2px solid $cd-danger;
+                          background: $cd-danger;
+                          animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);   // durée et ease in out a diff point
+                          animation-iteration-count: 3;                          //pour qu'il le fasse 3 fois
+
+                      }
+                  }
+              }
+          }
+
+          @keyframes headshake {
+              25% {
+                  // entièrement à droite
+                  transform: translateX($shake-intensity);                        // se décale un peu a droite 
+              }
+              75% {
+                  // entièrement à gauche
+                  transform: translateX($shake-intensity * -1);                   // se décale un peu a gauche
+              }
+          }
+
+
+
+
+
+
+## Samedi/ dimanche 4/ 5 avril
+
+### CSS animation (OpenClassroom)
+
+
+- Faites boucler vos animations à l'infini :
+
+
+            .load {
+              width: 30vh;
+              height: 22.5vh;
+              display: flex;
+              justify-content: space-evenly;
+            }
+            .load__bar {
+              background-color: #15DEA5;
+              height: 100%;
+              width: 3vh;
+              animation: bars 1000ms backwards infinite;
+              animation-direction : nomal;                  // rare d'utiliser normal, souvent reverse pour  jouer des
+            }                                                  animations avec des allers-retours ou alternate animation en 
+            .load__bar--1 {                                    boucle infinie et invisible 
+              animation-delay: 200ms;
+            }
+            .load__bar--2 {
+              animation-delay: 400ms;
+            }
+            .load__bar--3 {
+              animation-delay: 600ms;
+            }
+            .load__bar--4 {
+              animation-delay: 800ms;
+            }
+            .load__bar--5 {
+              animation-delay: 1000ms;
+            }
+            
+            
+            
+            .load__bar {
+                background-color: #15DEA5;
+                animation: bars 1000ms backwards infinite ease-in-out alternate;  // tout mettre sur la même ligne
+              }
+              
+        
+  - Avec alternate reverse 
+  
+        (HTML)
+          <div class="container">
+              <div class="load">
+              <div class="load__bar load__bar--1"></div>
+              <div class="load__bar load__bar--2"></div>
+              <div class="load__bar load__bar--3"></div>
+              <div class="load__bar load__bar--4"></div>
+              <div class="load__bar load__bar--5"></div>
+          </div>
+          <div class="load">
+              <div class="load__bar load__bar--1-inv"></div>
+              <div class="load__bar load__bar--2-inv"></div>
+              <div class="load__bar load__bar--3-inv"></div>
+              <div class="load__bar load__bar--4-inv"></div>
+              <div class="load__bar load__bar--5-inv"></div>
+              </div>
+          </div>
+        
+        
+        (CSS)
+        .load__bar {
+          animation: bars 1000ms backwards infinite ease-in-out alternate;
+        }
+        .load__bar--1 {
+          animation-delay: 200ms;
+        }
+        .load__bar--1-inv {
+          animation-delay: 200ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+        .load__bar--2 {
+          animation-delay: 400ms;
+        }
+        .load__bar--2-inv {
+          animation-delay: 400ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+        .load__bar--3 {
+          animation-delay: 600ms;
+        }
+        .load__bar--3-inv {
+          animation-delay: 600ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+        .load__bar--4 {
+          animation-delay: 800ms;
+        }
+        .load__bar--4-inv {
+          animation-delay: 800ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+        .load__bar--5 {
+          animation-delay: 1000ms;
+        }
+        .load__bar--5-inv {
+          animation-delay: 1000ms;
+          animation-direction: alternate-reverse;
+          background-color: #0E397F;
+        }
+     
+     
+  - La propriété animation-play-state permet de mettre en pause ou de jouer des animations en utilisant respectivement les 
+    mots clés « paused » ou « running »
+    
+          
+          (HTML)                                     (CSS)
+    
+          <div class="container">                     .spin {
+              <div class="spin"></div>                background-color: #15DEA5;
+          </div>                                      width: 30vh;
+                                                      height: 30vh;
+                                                      animation: spin 3s linear infinite paused;  // on met paused pour 
+                                                      }                                         qu'elle tourne pas à l'infini
+                                                      
+                                                      .spin:hover {
+                                                            animation-play-state: running;  // comme on a mise pause il faut 
+                                                       }                                    mettre :hover et running pour qu'
+                                                      @keyframes spin {                     on sache quand elle démarre
+                                                          from {
+                                                                transform: rotate(0deg);
+                                                           }
+                                                           to {
+                                                                transform: rotate(360deg);
+                                                                }
+                                                            }
+
+ - Cours openclassroom se finit en nous montrant comment marche Google Dev Tools pour les animations :)
