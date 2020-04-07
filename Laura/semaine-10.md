@@ -78,3 +78,381 @@ ecrivez-votre-premier-script)
 J'ai pris plus de temps à savoir comment installer MAMP et à savoir comment relier mon fichier roots à PHP qu'à apprendre,
 les joies du confinement x) mais ça avance petit à petit. J'ai décidé de faire un chapitre par jour (i.e. donc 1 chapitre
 par jour pour toute la semaine) 
+
+
+
+
+## Mardi 7 avril
+
+### PHP (OpenClassroom)
+
+                                                   (Autodidact)
+
+
+
+
+
+> Les variables 
+*********************
+
+
+  - Les variables sont capables de stocker **différents types d'informations. On parle de types de données.** 
+  - Les chaînes de caractères **(string)** : le nom informatique qu'on donne au texte (aka chaîne de caractères). 
+  - Les nombres entiers **(int)** : ce sont les nombres du type 1, -1 etc ...
+    Ex :
+    
+                 <?php
+                      $age_du_visiteur = 17;
+                  ?>
+                  
+  - Les nombres décimaux **(float)** : nombres à virgule, comme 14,738. Attention, les nombres doivent être écrits 
+    avec un point au lieu de la virgule (c'est la notation anglaise).Exemple :14.738.
+    Ex :
+    
+                  <?php
+                        $poids = 57.3;
+                    ?>
+                    
+  - Les booléens **(bool)** : type très important qui permet de stocker soit vrai soit faux. (aka retenir si une information 
+    est vraie ou fausse. On les utilise très fréquemment. On écrittruepour vrai, etfalsepour faux.
+    Ex :
+    
+                  <?php
+                        $je_suis_un_zero = true;
+                        $je_suis_bon_en_php = false;
+                   ?>
+                   
+  - Rien **(NULL)** : qu'une variable ne contient rien.  Ce n'est pas vraiment un type de données, mais plutôt l'absence de type.
+  
+    Ex : 
+    
+                    <?php
+                        $pas_de_valeur = NULL;
+                    ?>
+  
+  
+  - **Affecter une valeur à une variable**
+  1. D'abord, on écrit le symbole **« dollar » ($)** : il précède toujours le nom d'une variable. C'est comme un signe de 
+  reconnaissance si vous préférez : ça permet de dire à PHP « J'utilise une variable ». Vous reconnaîtrez toujours qu'il y a 
+  une variable par la présence du symbole « dollar » ($). Notes: le nom de la variable avec _ pour chaque espace du nom.
+  2. Ensuite, il y a le signe « égal » ** = ** 
+  3. À la suite, il y a la **valeur de la variable**, ici 17.
+  4. Enfin, il y a l'incontournable point-virgule **(;)** qui permet de terminer l'instruction
+  
+  
+      Ex: 
+      
+                                <?php
+                                  $age_du_visiteur = 17; // La variable est créée et vaut 17
+                                  $age_du_visiteur = 23; // La variable est modifiée et vaut 23
+                                  $age_du_visiteur = 55; // La variable est modifiée et vaut 55
+                                ?>
+                                
+  
+  - **Afficher et concaténer des variables**
+    Avec echo 
+      Ex: 
+      
+                                <?php
+                                    $age_du_visiteur = 17;
+                                    echo $age_du_visiteur;
+                                 ?>
+    La concaténation
+      Ex : 
+      
+          // pour écrire que le visiteur a 17 ans 
+                                <?php
+                                    $age_du_visiteur = 17;
+                                    echo "Le visiteur a ";
+                                    echo $age_du_visiteur;
+                                    echo " ans";
+                                 ?>
+                                 
+           // la même chose mais concaténer avec guillemets double 
+                                  <?php
+                                      $age_du_visiteur = 17;
+                                      echo "Le visiteur a $age_du_visiteur ans";
+                                   ?>
+          
+          // la même chose mais concaténer avec guillemets simple
+          
+        <?php                                                             <?php
+          $age_du_visiteur = 17;                                            $age_du_visiteur = 17;
+          echo 'Le visiteur a $age_du_visiteur ans'; // Ne marche pas       echo 'Le visiteur a ' . $age_du_visiteur . ' ans';
+         ?>                                                                ?>
+  
+  
+  - **Faire des calculs simples**
+      Ex : 
+      
+              <?php
+                $nombre = 10;
+                $resultat = ($nombre + 5) * $nombre; // $resultat prend la valeur 150
+               ?>
+      
+      Le modulo: le reste de la division entière. Par exemple, 6 / 3 = 2 et il n'y a pas de reste. En revanche, 7 / 3 = 2 (car 
+      le nombre 3 « rentre » 2 fois dans le nombre 7) et il reste 1. Le modulo permet justement de récupérer ce « reste ». 
+      Pour faire un calcul avec un modulo, on utilise le symbole%. Ex : 
+               
+               <?php
+                  $nombre = 10 % 5; // $nombre prend la valeur 0 car la division tombe juste
+                  $nombre = 10 % 3; // $nombre prend la valeur 1 car il reste 1
+                ?>
+  
+
+
+> Les conditions
+*********************
+
+
+1. Les symboles à connaître : il va d'abord falloir retenir quelques symboles qui permettent de faire des comparaisons. Soyez 
+   attentifs car ils vous seront utiles pour les conditions.
+
+    == sert à tester l'égalité, à dire « Si c'est égal à… ». Dans les conditions, on utilisera toujours le double égal ==
+    Tout le reste comme d'hab = <= >= < > et != veut dire, est différent de
+    
+
+2. La structure if… else : ressemble beaucoup à JavaScript mais en moins compliqué ( ou peut-être pcq on l'a déjà vu).
+   
+   Ex :
+   
+           <?php
+                $autorisation_entrer = "Oui";
+
+                if ($autorisation_entrer == "Oui") // SI on a l'autorisation d'entrer
+                {
+                    // instructions à exécuter quand on est autorisé à entrer
+                }
+                elseif ($autorisation_entrer == "Non") // SINON SI on n'a pas l'autorisation d'entrer
+                {
+                    // instructions à exécuter quand on n'est pas autorisé à entrer
+                }
+                else // SINON (la variable ne contient ni Oui ni Non, on ne peut pas agir)
+                {
+                    echo "Euh, je ne connais pas ton âge, tu peux me le rappeler s'il te plaît ?";
+                }
+            ?>
+            
+3. Si ca avait été des booléens, pas obligés d'ajouter le== true, PHP comprend très bien ce que vous avez voulu dire :
+     
+              <?php
+                    $autorisation_entrer = true;
+
+                    if ($autorisation_entrer)
+                    {
+                        echo "Bienvenue petit nouveau. :o)";
+                    }
+                    else
+                    {
+                        echo "T'as pas le droit d'entrer !";
+                    }
+               ?>
+
+     
+     Il y a un symbole qui permet de vérifier si la variable vautfalse : le point d'exclamation (!). On écrit :
+
+              <?php
+                    $autorisation_entrer = true;
+
+                    if (! $autorisation_entrer)
+                    {
+
+                    }
+              ?>
+              
+    C'est une autre façon de faire. Si vous préférez mettreif ($autorisation_entrer == false)c'est tout aussi bien, mais la   
+    méthode « courte » est plus lisible.
+
+4. Les conditions multiples
+
+    AND = Et = &&, ex:
+    
+    
+        <?php
+            $age = 8;
+            $langue = "anglais";
+
+
+            if ($age <= 12 AND $langue == "français")
+            {
+                echo "Bienvenue sur mon site !";
+            }
+            elseif ($age <= 12 AND $langue == "anglais")
+            {
+                echo "Welcome to my website!";
+            }
+         ?>
+    
+    OR = Ou = ||, ex: 
+    
+          <?php
+                $pays = "France";
+
+                if ($pays == "France" OR $pays == "Belgique")
+                {
+                    echo "Bienvenue sur notre site !";
+                }
+                else
+                {
+                    echo "Désolés, notre service n'est pas encore disponible dans votre pays !";
+                }
+           ?>
+
+5. l'astuce bonus, remplacer echo par des accolades, ex: 
+
+          <?php
+                $variable = 23;
+
+                if ($variable == 23)
+                {
+                    echo '<strong>Bravo !</strong> Vous avez trouvé le nombre mystère !';
+                }
+          ?>
+          
+          Les deux veulent dire la même chose sauf qu'avec les accolades plus de problemes de guillemets mais faut refermer.
+          
+          <?php
+                $variable = 23;
+
+                if ($variable == 23)
+                {
+                ?>
+                <strong>Bravo !</strong> Vous avez trouvé le nombre mystère !
+                <?php
+                }
+            ?>
+
+6. Dernier type de condition: switch, ex: 
+
+- Pour éviter ce genre de lourdeur 
+
+            <?php
+                $note = 16;
+
+                if ($note == 0)
+                {
+                    echo "Tu es vraiment un gros nul !!!";
+                }
+
+                elseif ($note == 5)
+                {
+                    echo "Tu es très mauvais";
+                }
+
+                elseif ($note == 7)
+                {
+                    echo "Tu es mauvais";
+                }
+
+                elseif ($note == 10)
+                {
+                    echo "Tu as pile poil la moyenne, c'est un peu juste…";
+                }
+
+                elseif ($note == 12)
+                {
+                    echo "Tu es assez bon";
+                }
+
+                elseif ($note == 16)
+                {
+                    echo "Tu te débrouilles très bien !";
+                }
+
+                elseif ($note == 20)
+                {
+                    echo "Excellent travail, c'est parfait !";
+                }
+
+                else
+                {
+                    echo "Désolé, je n'ai pas de message à afficher pour cette note";
+                }
+            ?>
+    
+- On écrirait comme ça:
+
+        <?php
+        $note = 10;
+
+        switch ($note) // on indique sur quelle variable on travaille
+        { 
+            case 0: // dans le cas où $note vaut 0
+                echo "Tu es vraiment un gros nul !!!";
+            break;
+
+            case 5: // dans le cas où $note vaut 5
+                echo "Tu es très mauvais";
+            break;
+
+            case 7: // dans le cas où $note vaut 7
+                echo "Tu es mauvais";
+            break;
+
+            case 10: // etc. etc.
+                echo "Tu as pile poil la moyenne, c'est un peu juste…";
+            break;
+
+            case 12:
+                echo "Tu es assez bon";
+            break;
+
+            case 16:
+                echo "Tu te débrouilles très bien !";
+            break;
+
+            case 20:
+                echo "Excellent travail, c'est parfait !";
+            break;
+
+            default:
+                echo "Désolé, je n'ai pas de message à afficher pour cette note";
+        }
+        ?>
+        
+Avantage : on n'a plus besoin de mettre le double égal ! Défaut : ça ne marche pas avec les autres symboles (< > <= >= !=). En 
+clair, leswitchne peut tester que l'égalité.
+Notes: En pratique, on utilise très souvent unbreakcar sinon, PHP lit des instructions qui suivent et qui ne conviennent pas.
+Pour une condition simple et courte, on utilise leif, et quand on a une série de conditions à analyser, on préfère 
+utiliserswitchpour rendre le code plus clair.
+
+7. Les ternaires : des conditions condensées (pas très utiliser et difficile à lire mais au cas où)
+
+- Un ternaire est une condition condensée qui fait deux choses sur une seule ligne :
+    on teste la valeur d'une variable dans une condition ;
+    on affecte une valeur à une variable selon que la condition est vraie ou non.
+- Ex: 
+
+Au lieu d'écrire comme ça:         On écrit comme ça:      
+    
+    <?php                          <?php
+        $age = 24;                      $age = 24;
+
+        if ($age >= 18)                 $majeur = ($age >= 18) ? true : false;
+        {                             ?>
+          $majeur = true;
+        }
+        else
+        {
+          $majeur = false;
+        }
+    ?>
+
+
+> Les boucles 
+*********************
+
+
+
+> Les tableaux 
+*********************
+
+
+
+> Les fonctions 
+*********************
+
+
+
+> L'indentation est propre
+*********************
