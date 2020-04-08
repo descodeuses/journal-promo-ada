@@ -567,13 +567,17 @@ vous voulez juste savoir ce que contient l'array. C'est une sorte deechospécial
             print_r($coordonnees);
             echo '</pre>';
          ?>
-         
+  
+  
+  
  Notes: elle ne renvoie pas de code HTML comme<br />pour les retours à la ligne. Pour bien les voir, il faut donc utiliser la 
  balise HTML<pre> qui nous permet d'avoir un affichage plus correct.
 
-4. Rechercher dans un tableau
 
-- array_key_exists: pour vérifier si une clé existe dans l'array ; ex:
+
+4. Rechercher dans un tableau:
+
+- **array_key_exists**: pour vérifier si une clé existe dans l'array ; ex:
 
   En général:  <?php array_key_exists('cle', $array); ?>
     
@@ -596,7 +600,7 @@ vous voulez juste savoir ce que contient l'array. C'est une sorte deechospécial
 
                 ?>
 
-- in_array : pour vérifier si une valeur existe dans l'array ;mais cette fois on recherche dans les valeurs.in_array renvoie 
+- **in_array** : pour vérifier si une valeur existe dans l'array ;mais cette fois on recherche dans les valeurs.in_array renvoie 
 true si la valeur se trouve dans l'array,falsesi elle ne s'y trouve pas.
 
     <?php
@@ -615,7 +619,7 @@ true si la valeur se trouve dans l'array,falsesi elle ne s'y trouve pas.
      
      Et ca affichera sur la page web : La valeur "Cerise" se trouve dans les fruits!
 
-- array_search : pour récupérer la clé d'une valeur dans l'array.
+- **array_search** : pour récupérer la clé d'une valeur dans l'array.
 
       <?php
           $fruits = array ('Banane', 'Pomme', 'Poire', 'Cerise', 'Fraise', 'Framboise');
