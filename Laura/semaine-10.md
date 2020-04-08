@@ -443,6 +443,19 @@ Au lieu d'écrire comme ça:         On écrit comme ça:
 
 
 
+
+
+
+## Mercredi 8 avril
+
+### PHP (OpenClassroom)
+
+                                                   (Autodidact)
+
+
+
+
+
 > Les boucles 
 *********************
 
@@ -571,7 +584,7 @@ vous voulez juste savoir ce que contient l'array. C'est une sorte deechospécial
   
   
  Notes: elle ne renvoie pas de code HTML comme<br />pour les retours à la ligne. Pour bien les voir, il faut donc utiliser la 
- balise HTML<pre> qui nous permet d'avoir un affichage plus correct.
+ balise HTML pre qui nous permet d'avoir un affichage plus correct.
 
 
 
