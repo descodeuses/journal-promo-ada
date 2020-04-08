@@ -682,5 +682,45 @@ excellentes car elles couvrent la quasi-totalité de nos besoins avec ce site: h
 
 
 
-> L'indentation est propre
+
+> Les erreurs les plus courantes
 *********************
+
+
+
+**Parse error** ;
+La plus basique, ex: Parse error: parse error in fichier.php on line 15
+Souvent à cause de: ; - "" - } - trompé de concaténation
+
+**Undefined function** ;
+La fonction inconnue, ex: Fatal Error: Call to undefined function: fonction_inconnue() in fichier.php on line 27
+soit la fonction n'existe vraiment pas. (i.e. faute de frappe ou orthographe)
+soit la fonction existe vraiment, mais PHP ne la reconnaît pas : une extension de PHP que vous n'avez pas activée. 
+soit vous essayiez d'utiliser une fonction qui n'est pas disponible dans la version de PHP que vous avez
+
+**Wrong parameter count**.
+Si vous utilisez mal une fonction, ex: Warning: Wrong parameter count for fonction() in fichier.php on line 112
+Cela signifie que vous avez oublié des paramètres pour la fonction, ou même que vous en avez trop mis.
+
+Un peu moins courantes **Headers already sent by…**
+ex: Cannot modify header information - headers already sent by ...
+Ce que vous devez retenir, c'est que chacune de ces fonctions doit être utilisée au tout début de votre code PHP. Il ne faut 
+RIEN mettre avant, sinon ça provoquera l'erreur « Headers already sent by… »
+
+**Maximum execution time exceeded**
+
+
+
+> Inclure des portions de page
+*********************
+
+Si on a envie de mettre le header, menu et footer sur differentes pages et ne pas avoir a changer toutes les pages à 
+chaque fois qu'on change quelque chose dessus:
+1. on converti toutes nos pages en .php
+2. on copie colle la partie sur une nouvelle page en .php 
+3. à la place de la où on voudrait mettre la portion de page à dupliquer on met ce code :
+
+       <?php include("menus.php"); ?>
+
+4. et voilà on répète l'action pour les autres (footer et header) et lorsqu'on veut changer quelque chose on le change direct
+   dans menu.php et les changements se feront d'eux-mêmes sur les autres pages. 
