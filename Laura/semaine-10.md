@@ -201,6 +201,8 @@ par jour pour toute la semaine)
   
 
 
+
+
 > Les conditions
 *********************
 
@@ -439,6 +441,8 @@ Au lieu d'écrire comme ça:         On écrit comme ça:
     ?>
 
 
+
+
 > Les boucles 
 *********************
 
@@ -472,8 +476,161 @@ Sinon, alors il vaut mieux utiliser la bouclewhile.
 
 
 
+
+
 > Les tableaux 
 *********************
+
+1. Les tableaux numérotés: c'est-à-dire que chaque case est identifiée par un numéro. Ce numéro est appelé clé. Ex:
+    
+        <?php
+            // La fonction array permet de créer un array
+            $prenoms = array ('François', 'Michel', 'Nicole', 'Véronique', 'Benoît');
+         ?>
+
+         ou peut s'écrire comme cela                  et voilà comment on écrirait pour afficher la valeur du tableau:
+
+         <?php                                        <?php
+            $prenoms[0] = 'François';                     echo $prenoms[1];
+            $prenoms[1] = 'Michel';                    ?>
+            $prenoms[2] = 'Nicole';
+          ?>
+          
+
+2. Les tableaux associatifs: au lieu de numéroter les cases, on va les étiqueter en leur donnant à chacune un nom diff. Ex:
+
+        <?php                                         ou      <?php
+            // On crée notre array $coordonnees                   $coordonnees['prenom'] = 'François';
+            $coordonnees = array (                                $coordonnees['nom'] = 'Dupont';
+                'prenom' => 'François',                           $coordonnees['adresse'] = '3 Rue du Paradis';
+                'nom' => 'Dupont',                                $coordonnees['ville'] = 'Marseille';
+                'adresse' => '3 Rue du Paradis',                 ?>
+                'ville' => 'Marseille');
+          ?>                                          et pour l'afficher:
+          
+                                                        <?php
+                                                             echo $coordonnees['ville'];
+                                                         ?>
+
+3. Parcourir un tableau avec:
+
+- la bouclefor ;
+
+      <?php
+          // On crée notre array $prenoms
+          $prenoms = array ('François', 'Michel', 'Nicole', 'Véronique', 'Benoît');
+
+          // Puis on fait une boucle pour tout afficher :
+          for ($numero = 0; $numero < 5; $numero++)
+          {
+              echo $prenoms[$numero] . '<br />'; // affichera $prenoms[0], $prenoms[1] etc.
+          }
+       ?>
+
+- la boucleforeach ;
+
+        <?php
+            $prenoms = array ('François', 'Michel', 'Nicole', 'Véronique', 'Benoît');
+
+            foreach($prenoms as $element)
+            {
+                echo $element . '<br />'; // affichera $prenoms[0], $prenoms[1] etc.
+            }
+         ?>
+         
+         et marche aussi pour les tableaux associatifs 
+         
+         <?php
+            $coordonnees = array (
+                'prenom' => 'François',
+                'nom' => 'Dupont',
+                'adresse' => '3 Rue du Paradis',
+                'ville' => 'Marseille');
+
+            foreach($coordonnees as $cle => $element)
+            {
+                echo '[' . $cle . '] vaut ' . $element . '<br />';
+            }
+          ?>
+
+- la fonctionprint_r(utilisée principalement pour le débogage): si vous n'avez pas besoin d'une mise en forme spéciale et que 
+vous voulez juste savoir ce que contient l'array. C'est une sorte deechospécialisé dans les arrays.
+
+        <?php
+            $coordonnees = array (
+                'prenom' => 'François',
+                'nom' => 'Dupont',
+                'adresse' => '3 Rue du Paradis',
+                'ville' => 'Marseille');
+
+            echo '<pre>';
+            print_r($coordonnees);
+            echo '</pre>';
+         ?>
+         
+ Notes: elle ne renvoie pas de code HTML comme<br />pour les retours à la ligne. Pour bien les voir, il faut donc utiliser la 
+ balise HTML<pre> qui nous permet d'avoir un affichage plus correct.
+
+4. Rechercher dans un tableau
+
+- array_key_exists: pour vérifier si une clé existe dans l'array ; ex:
+
+  En général:  <?php array_key_exists('cle', $array); ?>
+    
+               <?php                                                Et affichera sur la page :
+                    $coordonnees = array (                          La clé "nom" se trouve dans les coordonnées!
+                        'prenom' => 'François',
+                        'nom' => 'Dupont',
+                        'adresse' => '3 Rue du Paradis',
+                        'ville' => 'Marseille');
+
+                    if (array_key_exists('nom', $coordonnees))
+                    {
+                        echo 'La clé "nom" se trouve dans les coordonnées !';
+                    }
+
+                    if (array_key_exists('pays', $coordonnees))
+                    {
+                        echo 'La clé "pays" se trouve dans les coordonnées !';
+                    }
+
+                ?>
+
+- in_array : pour vérifier si une valeur existe dans l'array ;mais cette fois on recherche dans les valeurs.in_array renvoie 
+true si la valeur se trouve dans l'array,falsesi elle ne s'y trouve pas.
+
+    <?php
+        $fruits = array ('Banane', 'Pomme', 'Poire', 'Cerise', 'Fraise', 'Framboise');
+
+        if (in_array('Myrtille', $fruits))
+        {
+            echo 'La valeur "Myrtille" se trouve dans les fruits !';
+        }
+
+        if (in_array('Cerise', $fruits))
+        {
+            echo 'La valeur "Cerise" se trouve dans les fruits !';
+        }
+     ?>
+     
+     Et ca affichera sur la page web : La valeur "Cerise" se trouve dans les fruits!
+
+- array_search : pour récupérer la clé d'une valeur dans l'array.
+
+      <?php
+          $fruits = array ('Banane', 'Pomme', 'Poire', 'Cerise', 'Fraise', 'Framboise');
+
+          $position = array_search('Fraise', $fruits);
+          echo '"Fraise" se trouve en position ' . $position . '<br />';
+
+          $position = array_search('Banane', $fruits);
+          echo '"Banane" se trouve en position ' . $position;
+      ?>
+      
+      Et ca affichera sur la page web :  "Fraise" se trouve en position 4 
+                                         "Banane" se trouve en position 0
+
+
 
 
 
