@@ -444,6 +444,34 @@ Au lieu d'écrire comme ça:         On écrit comme ça:
 
 
 
+Avec **While**, ex: 
+
+            <?php
+                $nombre_de_lignes = 1;  // initianilisation du nombre de ligne et commence à 1 
+
+                while ($nombre_de_lignes <= 100)
+                {
+                    echo 'Ceci est la ligne n°' . $nombre_de_lignes . '<br />';
+                    $nombre_de_lignes++; // ça c'est pour la réitération du nombre de ligne +1 a chaque fois jusqu'a 100 donc
+                }
+             ?>
+             
+Avec **for**, ex: 
+
+            <?php
+                for ($nombre_de_lignes = 1; $nombre_de_lignes <= 100; $nombre_de_lignes++) // initialtn; condition; incrémnt
+                {
+                    echo 'Ceci est la ligne n°' . $nombre_de_lignes . '<br />';
+                }
+            ?>
+
+
+Notes: Si vous hésitez entre les deux, il suffit simplement de vous poser la question suivante : « Est-ce que je sais d'avance 
+combien de fois je veux que mes instructions soient répétées ? ». Si la réponse est oui, alors la boucleforest tout indiquée. 
+Sinon, alors il vaut mieux utiliser la bouclewhile.
+
+
+
 > Les tableaux 
 *********************
 
