@@ -741,3 +741,15 @@ chaque fois qu'on change quelque chose dessus:
 
 4. et voilà on répète l'action pour les autres (footer et header) et lorsqu'on veut changer quelque chose on le change direct
    dans menu.php et les changements se feront d'eux-mêmes sur les autres pages. 
+
+
+
+> Coder proprement
+*********************
+
+Les standards à suivre en ce qui concerne l'écriture de code PHP. Ce consortium s'appelle le FIG (Framework Interop Group) et 
+a surtout été créé pour faire en sorte que l'ensemble des frameworks PHP respectent des règles communes. Avec les liens :
+
+- https://www.php-fig.org/psr/
+- https://www.php-fig.org/psr/psr-1/ : la base
+- https://www.php-fig.org/psr/psr-2/ : le style
