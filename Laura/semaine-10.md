@@ -637,6 +637,49 @@ true si la valeur se trouve dans l'array,falsesi elle ne s'y trouve pas.
 > Les fonctions 
 *********************
 
+Une fonction est une série d'instructions qui effectue des actions et qui retourne une valeur.
+1. comment **appelle**-t-on une fonction ? Par son nom. Ex : calculCube();
+
+2. mettre **paramètre** (un nombre, une chaîne de caractères, un booléen...), il faut l'écrire entre les () et
+si plusieurs paramétres à séparer avec des , Ex: fonctionImaginaire(17, 'Vert', true, 41.7);
+      
+3. **Récupérer** la valeur de retour de la fonction dans une variable, Ex: $volume = calculCube(4);
+
+4. Les fonctions prêtes à l'emploi de PHP: c'est en partie là que réside la force de PHP : ses fonctions sont vraiment 
+excellentes car elles couvrent la quasi-totalité de nos besoins avec ce site: https://www.php.net/manual/fr/funcref.php ex:
+
+    strlen: longueur d'une chaîne
+    <?php
+        $phrase = 'Bonjour tout le monde ! Je suis une phrase !';
+        $longueur = strlen($phrase);
+
+
+        echo 'La phrase ci-dessous comporte ' . $longueur . ' caractères :<br />' . $phrase;
+    ?>
+    
+    str_replace: rechercher et remplacer
+    <?php
+        $ma_variable = str_replace('b', 'p', 'bim bam boum');
+
+        echo $ma_variable;
+     ?>
+    
+    Récupérer la date
+    
+    <?php
+      // Enregistrons les informations de date dans des variables
+
+      $jour = date('d');
+      $mois = date('m');
+      $annee = date('Y');
+
+      $heure = date('H');
+      $minute = date('i');
+
+      // Maintenant on peut afficher ce qu'on a recueilli
+      echo 'Bonjour ! Nous sommes le ' . $jour . '/' . $mois . '/' . $annee . 'et il est ' . $heure. ' h ' . $minute;
+    ?>
+
 
 
 > L'indentation est propre
