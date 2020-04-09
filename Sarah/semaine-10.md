@@ -50,3 +50,34 @@ MySQL est un système de gestion de bases de données. Il se charge du stockage 
  - La valeur d'une variable peut être affichée avec l'instruction echo.
 
  - Il est possible de faire des calculs mathématiques entre plusieurs variables : addition, soustraction, multiplication et modulo (le reste d'une division avec le symbole %).
+ 
+ ## Mercredi 8 Avril
+ 
+ J'ai continué les modifications de mon site Codevores en ajoutant un input slider et je l'ai relié en javascript pour afficher le prix choisi par l'utilisateur. 
+ 
+ J'ai participé à la réunion Descodeuses pour réfléchir ensemble sur les modalités de reprise de la formation en le 2 Mai.
+ 
+ 
+## Jeudi 9 Avril
+
+J'ai continué les modifications de mon site codevores. J'ai reconnecté les boutons hamburger dont j'avais changé les classes. Il faut encore que je réorganise pour afficher correctement le menu. 
+
+J'ai assisté au Meet-up sur le Sketchnoting organisé par les Duchesses (Mathilde. L)  et Flutter. Pierre Tibulle présente le sketch noting ou "facilitation graphique" :
+    - associer le dessin et la prise de notes permet une meilleure concentration et plus de connections neuronales; 
+    - permet de partager une vision avec un groupe de personnes;
+    - Il faut noter toutes les idées principales;
+    - Si tu sketchnotes tu es un "facilitateur";
+    - Pour Sketchnoter on peut utiliser : 
+        - des balises de bases
+        - des pictos
+        - des personnages
+        - des lettres
+        - des cadres
+        - des connecteurs
+        - des ombres
+        - deux couleurs maximum en plus du noir
+        - il faut organiser sa page. 
+        - on peut signer en bas à droite
+        - mettre la date de la conférence en haut à gauche. 
+     - le site "un picto par jour" propose d'apprendre un pictogramme par jour pour être plus réactif lors du sketchnoting. 
+ 
