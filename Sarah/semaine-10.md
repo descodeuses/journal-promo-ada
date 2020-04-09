@@ -63,6 +63,7 @@ MySQL est un système de gestion de bases de données. Il se charge du stockage 
 J'ai continué les modifications de mon site codevores. J'ai reconnecté les boutons hamburger dont j'avais changé les classes. Il faut encore que je réorganise pour afficher correctement le menu. 
 
 J'ai assisté au Meet-up sur le Sketchnoting organisé par les Duchesses (Mathilde. L)  et Flutter. Pierre Tibulle présente le sketch noting ou "facilitation graphique" :
+
         - associer le dessin et la prise de notes permet une meilleure concentration et plus de connections neuronales; 
         - permet de partager une vision avec un groupe de personnes;
         - Il faut noter toutes les idées principales;
