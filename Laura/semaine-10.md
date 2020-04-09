@@ -753,3 +753,103 @@ a surtout été créé pour faire en sorte que l'ensemble des frameworks PHP res
 - https://www.php-fig.org/psr/
 - https://www.php-fig.org/psr/psr-1/ : la base
 - https://www.php-fig.org/psr/psr-2/ : le style
+
+
+
+
+
+
+
+## Jeudi 9 avril
+
+### PHP (OpenClassroom)
+
+                                                   (Autodidact)
+
+
+
+
+
+> Envoyer & récupérer des paramètres en PHP dans l'URL 
+*********************
+
+Tu créer 2 pages .php, dans la première, tu marques : 
+  
+      <a href="bonjour.php?nom=THAY&amp;prenom=Laura">Dis-moi bonjour !</a>
+
+Dans la 2ème que tu as renommé bonjour.php, tu écris : 
+
+      <p>Bonjour <?php echo $_GET['prenom'] . ' ' . $_GET['nom']; ?> !</p>
+
+
+
+
+
+
+> Ne faites jamais confiance aux données reçues !
+*********************
+
+Issets pour confirmer que la réponse est valable, ici on teste si les variables$_GET['prenom']et$_GET['nom']existent.:
+
+      <?php
+          if (isset($_GET['prenom']) AND isset($_GET['nom'])) // On a le nom et le prénom
+          {
+            echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' !';
+          }
+          else // si il manque des paramètres, on avertit le visiteur
+          {
+            echo 'Il faut renseigner un nom et un prénom !';
+          }
+      ?>
+
+
+Contrôler la valeur des paramètres si on modifie dans l'URL : bonjour.php?nom=Thay&prenom=Laura&repeter=8
+
+1. On teste si le paramètre repeter existe lui aussi (avec isset($_GET['repeter'])). Si tous les paramètres sont bien là, on   
+   fait une boucle (for mais while marche aussi). La boucle incrémente une petite variable $i pour répéter le message de 
+   bienvenue le nombre de fois indiqué.
+
+
+        <?php
+            if (isset($_GET['prenom']) AND isset($_GET['nom']) AND isset($_GET['repeter']))
+            {
+              for ($i = 0 ; $i < $_GET['repeter'] ; $i++)
+              {
+                echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' !<br />';
+              }
+            }
+            else
+            {
+               echo 'Il faut renseigner un nom, un prénom et un nombre de répétitions !';
+            }
+        ?>
+        
+2. Pour éviter les cas suivants:
+   Le cas où le nombre qu'on vous envoie n'est pas une valeur raisonnable (répéter *100) ni logique (texte à la place de chiffre)
+   Il faut donc vérifier que repeter contient bien un nombre & est compris dans un intervalle raisonnable (entre 1 et 100)
+   = **transtypage**
+   
+         <?php
+             $_GET['repeter'] = (int) $_GET['repeter'];
+          ?>
+          
+          <?php
+                if (isset($_GET['prenom']) AND isset($_GET['nom']) AND isset($_GET['repeter']))
+                        {
+                          // 1 : On force la conversion en nombre entier
+                          $_GET['repeter'] = (int) $_GET['repeter'];
+
+                          // 2 : Le nombre doit être compris entre 1 et 100
+                          if ($_GET['repeter'] >= 1 AND $_GET['repeter'] <= 100) 
+                          {	
+                            for ($i = 0 ; $i < $_GET['repeter'] ; $i++)
+                            {
+                              echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' !<br />';
+                            }
+                          }
+                        }
+                else
+                {
+                   echo 'Il faut renseigner un nom, un prénom et un nombre de répétitions !';
+                }
+           ?>
