@@ -853,3 +853,222 @@ Contrôler la valeur des paramètres si on modifie dans l'URL : bonjour.php?nom=
                    echo 'Il faut renseigner un nom, un prénom et un nombre de répétitions !';
                 }
            ?>
+
+
+
+
+
+
+> Transmettez des données avec les formulaires
+*********************
+Dans la balise form on applique:
+
+- la méthode (method):
+Au lieu de GET on prendra POST (pas de transistions de données dans l'url et possibilité +256 caractères + puissant+ commun)
+Ex: method="POST"
+
+- la cible (action):
+Sert à définir la page appelée par le formulaire
+Ex: action="cible.php"
+
+
+Dans la page du formulaire:                               Et l'autre page cible.php:
+
+      <form action="cible.php" method="post">               <p>Je sais comment tu t'appelles, hé hé.               
+        <p>                                                  Tu t'appelles <?php echo $_POST['prenom']; ?> !</p>
+            <input type="text" name="prenom" />             <p>Si tu veux changer de prénom, <a href="formulaire.php">
+            <input type="submit" value="Valider" />           clique ici</a> pour revenir à la page formulaire.php.</p>
+        </p>                                                     pour revenir à la page formulaire.php.
+        <p>Bonjour !</p>                                     </p>
+
+
+Rappel de HTML : le champ<input type="submit" />permet de créer le bouton de validation du formulaire qui commande l'envoi des 
+données, et donc la redirection du visiteur vers la page cible.
+
+Si on a une liste déroulante :
+
+        <select name="choix">                                  $_POST['choix']
+            <option value="choix1">Choix 1</option>
+            <option value="choix2">Choix 2</option>
+            <option value="choix3">Choix 3</option>
+            <option value="choix4">Choix 4</option>
+        </select>
+
+Si on a des cases à cocher: 
+
+        <input type="checkbox" name="case" id="case" /> <label for="case">Ma case à cocher</label>
+        
+        isset($_POST['case'])  //pour vérifier si la case a cocher est validé ou non
+
+Label n'est pas obligatoire mais permet d'associer le libellé à la case à cocher qui a le mêmeidque son attributfor, ce qui 
+permet de cliquer sur le libellé pour cocher la case. On y gagne donc en ergonomie.
+Et si tu veux que la case sois coché par défaut: 
+
+        <input type="checkbox" name="case" checked="checked" />
+
+Si on a des cases à cocher multiple: 
+
+        Aimez-vous les frites ?
+        <input type="radio" name="frites" value="oui" id="oui" checked="checked" /> <label for="oui">Oui</label>
+        <input type="radio" name="frites" value="non" id="non" /> <label for="non">Non</label>
+
+Dans la page cible, une variable$_POST['frites']sera créée. Elle aura la valeur du bouton d'option choisi par le visiteur, 
+issue de l'attribut value. Si on aime les frites, alors on aura$_POST['frites'] = 'oui'// bien renseigner value!
+
+Pour éviter les failles XSS: htmlspecialchars
+    
+        <p>Je sais comment tu t'appelles, hé hé. Tu t'appelles <?php echo htmlspecialchars($_POST['prenom']); ?> !</p>
+
+Il faut penser à utiliser cette fonction sur tous les textes envoyés par l'utilisateur qui sont susceptibles d'être affichés 
+sur une page web. Sur un forum par exemple, il faut penser à échapper les messages postés par vos membres, mais aussi leurs 
+pseudos (ils peuvent s'amuser à y mettre du HTML !) ainsi que leurs signatures. Bref, tout ce qui est affiché et qui vient à 
+la base d'un visiteur, vous devez penser à le protéger avechtmlspecialchars.
+
+
+
+
+
+
+L'envoi de fichiers (++ difficile)
+********************************
+
+
+L'attribut enctype="multipart/form-data": le navigateur du visiteur sait qu'il s'apprête à envoyer des fichiers
+
+      <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
+              <p>
+                      Formulaire d'envoi de fichier :<br />
+                      <input type="file" name="monfichier" /><br />     //input type="file" permet envoyer un fichier
+                      <input type="submit" value="Envoyer le fichier" />
+              </p>
+      </form>
+      
+Maintenant que le fichier est envoyé au serveur PHP il est stocké momentannement et c'est à nous de déterminer si on le 
+valide ou pas. (si c'est la bonne taille, type de document) L'on validera grâce à move_uploaded_file  ,comment savoir if ok?
+
+
+                                               (récapitulatif)
+
+Variable
+
+                Signification
+
+$_FILES['monfichier']['name']
+
+                Contient le nom du fichier envoyé par le visiteur.
+
+$_FILES['monfichier']['type']
+
+                Indique le type du fichier envoyé. Si c'est une image gif par exemple, le type seraimage/gif.
+
+$_FILES['monfichier']['size']
+
+                Indique la taille du fichier envoyé. Attention : 
+                cette taille est en octets. Il faut environ 1 000 octets 
+                pour faire 1 Ko, et 1 000 000 d'octets pour faire 1 Mo.
+                Attention : la taille de l'envoi est limitée par PHP. 
+                Par défaut, impossible d'uploader des fichiers de plus de 8 Mo.
+
+$_FILES['monfichier']['tmp_name']
+
+                Juste après l'envoi, le fichier est placé dans un répertoire temporaire sur le
+                serveur en attendant que votre script PHP décide si oui ou non il accepte de
+                le stocker pour de bon. Cette variable contient l'emplacement temporaire 
+                du fichier (c'est PHP qui gère ça).
+
+$_FILES['monfichier']['error']
+
+                Contient un code d'erreur permettant de savoir si l'envoi s'est bien effectué ou s'il
+                y a eu un problème et si oui, lequel. La variable vaut 0 s'il n'y a pas eu d'erreur.
+
+1.Vérifier tout d'abord si le visiteur a bien envoyé un fichier (en testant la variable$_FILES['monfichier']avecisset()) et 
+s'il n'y a pas eu d'erreur d'envoi (grâce à$_FILES['monfichier']['error']).
+
+                <?php
+                    // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
+                    if (isset($_FILES['monfichier']) AND $_FILES['monfichier']['error'] == 0)
+                    {
+
+                    }
+                 ?>
+
+2.Vérifier si la taille du fichier ne dépasse pas 1 Mo par exemple (environ 1 000 000 d'octets) grâce à$_FILES['monfichier']
+['size'].
+
+                  <?php
+                      // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
+                      if (isset($_FILES['monfichier']) AND $_FILES['monfichier']['error'] == 0)
+                      {
+                              // Testons si le fichier n'est pas trop gros
+                              if ($_FILES['monfichier']['size'] <= 1000000)
+                              {
+
+                              }
+                      }
+                  ?>
+
+3.Vérifier si l'extension du fichier est autorisée (il faut interdire à tout prix que les gens puissent envoyer des fichiers 
+PHP, sinon ils pourraient exécuter des scripts sur votre serveur). Dans notre cas, nous autoriserons seulement les images 
+(fichiers .png, .jpg, .jpeg et .gif).
+
+                  <?php
+                      $infosfichier = pathinfo($_FILES['monfichier']['name']);
+                      $extension_upload = $infosfichier['extension'];
+                  ?>
+
+
+Ce qui nous donne au total: 
+
+                  <?php
+                  // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
+                  if (isset($_FILES['monfichier']) AND $_FILES['monfichier']['error'] == 0)
+                  {
+                          // Testons si le fichier n'est pas trop gros
+                          if ($_FILES['monfichier']['size'] <= 1000000)
+                          {
+                                  // Testons si l'extension est autorisée
+                                  $infosfichier = pathinfo($_FILES['monfichier']['name']);
+                                  $extension_upload = $infosfichier['extension'];
+                                  $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
+                                  if (in_array($extension_upload, $extensions_autorisees))
+                                  {
+
+                                  }
+                          }
+                  }
+                  ?>
+                  
+                  
+4. Valider l'upload du fichier
+Si tout est bon, on accepte le fichier en appelant move_uploaded_file().
+Cette fonction prend deux paramètres :
+
+  le nom temporaire du fichier (on l'a avec$_FILES['monfichier']['tmp_name']) ;
+  le chemin qui est le nom sous lequel sera stocké le fichier de façon définitive. On peut utiliser le nom d'origine du 
+  fichier$_FILES['monfichier']['name']ou générer un nom au hasard.
+
+Je propose de placer le fichier dans un sous-dossier « uploads ».
+On gardera le même nom de fichier que celui d'origine. Comme$_FILES['monfichier']['name']contient le chemin entier vers le 
+fichier d'origine (C:\dossier\fichier.pngpar exemple), il nous faudra extraire le nom du fichier. On peut utiliser pour cela 
+la fonction basename qui renverra juste « fichier.png ».
+
+        <?php
+        // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
+        if (isset($_FILES['monfichier']) AND $_FILES['monfichier']['error'] == 0)
+        {
+                // Testons si le fichier n'est pas trop gros
+                if ($_FILES['monfichier']['size'] <= 1000000)
+                {
+                        // Testons si l'extension est autorisée
+                        $infosfichier = pathinfo($_FILES['monfichier']['name']);
+                        $extension_upload = $infosfichier['extension'];
+                        $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
+                        if (in_array($extension_upload, $extensions_autorisees))
+                        {
+                                // On peut valider le fichier et le stocker définitivement
+                                move_uploaded_file($_FILES['monfichier']['tmp_name'], 'uploads/' . basename($_FILES['monfichier']['name']));
+                                echo "L'envoi a bien été effectué !";
+                        }
+                }
+        }
+        ?>
