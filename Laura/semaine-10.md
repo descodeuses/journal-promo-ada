@@ -1356,3 +1356,22 @@ réduire drastiquement les risques de faille XSS sur votre site, ex:
 Ex, si maintenant j'habite en Chine voila ce que je ferai: 
 
       <?php setcookie('pays', 'Chine', time() + 365*24*3600, null, null, false, true); ?>
+
+
+
+
+
+> Lire et écrire dans un fichier 
+*********************
+
+**Autoriser**
+Il faut en effet donner le droit à PHP de créer et modifier les fichiers, CHMOD est un nombre à trois chiffres que l'on 
+attribue à un fichier, 777 pour donner la peremission a PHP de créer/modifier des fichiers par lui-même
+
+**Ouvrir/Fermer**
+La fonctionfopenpermet d'ouvrir le fichier,fgetsde le lire ligne par ligne etfputsd'y écrire une ligne.
+
+
+
+**Modifier/Ecrire**
+À moins de stocker des données très simples, l'utilisation des fichiers n'est pas vraiment la technique la plus adaptée pour enregistrer des informations. Il est vivement recommandé de faire appel à une base de données.
