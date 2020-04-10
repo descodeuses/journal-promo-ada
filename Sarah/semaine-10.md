@@ -125,3 +125,28 @@ Il existe de nombreuses fonctions permettant de travailler sur des tableaux et n
 PHP propose des centaines et des centaines de fonctions prêtes à l'emploi pour tous types de tâches : envoyer un e-mail, récupérer l'heure, crypter des mots de passe, etc.
 
 Si PHP ne propose pas la fonction dont on a besoin, il est possible de la créer avec le mot-clé "function".
+
+### Les erreurs en PHP
+
+#### Les erreurs les plus courantes 
+
+    - Parse error : 
+        - oubli ; à la fin d'une instruction
+        - oubli de " 
+        - oubli d'un . dans une concaténation
+        - oubli d'une {
+      
+    - Undefined function : on a utilisé une fonction qui n'existe pas. 
+        - vérifier l'orthographe de la fonction
+        - la fonctionse trouve dans une extension de php que l'on a pas activée
+        
+    - Wrong parameter count : on a oublié d'utiliser certains paramètres pour la fonction ou on en a trop mis. 
+        - Il faut regarder la documentation php pour véréifier les paramètres de la fonction. 
+  
+  #### Les erreurs rares
+  
+  - Header already sent by : Les Headers en Php sont des informations envoyées avant tout autre chose au navigateur. Si elles ne sont pas placées en tout début du code php avec rien avant alors l'erreur s'affiche. 
+  
+  - L'image contient des erreurs. Cette erreur s'affiche dans le navigateur si on a fait une parse error dans le code en utilisant la bibliothèque GD. L'erreur sera inscrite dans l'image. on peut alors supprimer la ligne <?php header ("Content-type: image/png"); ?> et le vrai message d'erreur appraitra.
+  
+  - Maximum execution time exceeded : souvent à cause d'une boucle infinie.
