@@ -18,15 +18,21 @@
   - Je m'isole pour travailler deux heures. 
   - Je trouve également les exercices de W3 qui sont encore plus simples et j'en fais quelques uns.
 
-  # Mercredi 07/04/2020
-  -------------------------
+# Mercredi 08/04/2020
+-------------------------
   - Rien pu faire à part la réunion à 17h pour discuter la suite de la formation.
   
-  # Jeudi 07/04/2020
-  -------------------------
-    ## Matin
-    - FreeCode Camp
+# Jeudi 09/04/2020
+-------------------------
+  ## Matin
+  - FreeCode Camp: switch statements; boolean values in functions. Pas bcp avancé, exercices pas très clairs pour moi.
 
-  
-  ## Après-midi
-- 
+   ## Après-midi
+   - 18h: meetup online suggéré par Marie sur les Sketchnotes. Super intéressant, créatif et utile.
+
+ # Vendredi 10/04/2020
+ -------------------------
+   ## Matin
+   (Réorganisation des journées en vue de la reprise des cours en mai. J'ai dès à présent la matinée pour travailler, je passe l'am avec les enfants.)
+   - W3Schools, complété exercices JavaScript and the HTML DOM. 
+   - FreeCodeCamp partie sur les objets
