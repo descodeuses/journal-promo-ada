@@ -1231,4 +1231,128 @@ Les principales variables superglobales existantes:
 
 **$_FILES** : elle contient la liste des fichiers qui ont été envoyés via le formulaire précédent.
 
-</pre>
+
+
+
+> Session & Cookies 
+*********************
+
+**Session (fonctionnement)**
+1. Un visiteur arrive sur votre site. On demande à créer une session pour lui. PHP génère alors un numéro unique. Ex:
+   a02bbffc6198e6e0cc2715047bc3766f. (i.e. sert d'identifiant et est appelé « ID de session » (ou  PHPSESSID ). 
+   PHP transmet automatiquement cet ID de page en page en utilisant généralement un cookie.)
+2. Une fois la session générée, on peut créer une infinité de variables de session pour nos besoins. 
+   Ex:  $_SESSION['nom'] ou $_SESSION['prenom']
+   Le serveur conserve ces variables même lorsque la page PHP a fini d'être générée. Cela veut dire que, quelle que soit la   
+   page de votre site, vous pourrez récupérer par exemple le nom et le prénom du visiteur via la superglobale  $_SESSION  !
+3. Lorsque le visiteur se déconnecte de votre site, la session est fermée et PHP « oublie » alors toutes les variables de 
+   session que vous avez créées. Il est en fait difficile de savoir précisément quand un visiteur quitte votre site. Le plus 
+   souvent, le visiteur est déconnecté par un timeout.
+   
+   A retenir : 
+    session_start(): appeler cette fonction au tout début de chacune des pages où vous avez besoin des variables de session.
+    session_destroy():  automatiquement appelée lorsque le visiteur ne charge plus de page de votre site > timeout, 
+                        possibilité créer une page « Déconnexion » si le visiteur souhaite se déconnecter manuellement.
+
+Ex : 
+
+    <?php
+        // On démarre la session AVANT d'écrire du code HTML
+        session_start();
+
+        // On s'amuse à créer quelques variables de session dans $_SESSION
+        $_SESSION['prenom'] = 'Jean';
+        $_SESSION['nom'] = 'Dupont';
+        $_SESSION['age'] = 24;
+    ?>
+
+    <!DOCTYPE html>
+    <html>
+            <head>
+                <meta charset="utf-8" />
+                <title>Titre de ma page</title>
+            </head>
+            <body>
+            <p>
+                Salut <?php echo $_SESSION['prenom']; ?> !<br />
+                Tu es à l'accueil de mon site (index.php). Tu veux aller sur une autre page ?
+            </p>
+            <p>
+                <a href="mapage.php">Lien vers mapage.php</a><br />
+                <a href="monscript.php">Lien vers monscript.php</a><br />
+                <a href="informations.php">Lien vers informations.php</a>
+            </p>
+            </body>
+    </html>
+
+dans lautre page :  
+
+    <?php
+        session_start(); // On démarre la session AVANT toute chose
+    ?>
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Titre de ma page</title>
+        </head>
+        <body>
+        <p>Re-bonjour !</p>
+        <p>
+            Je me souviens de toi ! Tu t'appelles <?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom']; ?> !<br />
+            Et ton âge hummm... Tu as <?php echo $_SESSION['age']; ?> ans, c'est ça ? :-D
+        </p>
+        </body>
+    </html>
+    
+
+**L'utilité des sessions en pratique**
+
+Enregistrer les infos de l'authentification (id et mdp) et les mettre partout sur toutes les pages du site ! Ex: Panier.
+
+
+
+
+
+**Cookies (fonctionnement)**
+Les cookies sont donc des informations temporaires que l'on stocke sur l'ordinateur des visiteurs. La taille est limitée à 
+quelques kilo-octets : vous ne pouvez pas stocker beaucoup d'informations à la fois, mais c'est en général suffisant.
+Comment l'écrire : <?php setcookie('pseudo', 'M@teo21', time() + 365*24*3600); ?>  // nom, valeur et timestamp
+
+**Sécuriser** son cookie avec le mode httpOnly
+réduire drastiquement les risques de faille XSS sur votre site, ex:
+
+    <?php setcookie('pseudo', 'M@teo21', time() + 365*24*3600, null, null, false, true); ?>
+
+**Créer le cookie avant d'écrire du HTML**
+
+    <?php
+        setcookie('pseudo', 'M@teo21', time() + 365*24*3600, null, null, false, true); // On écrit un cookie
+        setcookie('pays', 'France', time() + 365*24*3600, null, null, false, true); // On écrit un autre cookie...
+
+        // Et SEULEMENT MAINTENANT, on peut commencer à écrire du code html
+     ?>
+
+     <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <title>Ma super page PHP</title>
+            </head>
+            <body>
+
+            etc.
+            
+            
+ **Afficher un cookie**
+ 
+       <p>
+          Hé ! Je me souviens de toi !<br />
+          Tu t'appelles <?php echo $_COOKIE['pseudo']; ?> et tu viens de <?php echo $_COOKIE['pays']; ?> c'est bien ça ?
+      </p>
+      
+**Modifier un cookie existant**
+Ex, si maintenant j'habite en Chine voila ce que je ferai: 
+
+      <?php setcookie('pays', 'Chine', time() + 365*24*3600, null, null, false, true); ?>
