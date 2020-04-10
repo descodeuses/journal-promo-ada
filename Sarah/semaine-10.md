@@ -82,3 +82,18 @@ J'ai assisté au Meet-up sur le Sketchnoting organisé par les Duchesses (Mathil
                 - mettre la date de la conférence en haut à gauche. 
          - le site "un picto par jour" propose d'apprendre un pictogramme par jour pour être plus réactif lors du sketchnoting. 
  
+## Vendredi 10 Avril
+
+Reprise des cours de PhP
+
+### Les boucles : 
+
+    - Les boucles demandent à PHP de répéter des instructions plusieurs fois.
+
+    - Les deux principaux types de boucles sont :
+
+        - while : à utiliser de préférence lorsqu'on ne sait pas par avance combien de fois la boucle doit être répétée ;
+
+        - for : à utiliser lorsqu'on veut répéter des instructions un nombre précis de fois.
+
+    - L'incrémentation est une technique qui consiste à ajouter 1 à la valeur d'une variable. La décrémentation retire au contraire 1 à cette variable. On trouve souvent des incrémentations au sein de bouclesfor.
