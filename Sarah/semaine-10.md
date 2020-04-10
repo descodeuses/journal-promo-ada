@@ -118,3 +118,10 @@ Il existe de nombreuses fonctions permettant de travailler sur des tableaux et n
       - "array_key_exists" pour savoir si un clé est dans un tableau
       - "in_array" pour savoir si une valeur est dans un tableau
       - "array_search" pour chercher la clé qui correspond à une valeur dans le tableau
+      
+      
+### Les Fonctions
+
+PHP propose des centaines et des centaines de fonctions prêtes à l'emploi pour tous types de tâches : envoyer un e-mail, récupérer l'heure, crypter des mots de passe, etc.
+
+Si PHP ne propose pas la fonction dont on a besoin, il est possible de la créer avec le mot-clé "function".
