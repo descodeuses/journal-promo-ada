@@ -1072,3 +1072,306 @@ la fonction basename qui renverra juste « fichier.png ».
                 }
         }
         ?>
+
+
+
+
+
+
+
+## Vendredi 10 avril
+
+### PHP (OpenClassroom)
+
+                                                   (Autodidact)
+
+
+
+
+
+> TP  
+*********************
+
+**Objectif**:
+- afficher du texte avec echo ;
+- utiliser les variables (affectation, affichage…) ;
+- transmettre des variables via une zone de texte d'un formulaire ;
+- utiliser des conditions simples (if,else).
+
+**Scénario** : 
+Mettre en ligne une page web pour donner des informations confidentielles à certaines personnes. Cependant, pour limiter 
+l'accès à cette page, il faudra connaître un mot de passe.Dans notre cas, les données confidentielles seront les codes 
+d'accès au serveur central de la NASA (soyons fous !). Le mot de passe pour pouvoir visualiser les codes d'accès sera 
+kangourou. Sauriez-vous réaliser une page qui n'affiche ces codes secrets que si l'on a rentré le bon mot de passe ?
+
+**Etapes**:
+Créer 2 pages .Php, l'une pour le client qui entre le mdp et l'autre pour recevoir l'input que le client a mis.
+
+Dans le 1er: 
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Page protégée par mot de passe</title>
+        </head>
+        <body>
+            <p>Veuillez entrer le mot de passe pour obtenir les codes d'accès au serveur central de la NASA :</p>
+            <form action="secret.php" method="post">
+                <p>
+                <input type="password" name="mot_de_passe" />
+                <input type="submit" value="Valider" />
+                </p>
+            </form>
+            <p>Cette page est réservée au personnel de la NASA. Si vous ne travaillez pas à la NASA, inutile d'insister vous ne trouverez jamais le mot de passe ! ;-)</p>
+        </body>
+    </html>
+
+Dans le 2eme:
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Codes d'accès au serveur central de la NASA</title>
+        </head>
+        <body>
+
+            <?php
+        if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ==  "kangourou") // Si le mot de passe est bon
+        {
+        // On affiche les codes
+        ?>
+            <h1>Voici les codes d'accès :</h1>
+            <p><strong>CRD5-GTFT-CK65-JOPM-V29N-24G1-HH28-LLFV</strong></p>   
+
+            <p>
+            Cette page est réservée au personnel de la NASA. N'oubliez pas de la visiter régulièrement car les codes d'accès sont changés toutes les semaines.<br />
+            La NASA vous remercie de votre visite.
+            </p>
+            <?php
+        }
+        else // Sinon, on affiche un message d'erreur
+        {
+            echo '<p>Mot de passe incorrect</p>';
+        }
+        ?>
+
+
+        </body>
+    </html>
+    
+    
+Possibilité de réaliser ce TP en **une seule page**:
+- sur la pageformulaire.php, s'appelle lui-même. En clair, l'attributactiondu formulaire seraitaction="formulaire.php".
+- Il faut construire le code de votre pageformulaire.phpen deux grandes parties :
+      si aucun mot de passe n'a été envoyé (ou s'il est faux) : afficher le formulaire ;
+      si le mot de passe a été envoyé et qu'il est bon : afficher les codes secrets.
+
+      <?php
+
+          // Le mot de passe n'a pas été envoyé ou n'est pas bon
+          if (!isset($_POST['mot_de_passe']) OR $_POST['mot_de_passe'] != "kangourou")
+          {
+            // Afficher le formulaire de saisie du mot de passe
+          }
+          // Le mot de passe a été envoyé et il est bon
+          else
+          {
+            // Afficher les codes secrets
+          }
+
+       ?>
+
+
+
+
+> Variables superglobales 
+*********************
+
+
+
+Des variables un peu particulières pour trois raisons :
+1. écrites en majuscules et commencent toutes, à une exception près, par un underscore ex: (_).$_GETet$_POST;
+2. ce sont des array car elles contiennent généralement de nombreuses informations ;
+3. ces variables sont automatiquement créées par PHP à chaque fois qu'une page est chargée. Elles existent donc sur toutes 
+les pages et sont accessibles partout : au milieu de votre code, au début, dans les fonctions, etc.
+
+
+
+Afficher le contenu d'une superglobal, on utilise print_r pcq c'est une array: 
+
+        <pre>
+            <?php
+            print_r($_GET);
+        ?>
+
+
+
+Les principales variables superglobales existantes:
+
+**$_SERVER** : ce sont des valeurs renvoyées par le serveur. Elles sont nombreuses et quelques-unes d'entre elles peuvent 
+               nous être d'une grande utilité. Je vous propose de retenir au moins$_SERVER['REMOTE_ADDR']. Elle nous donne 
+               l'adresse IP du client qui a demandé à voir la page, ce qui peut être utile pour l'identifier.
+
+**$_ENV** : ce sont des variables d'environnement toujours données par le serveur. C'est le plus souvent sous des serveurs 
+            Linux que l'on retrouve des informations dans cette superglobale. Généralement, on ne trouvera rien de bien utile 
+            là-dedans pour notre site web.
+
+**$_SESSION** : on y retrouve les variables de session. Ce sont des variables qui restent stockées sur le serveur le temps de 
+                la présence d'un visiteur. Nous allons apprendre à nous en servir dans ce chapitre.
+
+**$_COOKIE** : contient les valeurs des cookies enregistrés sur l'ordinateur du visiteur. Cela nous permet de stocker des 
+               informations sur l'ordinateur du visiteur pendant plusieurs mois, pour se souvenir de son nom par exemple.
+
+**$_GET** : vous la connaissez, elle contient les données envoyées en paramètres dans l'URL.
+
+**$_POST** : de même, c'est une variable que vous connaissez et qui contient les informations qui viennent d'être envoyées 
+            par un formulaire.
+
+**$_FILES** : elle contient la liste des fichiers qui ont été envoyés via le formulaire précédent.
+
+
+
+
+> Session & Cookies 
+*********************
+
+**Session (fonctionnement)**
+1. Un visiteur arrive sur votre site. On demande à créer une session pour lui. PHP génère alors un numéro unique. Ex:
+   a02bbffc6198e6e0cc2715047bc3766f. (i.e. sert d'identifiant et est appelé « ID de session » (ou  PHPSESSID ). 
+   PHP transmet automatiquement cet ID de page en page en utilisant généralement un cookie.)
+2. Une fois la session générée, on peut créer une infinité de variables de session pour nos besoins. 
+   Ex:  $_SESSION['nom'] ou $_SESSION['prenom']
+   Le serveur conserve ces variables même lorsque la page PHP a fini d'être générée. Cela veut dire que, quelle que soit la   
+   page de votre site, vous pourrez récupérer par exemple le nom et le prénom du visiteur via la superglobale  $_SESSION  !
+3. Lorsque le visiteur se déconnecte de votre site, la session est fermée et PHP « oublie » alors toutes les variables de 
+   session que vous avez créées. Il est en fait difficile de savoir précisément quand un visiteur quitte votre site. Le plus 
+   souvent, le visiteur est déconnecté par un timeout.
+   
+   A retenir : 
+    session_start(): appeler cette fonction au tout début de chacune des pages où vous avez besoin des variables de session.
+    session_destroy():  automatiquement appelée lorsque le visiteur ne charge plus de page de votre site > timeout, 
+                        possibilité créer une page « Déconnexion » si le visiteur souhaite se déconnecter manuellement.
+
+Ex : 
+
+    <?php
+        // On démarre la session AVANT d'écrire du code HTML
+        session_start();
+
+        // On s'amuse à créer quelques variables de session dans $_SESSION
+        $_SESSION['prenom'] = 'Jean';
+        $_SESSION['nom'] = 'Dupont';
+        $_SESSION['age'] = 24;
+    ?>
+
+    <!DOCTYPE html>
+    <html>
+            <head>
+                <meta charset="utf-8" />
+                <title>Titre de ma page</title>
+            </head>
+            <body>
+            <p>
+                Salut <?php echo $_SESSION['prenom']; ?> !<br />
+                Tu es à l'accueil de mon site (index.php). Tu veux aller sur une autre page ?
+            </p>
+            <p>
+                <a href="mapage.php">Lien vers mapage.php</a><br />
+                <a href="monscript.php">Lien vers monscript.php</a><br />
+                <a href="informations.php">Lien vers informations.php</a>
+            </p>
+            </body>
+    </html>
+
+dans lautre page :  
+
+    <?php
+        session_start(); // On démarre la session AVANT toute chose
+    ?>
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Titre de ma page</title>
+        </head>
+        <body>
+        <p>Re-bonjour !</p>
+        <p>
+            Je me souviens de toi ! Tu t'appelles <?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom']; ?> !<br />
+            Et ton âge hummm... Tu as <?php echo $_SESSION['age']; ?> ans, c'est ça ? :-D
+        </p>
+        </body>
+    </html>
+    
+
+**L'utilité des sessions en pratique**
+
+Enregistrer les infos de l'authentification (id et mdp) et les mettre partout sur toutes les pages du site ! Ex: Panier.
+
+
+
+
+
+**Cookies (fonctionnement)**
+Les cookies sont donc des informations temporaires que l'on stocke sur l'ordinateur des visiteurs. La taille est limitée à 
+quelques kilo-octets : vous ne pouvez pas stocker beaucoup d'informations à la fois, mais c'est en général suffisant.
+Comment l'écrire : <?php setcookie('pseudo', 'M@teo21', time() + 365*24*3600); ?>  // nom, valeur et timestamp
+
+**Sécuriser** son cookie avec le mode httpOnly
+réduire drastiquement les risques de faille XSS sur votre site, ex:
+
+    <?php setcookie('pseudo', 'M@teo21', time() + 365*24*3600, null, null, false, true); ?>
+
+**Créer le cookie avant d'écrire du HTML**
+
+    <?php
+        setcookie('pseudo', 'M@teo21', time() + 365*24*3600, null, null, false, true); // On écrit un cookie
+        setcookie('pays', 'France', time() + 365*24*3600, null, null, false, true); // On écrit un autre cookie...
+
+        // Et SEULEMENT MAINTENANT, on peut commencer à écrire du code html
+     ?>
+
+     <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <title>Ma super page PHP</title>
+            </head>
+            <body>
+
+            etc.
+            
+            
+ **Afficher un cookie**
+ 
+       <p>
+          Hé ! Je me souviens de toi !<br />
+          Tu t'appelles <?php echo $_COOKIE['pseudo']; ?> et tu viens de <?php echo $_COOKIE['pays']; ?> c'est bien ça ?
+      </p>
+      
+**Modifier un cookie existant**
+Ex, si maintenant j'habite en Chine voila ce que je ferai: 
+
+      <?php setcookie('pays', 'Chine', time() + 365*24*3600, null, null, false, true); ?>
+
+
+
+
+
+> Lire et écrire dans un fichier 
+*********************
+
+**Autoriser**
+Il faut en effet donner le droit à PHP de créer et modifier les fichiers, CHMOD est un nombre à trois chiffres que l'on 
+attribue à un fichier, 777 pour donner la peremission a PHP de créer/modifier des fichiers par lui-même
+
+**Ouvrir/Fermer**
+La fonctionfopenpermet d'ouvrir le fichier,fgetsde le lire ligne par ligne etfputsd'y écrire une ligne.
+
+
+
+**Modifier/Ecrire**
+À moins de stocker des données très simples, l'utilisation des fichiers n'est pas vraiment la technique la plus adaptée pour enregistrer des informations. Il est vivement recommandé de faire appel à une base de données.

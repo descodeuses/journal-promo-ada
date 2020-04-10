@@ -82,3 +82,71 @@ J'ai assisté au Meet-up sur le Sketchnoting organisé par les Duchesses (Mathil
                 - mettre la date de la conférence en haut à gauche. 
          - le site "un picto par jour" propose d'apprendre un pictogramme par jour pour être plus réactif lors du sketchnoting. 
  
+## Vendredi 10 Avril
+
+Reprise des cours de PhP
+
+### Les boucles : 
+
+    - Les boucles demandent à PHP de répéter des instructions plusieurs fois.
+
+    - Les deux principaux types de boucles sont :
+
+        - while : à utiliser de préférence lorsqu'on ne sait pas par avance combien de fois la boucle doit être répétée ;
+
+        - for : à utiliser lorsqu'on veut répéter des instructions un nombre précis de fois.
+
+    - L'incrémentation est une technique qui consiste à ajouter 1 à la valeur d'une variable. La décrémentation retire au contraire 1 à cette variable. On trouve souvent des incrémentations au sein de bouclesfor.
+    
+### Les arrays
+
+Les tableaux (ou arrays) sont des variables représentées sous forme de tableau. Elles peuvent stocker de grandes quantités d'informations.
+
+Chaque ligne d'un tableau possède une clé (qui permet de l'identifier) et une valeur.
+
+Il existe deux types de tableaux :
+
+    - les tableaux numérotés : chaque ligne est identifiée par une clé numérotée. La numérotation commence à partir de 0 ;
+
+    - les tableaux associatifs : chaque ligne est identifiée par une courte chaîne de texte.
+
+Pour parcourir un tableau, on peut utiliser: 
+      - la boucle "for" 
+      - la boucle "foreach";
+      
+Il existe de nombreuses fonctions permettant de travailler sur des tableaux et notamment d'effectuer des recherches : 
+      - "array_key_exists" pour savoir si un clé est dans un tableau
+      - "in_array" pour savoir si une valeur est dans un tableau
+      - "array_search" pour chercher la clé qui correspond à une valeur dans le tableau
+      
+      
+### Les Fonctions
+
+PHP propose des centaines et des centaines de fonctions prêtes à l'emploi pour tous types de tâches : envoyer un e-mail, récupérer l'heure, crypter des mots de passe, etc.
+
+Si PHP ne propose pas la fonction dont on a besoin, il est possible de la créer avec le mot-clé "function".
+
+### Les erreurs en PHP
+
+#### Les erreurs les plus courantes 
+
+    - Parse error : 
+        - oubli ; à la fin d'une instruction
+        - oubli de " 
+        - oubli d'un . dans une concaténation
+        - oubli d'une {
+      
+    - Undefined function : on a utilisé une fonction qui n'existe pas. 
+        - vérifier l'orthographe de la fonction
+        - la fonctionse trouve dans une extension de php que l'on a pas activée
+        
+    - Wrong parameter count : on a oublié d'utiliser certains paramètres pour la fonction ou on en a trop mis. 
+        - Il faut regarder la documentation php pour véréifier les paramètres de la fonction. 
+  
+  #### Les erreurs rares
+  
+  - Header already sent by : Les Headers en Php sont des informations envoyées avant tout autre chose au navigateur. Si elles ne sont pas placées en tout début du code php avec rien avant alors l'erreur s'affiche. 
+  
+  - L'image contient des erreurs. Cette erreur s'affiche dans le navigateur si on a fait une parse error dans le code en utilisant la bibliothèque GD. L'erreur sera inscrite dans l'image. on peut alors supprimer la ligne <?php header ("Content-type: image/png"); ?> et le vrai message d'erreur appraitra.
+  
+  - Maximum execution time exceeded : souvent à cause d'une boucle infinie.
