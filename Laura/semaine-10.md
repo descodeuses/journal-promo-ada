@@ -1072,3 +1072,116 @@ la fonction basename qui renverra juste « fichier.png ».
                 }
         }
         ?>
+
+
+
+
+
+
+
+## Vendredi 10 avril
+
+### PHP (OpenClassroom)
+
+                                                   (Autodidact)
+
+
+
+
+
+> TP  
+*********************
+
+**Objectif**:
+- afficher du texte avec echo ;
+- utiliser les variables (affectation, affichage…) ;
+- transmettre des variables via une zone de texte d'un formulaire ;
+- utiliser des conditions simples (if,else).
+
+**Scénario** : 
+Mettre en ligne une page web pour donner des informations confidentielles à certaines personnes. Cependant, pour limiter 
+l'accès à cette page, il faudra connaître un mot de passe.Dans notre cas, les données confidentielles seront les codes 
+d'accès au serveur central de la NASA (soyons fous !). Le mot de passe pour pouvoir visualiser les codes d'accès sera 
+kangourou. Sauriez-vous réaliser une page qui n'affiche ces codes secrets que si l'on a rentré le bon mot de passe ?
+
+**Etapes**:
+Créer 2 pages .Php, l'une pour le client qui entre le mdp et l'autre pour recevoir l'input que le client a mis.
+
+Dans le 1er: 
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Page protégée par mot de passe</title>
+        </head>
+        <body>
+            <p>Veuillez entrer le mot de passe pour obtenir les codes d'accès au serveur central de la NASA :</p>
+            <form action="secret.php" method="post">
+                <p>
+                <input type="password" name="mot_de_passe" />
+                <input type="submit" value="Valider" />
+                </p>
+            </form>
+            <p>Cette page est réservée au personnel de la NASA. Si vous ne travaillez pas à la NASA, inutile d'insister vous ne trouverez jamais le mot de passe ! ;-)</p>
+        </body>
+    </html>
+
+Dans le 2eme:
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Codes d'accès au serveur central de la NASA</title>
+        </head>
+        <body>
+
+            <?php
+        if (isset($_POST['mot_de_passe']) AND $_POST['mot_de_passe'] ==  "kangourou") // Si le mot de passe est bon
+        {
+        // On affiche les codes
+        ?>
+            <h1>Voici les codes d'accès :</h1>
+            <p><strong>CRD5-GTFT-CK65-JOPM-V29N-24G1-HH28-LLFV</strong></p>   
+
+            <p>
+            Cette page est réservée au personnel de la NASA. N'oubliez pas de la visiter régulièrement car les codes d'accès sont changés toutes les semaines.<br />
+            La NASA vous remercie de votre visite.
+            </p>
+            <?php
+        }
+        else // Sinon, on affiche un message d'erreur
+        {
+            echo '<p>Mot de passe incorrect</p>';
+        }
+        ?>
+
+
+        </body>
+    </html>
+    
+    
+Possibilité de réaliser ce TP en **une seule page**:
+- sur la pageformulaire.php, s'appelle lui-même. En clair, l'attributactiondu formulaire seraitaction="formulaire.php".
+- Il faut construire le code de votre pageformulaire.phpen deux grandes parties :
+      si aucun mot de passe n'a été envoyé (ou s'il est faux) : afficher le formulaire ;
+      si le mot de passe a été envoyé et qu'il est bon : afficher les codes secrets.
+
+      <?php
+
+          // Le mot de passe n'a pas été envoyé ou n'est pas bon
+          if (!isset($_POST['mot_de_passe']) OR $_POST['mot_de_passe'] != "kangourou")
+          {
+            // Afficher le formulaire de saisie du mot de passe
+          }
+          // Le mot de passe a été envoyé et il est bon
+          else
+          {
+            // Afficher les codes secrets
+          }
+
+       ?>
+
+
+
