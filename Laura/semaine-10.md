@@ -1375,3 +1375,21 @@ La fonctionfopenpermet d'ouvrir le fichier,fgetsde le lire ligne par ligne etfpu
 
 **Modifier/Ecrire**
 À moins de stocker des données très simples, l'utilisation des fichiers n'est pas vraiment la technique la plus adaptée pour enregistrer des informations. Il est vivement recommandé de faire appel à une base de données.
+
+
+## Samedi et Dimanche 11 et 12 avril
+
+### Projet (App)
+
+                                                   (Pages statut)
+                                                   
+- Des amis m'ont filé une maquette à faire, pour une app qui te donne un lieu selon ce que tu désires/aimes/veux faire.
+- Le plus gros dilemme au début était de le faire en responsive mobile first je commencais à m'embrouiller avec les 
+differentes taille d'iphone. Et le fait aussi qu'ils voulaient des checkbox et non des button du coup il fallait trouver 
+un moyen de ne pas afficher les cases a check mais j'ai fini par trouver un site qui en faisait une démo. Du coup là j'ai 
+fait toutes les pages de la surface, il me reste plus qu'a ajouter du JS pour pouvoir faire des animations du style, quand
+on appuie sur le bouton infos ca affiche le texte en dessous de chaque catégorie correspondante.
+
+ 
+
+#### (Login Page) 
