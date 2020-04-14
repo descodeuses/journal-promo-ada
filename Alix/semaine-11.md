@@ -7,3 +7,4 @@ Arrangement de la maquette e-shop pour en faire un repo présentable.
 ## Mardi 14 avril
 
 Continuation du cours php le matin.
+Révision du cours php passé.
