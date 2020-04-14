@@ -52,3 +52,27 @@ ML right now, why?
 
 ML & AI will redefined the jobs we have not steal them. Change it so we can have more leisure/time than before.
 
+
+
+
+> Projet (CSS)
+*********************
+
+Syntaxe pour sélectionner le premier enfant label dans une div: 
+
+              (CSS)
+              .petit-container label:first-of-type{       //et non pas first of child
+                padding-left: 3em;
+                margin-left: 5em;
+                padding-right: 3em;
+              }
+              
+              (HTML)
+              <div class="petit-container">
+                                      <input id="toggle1" type="checkbox">
+                                      <label for="toggle1"> GO </label>
+
+
+                                      <input id="toggle2" type="checkbox">
+                                      <label for="toggle2"> WEBSITE </label>
+                                </div>
