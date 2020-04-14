@@ -21,3 +21,14 @@ Reprise du cours php d'OpenClassRoom
 - La fonction isset()permet de vérifier si une variable est définie ou non.
 
 - Le transtypage est une technique qui permet de convertir une variable dans le type de données souhaité. Cela permet de s'assurer par exemple qu'une variable est bien unint(nombre entier).
+
+
+### Transmettre des données avec un formulaire
+
+- Les formulaires sont le moyen le plus pratique pour le visiteur de transmettre des informations à un site. 
+
+- Les données envoyées via un formulaire se retrouvent dans un array$_POST.
+
+- il faut contrôler les données qu'envoie l'utilisateur. Il pourrait très bien ne pas remplir tous les champs voire trafiquer le code HTML de la page pour supprimer ou ajouter des champs. 
+
+- il faut s'assurer qu'aucun texte qui est envoyé ne contient du HTML si celui-ci est destiné à être affiché sur une page. Sinon, on ouvre une faille XSS. Pour éviter la faille XSS, il suffit d'appliquer la fonction "htmlspecialchars" sur tous les textes envoyés par les visiteurs que l'on affiche.
