@@ -76,3 +76,35 @@ Syntaxe pour sélectionner le premier enfant label dans une div:
                                       <input id="toggle2" type="checkbox">
                                       <label for="toggle2"> WEBSITE </label>
                                 </div>
+
+## Mercredi 15 avril
+
+### Projet (App) 
+
+                                                   (Autodidact)
+
+
+
+- visio-cours ce matin avec Laïla sur le client/serveur (que j'avais déjà compris en lisant les cours OC mais la partie où 
+elle nous a montré ses extensions Chrome pour catalyser son quotidien c'était pratique. La seamine pro, elle nous montrera 
+comment mettre une API instagram :D j'ai hate.
+
+
+<hr/>
+
+> CSS Animation
+*********************
+Alors j'ai un peu fouillé mes cours OC que j'avais stocké ici, pour pouvoir faire l'animation demander de la maquette app. Au
+début j'ai demandé sur le slack par quoi commencer, on m'a dit :active, j'ai essayé mais c'est pas tout à fait l'effet 
+que je voulais pcq je n'arrivais pas à changer sa position Y tant que ça. Finalement j'ai fini par taper CSS animation 
+generator et je suis tombée sur cette pépite:
+
+https://www.theappguruz.com/tag-tools/web/CSSAnimations/
+
+Comme ça y a juste à changer les points qui nous intéressent. 
+
+
+<hr/>
+
+> JavaScript
+*********************
