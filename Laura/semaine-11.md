@@ -161,3 +161,12 @@ ce qui a donner:
             		        <label for="toggle4"> group </label>
                                 <p class="infos-description">< short description on i tap ></p>
 
+AAAAHHH CA Y EST !! J'ai enfin fini de faire debugg mon app ... A force de changer de nom de div ca finit par peter dans tous
+les sens, merci mon canard (j'ai pris l'habitude mainteannt a chaque fois que je voulais faire une nouvelle feature de le 
+faire sur essaie sur un autre fichier puis de le copier coller une fois que ca marchait pcq on finit vite par s'y perdre et 
+ne plus savoir a quoi ressemblait le code de base), petit mode d'emploi: 
+
+- check les noms 
+- check si les fichiers sont bien connecté js et css 
+- check l'indentation
+
