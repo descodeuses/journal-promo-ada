@@ -14,3 +14,11 @@ Révision du cours php passé.
 Cours Serveur Laïla.
 Après-midi : cours java
 Soir : amélioration maquette e-shop
+
+## Jeudi 16 avril
+
+Arrangement de mon CV online
+Création de mon CV de dev sur le site de pôle emploi (à continuer car bug).
+Cours php
+Réunion avec Nada
+Arrangement maquette e-shop
