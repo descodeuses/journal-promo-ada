@@ -106,5 +106,58 @@ Comme ça y a juste à changer les points qui nous intéressent.
 
 <hr/>
 
-> JavaScript
+## Jeudi 16 avril
+
+### Projet (App) 
+
+                                                   (Autodidact)
+
+> Javascript
 *********************
+
+Il me reste **à afficher les textes infos lorsque l'on clique sur le bouton infos**, que j'ai réussi pour la page with mais du 
+coup il reste les 4 autres pages, quelque chose a péter quand j'ai changé le nom du bouton infos... 
+J'ai un peu galéré ce matin à trouver le bon code JS, comme j'ai mes reflexes avec CSS: chercher sur internet si y a pas déjà
+un modèl que je pourrai refaire à ma sauce mais non. Du coup j'ai demandé de l'aide sur Slack et Leila m'a corriger ma réponse 
+ce qui a donner:
+
+        
+        (JS)
+        document.querySelector('.bouton-afficher').addEventListener('click', function(){
+          var paragraphes = document.querySelectorAll("p.infos-description");
+          paragraphes.forEach((p) => {
+            p.style.display = "block";
+          });
+        }); 
+        
+        (CSS)
+        .bouton-afficher{
+          border: none;
+          color:inherit;
+          padding: 0px 0px;
+        }
+
+        .infos-description{
+          margin-left: 11em;
+          margin-top: -1em;
+          font-size: 0.5em;
+          display:none;
+        }
+        
+        (HTML)
+        <input id="toggle1" type="checkbox" checked>
+            		        <label for="toggle1"> solo </label>
+                                <p class="infos-description">< short description on i tap ></p>
+
+            		  <input id="toggle2" type="checkbox">
+            		        <label for="toggle2"> date </label>
+                                <p class="infos-description">< short description on i tap ></p>
+
+            		  <input id="toggle3" type="checkbox">
+            		        <label for="toggle3"> duo </label>
+                                <p class="infos-description">< short description on i tap ></p>
+
+            		  <input id="toggle4" type="checkbox">
+            		        <label for="toggle4"> group </label>
+                                <p class="infos-description">< short description on i tap ></p>
+
