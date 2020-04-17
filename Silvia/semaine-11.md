@@ -14,8 +14,10 @@
 - FreeCodeCamp: Applied accessibility 1-10
   - Impression d'avoir déjà râté un coche avec PHP que tout le monde s'est mis à faire en solo. Franchement, je ne saurais pas par où commencer et je n'ai pas très envie de m'y coller.
 - Je commence à regarder le cours PHP d'OCR
+  - impossible de télécharger WAMP, je laisse tomber
 
 ## Vendredi 17/04/2020
+- FCC : tuto pour créer des jeux avec JS. Je tente le memory. Fait mais ça ne marche pas... le tuto est très rapide, je l'ai vu 12 fois mais je n'arrive pas à comprendre où doit s'arrêter la première fonction et j'ai visiblement un problème de parenthèses. Je verrai ça demain
 
 ## Samedi 18/04/2020
 
