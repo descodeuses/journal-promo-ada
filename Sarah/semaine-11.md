@@ -32,3 +32,23 @@ Reprise du cours php d'OpenClassRoom
 - il faut contrôler les données qu'envoie l'utilisateur. Il pourrait très bien ne pas remplir tous les champs voire trafiquer le code HTML de la page pour supprimer ou ajouter des champs. 
 
 - il faut s'assurer qu'aucun texte qui est envoyé ne contient du HTML si celui-ci est destiné à être affiché sur une page. Sinon, on ouvre une faille XSS. Pour éviter la faille XSS, il suffit d'appliquer la fonction "htmlspecialchars" sur tous les textes envoyés par les visiteurs que l'on affiche.
+
+## Jeudi 16 avril
+
+J'ai continué à modifier mon site Codevores.
+
+J'ai avancer d'un chapitre le cours de PHP et j'ai réussi le tp consistant à créer deux pages php dont l'une est protégée par un mot de passe qui doit être donné par l'utilisateur dans le champ input password de la première page php. 
+
+                    <?php
+                    htmlspecialchars($_POST['mdp']);
+
+                    if (isset($_POST['mdp'])){
+                      if ($_POST['mdp'] == 'kangourou') {
+                        echo('voici les informations confidentielles');
+                      } else {
+                        echo('Vous n'avez pas les autorisations');
+                      }
+                    } else {
+                        echo('Vous n'avez pas les autorisations');
+                        }
+                     ?>
