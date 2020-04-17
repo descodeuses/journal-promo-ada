@@ -170,3 +170,26 @@ ne plus savoir a quoi ressemblait le code de base), petit mode d'emploi:
 - check si les fichiers sont bien connecté js et css 
 - check l'indentation
 
+
+
+
+## Vendredi 17 avril
+
+### Projet (App)
+
+                                                   (Autodidact)
+
+
+
+
+
+> Résultats
+*********************
+
+Jusqu'à maintenant, j'ai fait fini toutes les pages demandés de la maquette avec comme principales difficultés:
+  - faire des checkbox en input sans la forme cocher dégueu et stylisé le tout comme la maquette (merci google): DONE
+  - faire l'animation du début lors que le titre slide vers le haut et le reste du text apparait avec keyframes : DONE
+  - faire du javascript et lorsque l'on clique sur le bouton infos, les textes en desosus de chaque catégorie apparait :DONE
+  - dernier probleme: faire en sorte que les pages sois interconnecté avec les liens a mais je viens d'apprendre qu'on ne peut
+    tu ne peux pas avoir un élément intéractif dans un autre élément intéractifs donc tu n'as pas le droit d'avoir un input 
+    dans un lien 
