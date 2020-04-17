@@ -1391,5 +1391,3 @@ fait toutes les pages de la surface, il me reste plus qu'a ajouter du JS pour po
 on appuie sur le bouton infos ca affiche le texte en dessous de chaque catégorie correspondante.
 
  
-
-#### (Login Page) 
