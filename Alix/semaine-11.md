@@ -22,3 +22,7 @@ Création de mon CV de dev sur le site de pôle emploi (à continuer car bug).
 Cours php
 Réunion avec Nada
 Arrangement maquette e-shop
+
+## Vendredi 17 avril
+
+Cours php
