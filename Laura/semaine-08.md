@@ -481,3 +481,5 @@ Notes: le navigateur n'est toujours pas bien fait (flemme)
 - Indenter tout mon code 
 
 - Refaire la nav encore et toujours... 
+
+

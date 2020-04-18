@@ -32,3 +32,43 @@ Reprise du cours php d'OpenClassRoom
 - il faut contrôler les données qu'envoie l'utilisateur. Il pourrait très bien ne pas remplir tous les champs voire trafiquer le code HTML de la page pour supprimer ou ajouter des champs. 
 
 - il faut s'assurer qu'aucun texte qui est envoyé ne contient du HTML si celui-ci est destiné à être affiché sur une page. Sinon, on ouvre une faille XSS. Pour éviter la faille XSS, il suffit d'appliquer la fonction "htmlspecialchars" sur tous les textes envoyés par les visiteurs que l'on affiche.
+
+## Jeudi 16 avril
+
+J'ai continué à modifier mon site Codevores.
+
+J'ai avancer d'un chapitre le cours de PHP et j'ai réussi le tp consistant à créer deux pages php dont l'une est protégée par un mot de passe qui doit être donné par l'utilisateur dans le champ input password de la première page php. 
+
+                    <?php
+                    htmlspecialchars($_POST['mdp']);
+
+                    if (isset($_POST['mdp'])){
+                      if ($_POST['mdp'] == 'kangourou') {
+                        echo('voici les informations confidentielles');
+                      } else {
+                        echo('Vous n'avez pas les autorisations');
+                      }
+                    } else {
+                        echo('Vous n'avez pas les autorisations');
+                        }
+                     ?>
+
+## Vendredi 17 avril
+
+Je continue le cours de PHP
+
+### Les variables superglobales
+
+Les variables superglobales sont des variables automatiquement créées par PHP. Elles se présentent sous la forme d'arrays contenant différents types d'informations.
+
+$_SERVER : ce sont des valeurs renvoyées par le serveur. Elles sont nombreuses et quelques-unes d'entre elles peuvent nous être d'une grande utilité. $_SERVER['REMOTE_ADDR'] nous donne l'adresse IP du client qui a demandé à voir la page (utile pour l'identifier).
+
+$_SESSION : on y retrouve les variables de session. Ce sont des variables qui restent stockées sur le serveur le temps de la présence d'un visiteur. 
+
+$_COOKIE : contient les valeurs des cookies enregistrés sur l'ordinateur du visiteur. Cela nous permet de stocker des informations sur l'ordinateur du visiteur pendant plusieurs mois, pour se souvenir de son nom par exemple.
+
+$_GET : elle contient les données envoyées en paramètres dans l'URL.
+
+$_POST : elle contient les informations qui viennent d'être envoyées par un formulaire.
+
+$_FILES : elle contient la liste des fichiers qui ont été envoyés via le formulaire précédent.
